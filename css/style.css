@@ -1,0 +1,27 @@
+/* 全ページ共通のcssを記述 */
+body{
+
+}
+
+.container{
+    width: 1400px;
+    height: 1000px;
+    margin:0 auto;
+    background-color: rgb(246, 200, 200);
+}
+
+.header{
+    background-color: darkturquoise;
+}
+
+
+.footer{
+    background-color: rgb(243, 140, 108);
+}
+
+
+
+
+
+
+
