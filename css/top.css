@@ -1,5 +1,16 @@
 /* topページcss */
 
+.headerRoute{
+    background-color: rgb(44, 40, 28);
+    height: 12px;
+}
+
+.main{
+    height: 90vh;
+    background-image: url('<?php echo get_template_directory_uri(); ?>/img/hana3.jpg?>');
+    background-size: cover;
+}
+
 .about{
     background-color: rgb(235, 231, 187);
 }

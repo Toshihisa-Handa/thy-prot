@@ -1,27 +1,65 @@
 /* 全ページ共通のcssを記述 */
+html{
+font-family:'游明朝','游ゴシック' ;
+}
+
 body{
+    max-width: 1400px;
+    margin:0 auto;
 
 }
 
 .container{
-    width: 1400px;
-    height: 1000px;
-    margin:0 auto;
+    width: 100%;
     background-color: rgb(246, 200, 200);
 }
 
+/* ヘッダーここから */
 .header{
-    background-color: darkturquoise;
+    max-height: 100px;
+    background-color: white;
+    display: flex;
+}
+
+/* ヘッダーここまで */
+.logo{
+    width: 50%;
+    text-align: center;
+}
+.log-img{
+    height: 70px;
 }
 
 
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.navs{
+height: 100%;
+width: 20%;
+display: grid;
+place-items: center;
+padding:10px 0 10px 0;
+
+}
+.navs:hover{
+    background-color: black;
+    color:white;
+}
+
+
+
+/* フッターここから */
 .footer{
     background-color: rgb(243, 140, 108);
 }
 
 
 
-
+/* フッターここまで */
 
 
 

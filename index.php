@@ -14,6 +14,21 @@
     <!-- ヘッダー -->
     <?php get_template_part('parts/header'); ?>
     <!-- ヘッダーここまで -->
+    <!-- ヘッダールート -->
+    <div class="headerRoute">
+        
+    </div>
+    <!-- ヘッダールートここまで -->
+    <!-- メイン -->
+    <div class="main" style='background-image: url("<?php echo get_template_directory_uri(); ?>/img/hana3.jpg?>")'>
+
+    </div>
+    <!-- ヘッダールートここまで -->
+    
+
+
+
+
     <!-- アバウト -->
     <div class="about">
         <h1>アバウト</h1>
@@ -67,7 +82,7 @@
 
 
 
-        
+
 
     </div>
     <!-- ブログここまで -->
