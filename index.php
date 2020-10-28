@@ -31,7 +31,10 @@
 
     <!-- アバウト -->
     <div class="about">
+        <div class="contents content-head">
         <h1>アバウト</h1>
+
+        </div>
 
 
 
@@ -45,7 +48,10 @@
     <!-- アバウトここまで -->
     <!-- one team -->
     <div class="concept">
+        <div class="contents content-head">
         <h1>One team</h1>
+
+        </div>
 
 
 
@@ -59,8 +65,11 @@
     </div>
     <!-- one teamここまで -->
     <!-- 所有物件 -->
-    <div class="realestate">
+    <div class="property">
+        <div class="contents">
         <h1>所有物件</h1>
+
+        </div>
 
 
 
@@ -74,7 +83,10 @@
     <!-- 所有物件ここまで -->
     <!-- ブログ -->
     <div class="blog">
+        <div class="contents">
         <h1>ブログ</h1>
+
+        </div>
 
 
 
