@@ -1,0 +1,86 @@
+/* topページcss */
+
+img{
+    padding:0;
+    margin:0;
+    max-width: 100%;
+}
+
+/* ヘッダールート */
+.headerRoute{
+    background-color: rgb(44, 40, 28);
+    height: 12px;
+}
+
+/* メイン */
+.main{
+    height: 90vh;
+    background-image: url('<?php echo get_template_directory_uri(); ?>/img/hana3.jpg?>');
+    background-size: cover;
+}
+
+
+/* コンテンツ */
+.contents{
+    width: 980px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    
+
+}
+
+.content-head{
+    border:3px solid rgba(64, 63, 60, 0.4);
+    border-top:5px solid rgb(44, 40, 28);
+    
+
+}
+/* アバウト */
+.about{
+    width: 100%;
+    background-color:#F9F9F9;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    
+}
+.about-left{
+    width: 50%;
+}
+
+.about-right{
+    width: 50%;
+}
+
+
+
+/* コンセプト */
+.concept{
+    background-color: #aca5a5;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* プロパティ */
+.property{
+    background-color: rgb(200, 176, 222);
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ブログ */
+.blog{
+    background-color: rgb(176, 222, 214);
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
