@@ -6,24 +6,24 @@
   </div>
   <ul class='nav'>
       <li class="navs">
-          <div class="font-s">ホーム</div>
-          <div class="font-sm">HOME</div>
+          <div class="font-10">ホーム</div>
+          <div class="font-16">HOME</div>
       </li>
       <li class="navs">
-          <div class="font-s">会社概要</div>
-          <div class="font-sm">COMPANY</div>
+          <div class="font-10">会社概要</div>
+          <div class="font-16">COMPANY</div>
       </li>
       <li class="navs">
-          <div class="font-s">所有物件</div>
-          <div class="font-sm">PROPERTY</div>
+          <div class="font-10">所有物件</div>
+          <div class="font-16">PROPERTY</div>
       </li>
       <li class="navs">
-          <div class="font-s">ブログ</div>
-          <div class="font-sm">BLOG</div>
+          <div class="font-10">ブログ</div>
+          <div class="font-16">BLOG</div>
       </li>
       <li class="navs">
-          <div class="font-s">問い合わせ</div>
-          <div class="font-sm">CONTACT</div>
+          <div class="font-10">問い合わせ</div>
+          <div class="font-16">CONTACT</div>
       </li>
   </ul>
 
