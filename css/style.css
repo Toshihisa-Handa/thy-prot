@@ -15,9 +15,13 @@ body{
 }
 
 /* ヘッダーここから */
-.header{
+.header-wrapper{
     position: fixed;
-    width: 100%;
+    width: 1400px; 
+    /* ここのwidthはレスポンシブする時width1400px以下の時はwidthを１００％に変更する */
+}
+
+.header{
     max-height: 100px;
     background-color: white;
     display: flex;

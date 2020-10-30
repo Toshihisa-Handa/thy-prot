@@ -20,19 +20,14 @@ img{
 }
 
 
-/* コンテンツ */
-.contents{
+/* 共通コンテンツ */
+.contents-common{
     width: 980px;
     height: 500px;
     background-color: rgb(255, 255, 255);
     
 }
-.contents-large{
-    width: 980px;
-    height: 500px;
-    background-color: rgb(255, 255, 255);
-    
-}
+
 
 .content-head{
     border:3px solid rgba(64, 63, 60, 0.4);
@@ -158,6 +153,13 @@ img{
     align-items: center;
 }
 
+.contents-property{
+    width: 980px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
 .wrapper{
     display: flex;
     justify-content: center;
@@ -171,7 +173,7 @@ img{
     margin-top: 40px;
 }
 
-.cardLeft{
+.pCard{
     width: 450px;
     border:1px solid rgba(64, 63, 60, 0.4);
     border-top:4px solid #D88526;
@@ -193,20 +195,96 @@ img{
     line-height: 25px;
 }
 
-.cardRight{
-    width: 45%;
-    border:1px solid rgba(64, 63, 60, 0.4);
-    border-top:4px solid #D88526;
-}
 
 
 
 /* ブログ */
 .blog{
-    background-color: rgb(176, 222, 214);
+    background-color:#D2CABA;
     height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 30px;
+
+}
+
+.contents-blog{
+    width: 980px;
+    height: 500px;
+    background-color: #D2CABA;;
+}
+
+.blogCards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bCard{
+    width: 300px;
+    height: 450px;
+}
+
+.bCardImg-box{
+    height: 50%;
+}
+
+.bCardImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bCardSentence{
+    width: 100%;
+    height:50%;
+    background-color: white;
+}
+
+.blogTitle-box{
+    display: flex;
+    align-items: center;
+    height: 15%;
+}
+
+.blogTitle{
+    margin-left: 10px;
+}
+
+.blogCard-box{
+    margin-top: 15px;
+    height: 85%;
+}
+
+.bcardTitles{
+    display:flex;
+    justify-content: space-between;
+    padding: 15px 1px 25px 10px;
+}
+
+.bCardTitle, .bCardTime, .bCardText{
+    color:#4C4C4C;
+}
+
+.bCardTag-box{
+    padding-right:10px;
+}
+
+.bCardTag{
+    background-color: #A79079;
+    color:white;
+    text-align: center;
+    padding: 3px 0 3px 0;
+}
+
+.bCardTime{
+    margin-top:5px;
+}
+
+.bCardText{
+    margin-left: 10px;
+    max-height: 60%;
+    overflow: hidden;
 }
 

@@ -20,7 +20,7 @@
     </div>
     <!-- ヘッダールートここまで -->
     <!-- メイン -->
-    <div class="main" style='background-image: url("<?php echo get_template_directory_uri(); ?>/img/hana3.jpg?>")'>
+    <div class="main" style='background-image: url("<?php echo get_template_directory_uri(); ?>/img/main_pc.jpg?>")'>
 
     </div>
     <!-- ヘッダールートここまで -->
@@ -30,9 +30,9 @@
 
     <!-- アバウト -->
     <div class="about">
-        <div class="contents content-head about-area">
+        <div class="contents-common content-head about-area">
            <div class="about-left">
-               <div class="aboutTitle font-32">About Us&nbsp; &nbsp; <img style='width:40px;' src='<?php echo get_template_directory_uri(); ?>/img/hana2.jpg ?>'></div>
+               <div class="aboutTitle font-32">About Us&nbsp; &nbsp; <img style='width:40px;' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg ?>'></div>
                <div class="aboutText font-15">私たちは、関東近郊に2物件を所有し、あらゆる層に低価格で<br>
                                                住まいを提供する事業を行っています。<br>
                                                私たちは、低価格であること、イコール、古く条件が悪いアパ<br>
@@ -45,7 +45,7 @@
             </div>
             <div class="about-right">
               <div class="rightImg-box">
-                  <img class='rightImg' src="<?php echo get_template_directory_uri(); ?>/img/hana4.jpg?>" alt="">
+                  <img class='rightImg' src="<?php echo get_template_directory_uri(); ?>/img/top_02.jpg?>" alt="">
               </div>
            </div>
         </div>
@@ -54,14 +54,14 @@
     <!-- アバウトここまで -->
     <!-- one team -->
     <div class="concept">
-        <div class="contents content-head concept-area">
+        <div class="contents-common content-head concept-area">
         <div class="concept-left">
             <div class="leftImg-box">
-            <img class='leftImg' src="<?php echo get_template_directory_uri(); ?>/img/hana1.jpg?>" alt="">
+            <img class='leftImg' src="<?php echo get_template_directory_uri(); ?>/img/top_03.jpg?>" alt="">
             </div>
         </div>
         <div class="concept-right">
-            <div class="conceptTitle font-32">One Team&nbsp; &nbsp; <img style='width:40px;' src='<?php echo get_template_directory_uri(); ?>/img/hana2.jpg ?>'></div>
+            <div class="conceptTitle font-32">One Team&nbsp; &nbsp; <img style='width:40px;' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg ?>'></div>
             <div class="conceptText font-16">私たちは、不動産や中小のリフォーム会社とタッグ<br>
                                      を組んで、お客様によりよい条件のアパートを提供<br>
                                      できるよう、密に連携をくんでとりくんでおります。
@@ -75,17 +75,17 @@
     <!-- one teamここまで -->
     <!-- 所有物件 -->
     <div class="property">
-        <div class="contents-large">
+        <div class="contents-property">
           <div class="wrapper">
               <div class="propertyTitle-box">
                 <div class="propertyTitle font-32">所有物件</div>
-                <img style='width:40px;' src='<?php echo get_template_directory_uri(); ?>/img/hana2.jpg ?>'>
+                <img style='width:40px;' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg?>'>
               </div>
             </div>
           <div class="propertyCard-box">
-              <div class="cardLeft">
+              <div class="pCard">
                   <div class="cardImg-box">
-                    <img class='cardImg' src="<?php echo get_template_directory_uri(); ?>/img/hana1.jpg?>" alt="">
+                    <img class='cardImg' src="<?php echo get_template_directory_uri(); ?>/img/property_02.jpg?>" alt="">
                   </div>
                   <div class="cardSentence">
                       <div class="cardTitle font-16">埼玉県草加市</div>
@@ -93,9 +93,9 @@
                                             り</div>
                   </div>
               </div>
-              <div class="cardRight">
+              <div class="pCard">
                   <div class="cardImg-box">
-                    <img class='cardImg' src="<?php echo get_template_directory_uri(); ?>/img/hana1.jpg?>" alt="">
+                    <img class='cardImg' src="<?php echo get_template_directory_uri(); ?>/img/top_04.jpg?>" alt="">
                   </div>
                   <div class="cardSentence">
                       <div class="cardTitle font-16">神奈川県川崎市</div>
@@ -105,21 +105,116 @@
               </div>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
     </div>
     <!-- 所有物件ここまで -->
     <!-- ブログ -->
     <div class="blog">
-        <div class="contents">
-        <h1>ブログ</h1>
+        <div class="contents-blog">
+            <div class="blogTitle-box">
+              <img style='width:40px;' src='<?php echo get_template_directory_uri(); ?>/img/icon_02.jpg ?>'>
+              <div class="blogTitle font-32">人気記事</div>
+            </div>
+            <div class="blogCards">
+                <div class="blogCard-box">
+                    <div class="bCard">
+                        <div class="bCardImg-box">
+                        <img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/property_03.jpg?>" alt="">
+                        </div>
+                        <div class="bCardSentence">
+                        <div class="bcardTitles">
+                            <div class="bCardTitle font-16">タイトル</div>
+                            <div class="bCardTag-box">
+                            <div class="bCardTag font-14">不動産</div>
+                            <div class="bCardTime font-14">2020/10/20</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bCardText font-15">日差しの降り注ぐ西向き<br>
+                                                        のきれいなぶっけんです<br>
+                                                        日差しの降り注ぐ西向き<br>
+                                                        のきれいなぶっけんです<br>
+                                                        のきれいなぶっけんです<br>
+                                                        のきれいなぶっけんです<br>
+                                                        日差しの降り注ぐ西向き<br>
+                                                        のきれいなぶっけんです<br>
+                                                        のきれいなぶっけんです<br>
+                                                        のきれいなぶっけんです<br>
+                                                        日差しの降り注ぐ西向き<br>
+                                                        のきれいなぶっけんです<br>
+                                                        のきれいなぶっけんです<br>
+                                                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="blogCard-box">
+                    <div class="bCard">
+                        <div class="bCardImg-box">
+                        <img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/property_03.jpg?>" alt="">
+                        </div>
+                        <div class="bCardSentence">
+                        <div class="bcardTitles">
+                            <div class="bCardTitle font-16">タイトル</div>
+                            <div class="bCardTag-box">
+                            <div class="bCardTag font-14">不動産</div>
+                            <div class="bCardTime font-14">2020/10/20</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bCardText font-15">日差しの降り注ぐ西向き<br>
+                                                        のきれいなぶっけんです<br>
+                                                        日差しの降り注ぐ西向き<br>
+                                                        のきれいなぶっけんです<br>
+                                                        のきれいなぶっけんです<br>
+                                                        のきれいなぶっけんです<br>
+                                                        日差しの降り注ぐ西向き<br>
+                                                        のきれいなぶっけんです<br>
+                                                        のきれいなぶっけんです<br>
+                                                        のきれいなぶっけんです<br>
+                                                        日差しの降り注ぐ西向き<br>
+                                                        のきれいなぶっけんです<br>
+                                                        のきれいなぶっけんです<br>
+                                                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="blogCard-box">
+                    <div class="bCard">
+                        <div class="bCardImg-box">
+                        <img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/property_03.jpg?>" alt="">
+                        </div>
+                        <div class="bCardSentence">
+                        <div class="bcardTitles">
+                            <div class="bCardTitle font-16">タイトル</div>
+                            <div class="bCardTag-box">
+                            <div class="bCardTag font-14">不動産</div>
+                            <div class="bCardTime font-14">2020/10/20</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bCardText font-15">日差しの降り注ぐ西向き<br>
+                                                        のきれいなぶっけんです<br>
+                                                        日差しの降り注ぐ西向き<br>
+                                                        のきれいなぶっけんです<br>
+                                                        のきれいなぶっけんです<br>
+                                                        のきれいなぶっけんです<br>
+                                                        日差しの降り注ぐ西向き<br>
+                                                        のきれいなぶっけんです<br>
+                                                        のきれいなぶっけんです<br>
+                                                        のきれいなぶっけんです<br>
+                                                        日差しの降り注ぐ西向き<br>
+                                                        のきれいなぶっけんです<br>
+                                                        のきれいなぶっけんです<br>
+                                                        </div>
+                    </div>
+                    </div>
+                </div>
+              
+            </div>
+
 
         </div>
 
