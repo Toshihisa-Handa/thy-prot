@@ -229,9 +229,7 @@
     </div>
     <!-- ブログここまで -->
     <!-- フッター -->
-    <div class="footer">
         <?php get_template_part('parts/footer'); ?>
-    </div>
     <?php wp_footer(); ?>
     <!-- フッターここまで -->
     </div>
