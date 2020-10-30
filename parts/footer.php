@@ -27,5 +27,5 @@
 </div>
 
 <div class="copyright">
-    <div class="copyright font-14">Copyright © 2020 Company Co. All rights reserved</div>
+    <div class="copyrightText font-14">Copyright © 2020 Company Co. All rights reserved</div>
 </div>
