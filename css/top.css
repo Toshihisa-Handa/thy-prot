@@ -14,7 +14,7 @@ img{
 
 /* メイン */
 .main{
-    height: 90vh;
+    height: 100vh;
     background-image: url('<?php echo get_template_directory_uri(); ?>/img/hana3.jpg?>');
     background-size: cover;
 }
@@ -26,7 +26,12 @@ img{
     height: 500px;
     background-color: rgb(255, 255, 255);
     
-
+}
+.contents-large{
+    width: 980px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    
 }
 
 .content-head{
@@ -146,12 +151,55 @@ img{
 
 /* プロパティ */
 .property{
-    background-color: rgb(200, 176, 222);
-    height: 750px;
+    background-color:white;
+    height: 560px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.propertyCard-box{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.cardLeft{
+    width: 450px;
+    border:1px solid rgba(64, 63, 60, 0.4);
+    border-top:4px solid #D88526;
+}
+
+.cardImg{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    
+}
+
+.cardTitle{
+    padding: 8px 0 8px 5px;
+}
+
+.cardText{
+    padding-left:3px;
+    line-height: 25px;
+}
+
+.cardRight{
+    width: 45%;
+    border:1px solid rgba(64, 63, 60, 0.4);
+    border-top:4px solid #D88526;
+}
+
+
 
 /* ブログ */
 .blog{

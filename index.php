@@ -75,9 +75,35 @@
     <!-- one teamここまで -->
     <!-- 所有物件 -->
     <div class="property">
-        <div class="contents">
-        <h1>所有物件</h1>
-
+        <div class="contents-large">
+          <div class="wrapper">
+              <div class="propertyTitle-box">
+                <div class="propertyTitle font-32">所有物件</div>
+                <img style='width:40px;' src='<?php echo get_template_directory_uri(); ?>/img/hana2.jpg ?>'>
+              </div>
+            </div>
+          <div class="propertyCard-box">
+              <div class="cardLeft">
+                  <div class="cardImg-box">
+                    <img class='cardImg' src="<?php echo get_template_directory_uri(); ?>/img/hana1.jpg?>" alt="">
+                  </div>
+                  <div class="cardSentence">
+                      <div class="cardTitle font-16">埼玉県草加市</div>
+                      <div class="cardText font-15">最寄り駅より徒歩10分日当たり良好の物件、スーパー徒歩3分あ<br>
+                                            り</div>
+                  </div>
+              </div>
+              <div class="cardRight">
+                  <div class="cardImg-box">
+                    <img class='cardImg' src="<?php echo get_template_directory_uri(); ?>/img/hana1.jpg?>" alt="">
+                  </div>
+                  <div class="cardSentence">
+                      <div class="cardTitle font-16">神奈川県川崎市</div>
+                      <div class="cardText font-15">緑豊かな環境の中、地域では大規模開発が行われている地域で<br>
+                                                   す。</div>
+                  </div>
+              </div>
+          </div>
         </div>
 
 
