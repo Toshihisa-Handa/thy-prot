@@ -27,6 +27,9 @@
             <div class="font-10">問い合わせ</div>
             <div class="font-16">CONTACT</div>
         </li>
+        <li id='menu' class="menu">
+            <div class="font-16">menu</div>
+        </li>
     </ul>
 
 
