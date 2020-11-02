@@ -4,15 +4,64 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
-<?php get_template_part('parts/head'); ?>
-<link href="<?php echo get_template_directory_uri(); ?>/css/top.css" rel="stylesheet">
+<link href="../css/reset.css" rel="stylesheet">
+<link href="../css/parts.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<link href="../css/responsive.css" rel="stylesheet">
+<link href="../css/top.css" rel="stylesheet">
 
-<?php wp_head(); ?>
 </head>
 <body>
-        <div class="container">
+ <div class="container">
         <!-- ヘッダー -->
-        <?php get_template_part('parts/header'); ?>
+<!-- ヘッダーの記述 -->
+<div class="header-wrapper">
+
+
+    <div id='header' class="header">
+    <div class="logo">
+        <img class='log-img' src="../img/logo_01.png"  alt="">
+    </div>
+    <ul class='nav'>
+        <li class="navs">
+            <div class="font-10">ホーム</div>
+           <a href="index.html"><div class="font-16">HOME</div></a> 
+        </li>
+        <li class="navs">
+            <div class="font-10">会社概要</div>
+            <a href="company.html"><div class="font-16">COMPANY</div></a>
+        </li>
+        <li class="navs">
+            <div class="font-10">所有物件</div>
+            <a href="property.html">
+              <div class="font-16">PROPERTY</div>
+            </a>
+        </li>
+        <li class="navs">
+            <div class="font-10">ブログ</div>
+            <a href="blog.html"><div class="font-16">BLOG</div></a>
+        </li>
+        <li class="navs">
+            <div class="font-10">問い合わせ</div>
+            <a href="contact.html"><div class="font-16">CONTACT</div></a>
+        </li>
+        <li id='menu' class="menu">
+            <div class="font-16">menu</div>
+        </li>
+    </ul>
+
+
+    </div>
+
+    <div class="headerLine"></div>
+
+    </div>
+
+
+
+
+
+
         <!-- ヘッダーここまで -->
         <!-- ヘッダールート -->
         <div class="headerRoute">
@@ -21,12 +70,42 @@
         <!-- ヘッダールートここまで -->
 
         <!-- レスポンシブ時のヘッダーリンク -->
-        <?php get_template_part('parts/reHeader'); ?>
+<!-- レスポンシブ時のヘッダーナビ -->
+
+       <!-- レスポンシブヘッダーリンク -->
+       <div id='reHeader-wrapper' class="reHeader-wrapper hidden">
+        <div class="reHeader-innerwrapper">
+           <div class="reHeader">
+           <ul class='reNav'>
+               <li class="reNavs">
+                 <a href="#"><div class="font-28 c-white">HOME</div></a> 
+               </li>
+               <li class="reNavs">
+                <a href="#"> <div class="font-28 c-white">COMPANY</div></a> 
+               </li>
+               <li class="reNavs">
+                <a href="#"><div class="font-28 c-white">PROPERTY</div></a> 
+               </li>
+               <li class="reNavs">
+                <a href="#"><div class="font-28 c-white">BLOG</div></a> 
+               </li>
+               <li class="reNavs">
+                <a href="#"><div class="font-28 c-white">CONTACT</div></a> 
+               </li>
+           </ul>
+           </div>
+           </div>
+       </div>
+      <!-- レスポンシブヘッダーリンクここまで -->
+
+
+
+
         <!-- レスポンシブ時のヘッダーリンクここまで -->
         
         <div id='cwrapper' class="cwrapper">
             <!-- メイン -->
-            <div class="main" style='background-image: url("<?php echo get_template_directory_uri(); ?>/img/main_pc.jpg?>")'>
+            <div class="main" style='background-image: url("../img/main_pc.jpg")'>
 
             </div>
             <!-- ヘッダールートここまで -->
@@ -37,7 +116,7 @@
             <div class="about">
                 <div class="contents-common content-head about-area">
                 <div class="about-left">
-                    <div class="aboutTitle font-32">About Us&nbsp; <img class='icon01' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg ?>'></div>
+                    <div class="aboutTitle font-32">About Us&nbsp; <img class='icon01' src='../img/icon_01.jpg'></div>
                     <div class="aboutText font-15">私たちは、関東近郊に2物件を所有し、あらゆる層に低価格で<br>
                                                     住まいを提供する事業を行っています。<br>
                                                     私たちは、低価格であること、イコール、古く条件が悪いアパ<br>
@@ -50,7 +129,7 @@
                     </div>
                     <div class="about-right">
                     <div class="rightImg-box">
-                        <img class='rightImg' src="<?php echo get_template_directory_uri(); ?>/img/top_02.jpg?>" alt="">
+                        <img class='rightImg' src="../img/top_02.jpg" alt="">
                     </div>
                 </div>
                 </div>
@@ -62,11 +141,11 @@
                 <div class="contents-common content-head concept-area">
                 <div class="concept-left">
                     <div class="leftImg-box">
-                    <img class='leftImg' src="<?php echo get_template_directory_uri(); ?>/img/top_03.jpg?>" alt="">
+                    <img class='leftImg' src="../img/top_03.jpg" alt="">
                     </div>
                 </div>
                 <div class="concept-right">
-                    <div class="conceptTitle font-32">One Team&nbsp; <img class='icon01' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg ?>'></div>
+                    <div class="conceptTitle font-32">One Team&nbsp; <img class='icon01' src='../img/icon_01.jpg'></div>
                     <div class="conceptText font-16">私たちは、不動産や中小のリフォーム会社とタッグ<br>
                                             を組んで、お客様によりよい条件のアパートを提供<br>
                                             できるよう、密に連携をくんでとりくんでおります。
@@ -84,13 +163,13 @@
                 <div class="wrapper">
                     <div class="propertyTitle-box">
                         <div class="propertyTitle font-32">所有物件</div>
-                        <img class='icon01_under' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg?>'>
+                        <img class='icon01_under' src='../img/icon_01.jpg'>
                     </div>
                     </div>
                 <div class="propertyCard-box">
                     <div class="pCard">
                         <div class="cardImg-box">
-                            <img class='cardImg' src="<?php echo get_template_directory_uri(); ?>/img/property_02.jpg?>" alt="">
+                            <img class='cardImg' src="../img/property_02.jpg" alt="">
                         </div>
                         <div class="cardSentence">
                             <div class="cardTitle font-16">埼玉県草加市</div>
@@ -100,7 +179,7 @@
                     </div>
                     <div class="pCard">
                         <div class="cardImg-box">
-                            <img class='cardImg' src="<?php echo get_template_directory_uri(); ?>/img/top_04.jpg?>" alt="">
+                            <img class='cardImg' src="../img/top_04.jpg" alt="">
                         </div>
                         <div class="cardSentence">
                             <div class="cardTitle font-16">神奈川県川崎市</div>
@@ -116,14 +195,14 @@
             <div class="blog">
                 <div class="contents-blog">
                     <div class="blogTitle-box">
-                    <img class='icon01_side' src='<?php echo get_template_directory_uri(); ?>/img/icon_02.jpg ?>'>
+                    <img class='icon01_side' src='../img/icon_02.jpg '>
                     <div class="blogTitle font-32">人気記事</div>
                     </div>
                     <div class="blogCards">
                         <div class="blogCard-box">
                             <div class="bCard">
                                 <div class="bCardImg-box">
-                                <img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/property_03.jpg?>" alt="">
+                                <img class='bCardImg' src="../img/property_03.jpg" alt="">
                                 </div>
                                 <div class="bCardSentence">
                                 <div class="bcardTitles">
@@ -156,7 +235,7 @@
                         <div class="blogCard-box">
                             <div class="bCard">
                                 <div class="bCardImg-box">
-                                <img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/property_03.jpg?>" alt="">
+                                <img class='bCardImg' src="../img/property_03.jpg" alt="">
                                 </div>
                                 <div class="bCardSentence">
                                 <div class="bcardTitles">
@@ -189,7 +268,7 @@
                         <div class="blogCard-box">
                             <div class="bCard">
                                 <div class="bCardImg-box">
-                                <img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/property_03.jpg?>" alt="">
+                                <img class='bCardImg' src="../img/property_03.jpg" alt="">
                                 </div>
                                 <div class="bCardSentence">
                                 <div class="bcardTitles">
@@ -227,10 +306,39 @@
 
 
         <!-- フッター -->
-        <?php get_template_part('parts/footer'); ?>
-        <?php wp_footer(); ?>
+     <!-- フッターの記述 -->
+
+<div id='footer' class="footer">
+    <div class="contents-footer">
+         <div class="footerLeft">
+             <div class="footerLogo">
+             <img class='log-img' src="../img/logo_01.png"  alt="">
+             </div>
+             <div class="footer-navBox">
+                 <ul class="footer-nav">
+                     <li class='fnav'><a href="#" class='font-14'>会社概要</a></li>
+                     <li class='fnav'><a href="#" class='font-14'>所有物件</a></li>
+                     <li class='fnav'><a href="#" class='font-14'>ブログ</a></li>
+                     <li class='fnav'><a href="#" class='font-14'>問い合わせ</a></li>
+                     <li class='fnav'><a href="#" class='font-14'>プライバシーポリシー</a></li>
+                 </ul>
+                 <div class="footer-icon">
+                     <div class="logos font-32" style='color:white'>と</div>
+                     <div class="logos font-32" style='color:white'>F</div>
+                 </div>
+              </div>
+         </div>
+         <div class="footerRight">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104066.14309032867!2d139.14654797877154!3d35.40359048571882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601907eec727eb95%3A0x477d60ceabb84c60!2z56We5aWI5bed55yM56em6YeO5biC!5e0!3m2!1sja!2sjp!4v1604042996924!5m2!1sja!2sjp" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+         </div>
+     </div>
+ </div>
+ 
+ <div class="copyright">
+     <div class="copyrightText font-14">Copyright © 2020 Company Co. All rights reserved</div>
+ </div>
         <!-- フッターここまで -->
-        </div>
-<script src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
+  </div>
+<script src="../js/common.js"></script>
 </body>
 </html>

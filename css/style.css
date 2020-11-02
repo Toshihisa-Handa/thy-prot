@@ -64,7 +64,15 @@ padding:10px 0 10px 0;
     color:white;
 }
 
+.menu{
+    display: none;
+  
+}
 
+.headerLine{
+    height: 15px;
+    background-color: #363434;
+}
 
 /* ヘッダーここまで */
 

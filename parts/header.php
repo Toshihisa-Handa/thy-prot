@@ -17,7 +17,9 @@
         </li>
         <li class="navs">
             <div class="font-10">所有物件</div>
-            <div class="font-16">PROPERTY</div>
+            <a href="<?php echo get_template_directory_uri(); ?>/property.php">
+              <div class="font-16">PROPERTY</div>
+            </a>
         </li>
         <li class="navs">
             <div class="font-10">ブログ</div>
