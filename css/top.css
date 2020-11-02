@@ -288,3 +288,113 @@ img{
     overflow: hidden;
 }
 
+
+/* ============================ */
+/* =======各ページの中身 ========*/
+/* ============================= */
+/* 所有物件 */
+.property_main{
+    margin:70px 20px 20px 20px; 
+    font-size:1.6rem;
+}
+    .property_main h1{
+        font-size:3.0rem;
+        font-weight: 600;
+        margin-bottom:20px;
+    }
+    .property_main h2{
+        font-size:2.4rem;
+        font-weight: 600;
+        margin-bottom:20px;
+    }
+    .property_sub{
+        margin-bottom:20px;
+    }
+    .property_sub_text{
+        margin:10px; 
+        font-size:1.8rem;       
+    }
+    .pro_comment{
+        margin-bottom:20px;
+    }
+    .pro_overview{
+        margin-bottom:20px;
+    }
+        .pro_overview li{
+            list-style-type: none;
+        }
+    .pro_facility{
+        margin-bottom:20px;
+    }
+        .pro_facility li{
+            float:left;
+            list-style-type: none;
+            padding: 5px 5px;
+            border:1px solid #4C4C4C;
+            margin-right:5px;
+        }
+    @media screen and (min-width: 768px){
+        .property_sub{
+            display: flex;
+        }
+    }
+/* 会社概要 */
+.company{
+    margin:70px 20px 20px 20px; 
+    font-size:1.6rem;
+}
+    .company h1{
+        font-size:3.0rem;
+        font-weight: 600;
+    }
+    .company_tb{
+        margin:20px auto 0 auto;
+        width:100%;
+    }
+        .company_tb th{
+            font-weight: 600;
+            width:25%;
+            padding: 10px 20px;
+            border-bottom:1px solid #bbb;
+        }
+        .company_tb td{
+            width:75%;
+            padding: 10px 20px;
+            border-bottom:1px solid #aaa;
+        }
+    @media screen and (min-width: 600px){
+        .company_tb{
+            width:80%;
+        }
+    }
+
+/* プライバシーポリシー */
+.privacy{
+    margin:70px 20px 20px 20px; 
+}
+
+    .privacy p{
+        font-size:1.6rem;
+    }
+    .privacy h1{
+        font-size:3.0rem;
+        font-weight: 600;
+        padding-bottom:20px;
+    }
+    .privacy h2{
+        font-size:1.8rem;
+        margin:20px 0 10px 0;
+        font-weight: 600;
+    }
+    .list_1 {
+        font-size:1.6rem;
+        padding-left:30px;
+    }
+    .list_2 {
+        font-size:1.6rem;
+        padding-left:30px;
+    }
+    .list_3 {
+        font-size:1.6rem;
+        padding-left:30px;
+    }
