@@ -2,7 +2,7 @@
 <div class="header-wrapper">
 
 
-    <div class="header">
+    <div id='header' class="header">
     <div class="logo">
         <img class='log-img' src="<?php echo get_template_directory_uri(); ?>/img/logo_01.png"  alt="">
     </div>

@@ -9,15 +9,23 @@ body{
 
 }
 
+.mobile-menu{
+    width: 100%;
+    height: 100%;
+    background-color: #2C2C2C;
+}
+
 .container{
     width: 100%;
     background-color: rgb(246, 200, 200);
 }
 
+
 /* ヘッダーここから */
 .header-wrapper{
     position: fixed;
     width: 1400px; 
+    z-index: 9999;
     /* ここのwidthはレスポンシブする時width1400px以下の時はwidthを１００％に変更する */
 }
 
@@ -56,9 +64,8 @@ padding:10px 0 10px 0;
     color:white;
 }
 
-.menu{
-    display: none;
-}
+
+
 /* ヘッダーここまで */
 
 
@@ -128,9 +135,42 @@ padding:10px 0 10px 0;
     width: 100%;
     height: 50px;
     background-color: #2C2C2C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .copyrightText{
-    text-align: center;
-    color:#707070;
+        color:#707070;
+}
+
+
+/* クリックイベント */
+
+/* コンテンツラッパー */
+
+.reHeader-wrapper{
+    height: 70vh;
+    background-color: #000000;
+  
+}
+
+.reHeader-innerwrapper{
+    padding-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reHeader{
+    line-height: 65px;
+
+}
+
+.headerNav{
+    height: 10vh;
+}
+
+.footerNav{
+    height: 20vh;
 }

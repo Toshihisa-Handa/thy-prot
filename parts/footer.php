@@ -1,6 +1,6 @@
 <!-- フッターの記述 -->
 
-<div class="footer">
+<div id='footer' class="footer">
    <div class="contents-footer">
         <div class="footerLeft">
             <div class="footerLogo">

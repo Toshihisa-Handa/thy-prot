@@ -79,3 +79,12 @@ html {
 }
 
 
+/* 色指定 */
+.c-white{
+  color:white;
+}
+
+/* 隠す */
+.hidden{
+  display: none;
+}
