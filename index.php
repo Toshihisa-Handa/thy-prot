@@ -37,7 +37,7 @@
             <div class="about">
                 <div class="contents-common content-head about-area">
                 <div class="about-left">
-                    <div class="aboutTitle font-32">About Us&nbsp; &nbsp; <img style='width:40px;' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg ?>'></div>
+                    <div class="aboutTitle font-32">About Us&nbsp; <img class='icon01' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg ?>'></div>
                     <div class="aboutText font-15">私たちは、関東近郊に2物件を所有し、あらゆる層に低価格で<br>
                                                     住まいを提供する事業を行っています。<br>
                                                     私たちは、低価格であること、イコール、古く条件が悪いアパ<br>
@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 <div class="concept-right">
-                    <div class="conceptTitle font-32">One Team&nbsp; &nbsp; <img style='width:40px;' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg ?>'></div>
+                    <div class="conceptTitle font-32">One Team&nbsp; <img class='icon01' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg ?>'></div>
                     <div class="conceptText font-16">私たちは、不動産や中小のリフォーム会社とタッグ<br>
                                             を組んで、お客様によりよい条件のアパートを提供<br>
                                             できるよう、密に連携をくんでとりくんでおります。
@@ -84,7 +84,7 @@
                 <div class="wrapper">
                     <div class="propertyTitle-box">
                         <div class="propertyTitle font-32">所有物件</div>
-                        <img style='width:40px;' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg?>'>
+                        <img class='icon01_under' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg?>'>
                     </div>
                     </div>
                 <div class="propertyCard-box">
@@ -116,7 +116,7 @@
             <div class="blog">
                 <div class="contents-blog">
                     <div class="blogTitle-box">
-                    <img style='width:40px;' src='<?php echo get_template_directory_uri(); ?>/img/icon_02.jpg ?>'>
+                    <img class='icon01_side' src='<?php echo get_template_directory_uri(); ?>/img/icon_02.jpg ?>'>
                     <div class="blogTitle font-32">人気記事</div>
                     </div>
                     <div class="blogCards">
@@ -217,19 +217,8 @@
                             </div>
                             </div>
                         </div>
-                    
                     </div>
-
-
                 </div>
-
-
-
-
-
-
-
-
 
             </div>
             <!-- ブログここまで -->
@@ -238,7 +227,7 @@
 
 
         <!-- フッター -->
-            <?php get_template_part('parts/footer'); ?>
+        <?php get_template_part('parts/footer'); ?>
         <?php wp_footer(); ?>
         <!-- フッターここまで -->
         </div>
