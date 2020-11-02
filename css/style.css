@@ -30,7 +30,7 @@ body{
 }
 
 .header{
-    max-height: 100px;
+    height: 100px;
     background-color: white;
     display: flex;
 }
@@ -76,7 +76,20 @@ padding:10px 0 10px 0;
 
 /* ヘッダーここまで */
 
+/* コンテンツ */
+.contents-area{
+    width: 980px;
+    margin: 0 auto;
+}
 
+
+
+
+
+
+
+
+/* コンテンツここまで */
 
 
 
