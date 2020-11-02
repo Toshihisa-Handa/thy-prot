@@ -75,6 +75,7 @@ img{
     align-items: center;
 }
 
+
 /* ブログ */
 .blog{
     background-color: rgb(176, 222, 214);
@@ -82,5 +83,14 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* プライバシーポリシー- */
+.privacy{
+
+}
+.aa{
+    color:red
 }
 
