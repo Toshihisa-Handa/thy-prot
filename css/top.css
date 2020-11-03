@@ -398,3 +398,8 @@ img{
         font-size:1.6rem;
         padding-left:30px;
     }
+
+/* 404 */
+.error_page{
+    margin:70px 20px 20px 20px; 
+}
