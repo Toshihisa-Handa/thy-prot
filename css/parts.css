@@ -7,6 +7,9 @@ html {
 .font-10{
     font-size: 1rem;
 }
+.font-12{
+    font-size: 1.2rem;
+}
 
 .font-14{
     font-size: 1.4rem;
@@ -18,6 +21,9 @@ html {
 
 .font-16{
     font-size:1.6rem;
+}
+.font-18{
+    font-size:1.8rem;
 }
 
 .font-20{
@@ -39,6 +45,9 @@ html {
 
 /* マージン */
 /* トップ */
+.mt-5{
+  margin-top:5px;
+}
 .mt-10{
   margin-top:10px;
 }
