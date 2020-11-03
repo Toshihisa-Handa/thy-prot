@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link href="<?php echo get_template_directory_uri(); ?>/css/reset.css" rel="stylesheet">
+<link href="<?php echo get_template_directory_uri(); ?>/css/parts.css" rel="stylesheet">
+<link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet">
+<link href="<?php echo get_template_directory_uri(); ?>/css/top.css" rel="stylesheet">
+
+<?php wp_head(); ?></head>
+<body>
+    <div class="container">
+    <!-- ヘッダー -->
+    <?php get_template_part('parts/header'); ?>
+
 <!-- ヘッダーの記述 -->
 <div class="header-wrapper">
 

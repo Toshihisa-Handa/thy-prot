@@ -6,4 +6,7 @@ function add_css_js() {//関数名add_css_js()を作成
 	wp_enqueue_style('style',get_template_directory_uri().'css/style.css' );
 
 }
+// カスタムメニュー（ナビゲーション）
+register_nav_menu('sitenav','サイトナビゲーション');
+
 ?>
