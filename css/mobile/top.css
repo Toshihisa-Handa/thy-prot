@@ -8,51 +8,96 @@
 
 }
 
-/* アバウト */
-.about{
-    margin-top:20px
-    
-}
-.about-area{
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "right  right right"
-        "left  left left ";
 
-       
+/* アバウト・コンセプト */
+
+.about, .concept{
+    margin-top:20px;
 }
 
-.about-left{
-    grid-area:left;
-    max-width: 100%;
+.concept{
+    background-color: #CBC6BC;
+    padding-top:20px;
+    padding-bottom:20px;
+
 }
 
-
-
-.about-right{
-    grid-area:right;
-   width: 100%;
+.concept-area{
+    display:block;
 }
 
-.rightImg-box{
-    width: 95%;
-    margin:0 auto
-}
-
-.rightImg{
+.concept-left, .pCard{
     width: 100%;
 }
 
-.aboutTitle{
-    margin-left: 30px;
-    margin-top: 20px;
+.leftImg-box, .cardImg-box{
+    width: 95%;
+    margin:0 auto;
+}
+
+.leftImg, .cardImg{
+    width: 100%;
+    object-fit:cover ;
+}
+
+.concept-right{
+    width: 95%;
+    margin:0 auto;
+    background-color: white;
 
 }
 
-.aboutText{
-    margin: 10px 12px 0 12px;
-    line-height: 30px;
+.conceptTitle{
+    padding-top:15px;
+    margin-left:30px;
 }
+
+.conceptText{
+    margin-top: 15px;
+    margin-left:5px;
+    line-height: 28px;
+
+}
+
+
+/* 所有物件 */
+.property{
+    margin-top:20px;
+    margin-bottom:20px
+}
+.pCard{
+    margin-top: 15px;
+}
+
+.cardImg-box{
+    border-top:4px solid #D88526;
+}
+
+
+.propertyTitle-box{
+    display:none;
+}
+
+.cardTitle{
+    padding-top:15px;
+    margin-left:30px;
+}
+
+ .cardText{
+    margin-top: 3px;
+    margin-left:15px;
+    line-height: 28px;
+
+}
+
+/* ブログ */
+
+.blog{
+    display: none;
+}
+
+
+
+
+
 }

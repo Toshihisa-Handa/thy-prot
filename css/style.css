@@ -44,13 +44,22 @@ body{
 }
 
 
+.logo, .footerLogo{
+    max-width: 200px;
+    max-height: 100px;
+    object-fit: cover;
+}
+
 .logo{
     width: 50%;
     text-align: center;
+
 }
-.log-img{
-    height: 70px;
+
+.logo-img{
+    width: 100%;
 }
+
 
 
 
@@ -139,8 +148,13 @@ padding:10px 0 10px 0;
 
 }
 
-.fnav{
-   color: #C6C6C6
+
+.flink{
+    color: #C6C6C6
+}
+
+.snslink{
+    color: #C6C6C6
 }
 .footer-icon{
     display:flex;
@@ -155,6 +169,12 @@ padding:10px 0 10px 0;
 .footerRight{
     width: 50%;
 }
+
+.map{
+    width: 90%;
+    height: 90%;
+}
+
 
 /* フッターここまで */
 
