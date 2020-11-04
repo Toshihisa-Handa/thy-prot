@@ -1,38 +1,23 @@
 /* property.css */
-@media(min-width:1001px){
-
-
 /* ヘッダールート */
-.headerRoute{
-    background-color: #B5B5B5;
-    height: 30px;
+.headerRoute {
+   display: none;
 }
 
-.hrNav{
-    margin-left: 17%;
-    line-height: 27px;
-}
-
-.headerFix{/*ヘッダーの固定分の高さをとっている*/
-    height: 145px;
-}
-
-
-
-/* コンテンツ */
-.content-common{
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
+.contents-area{
+    padding-top:80px;
+    margin-bottom:50px;
 }
 
 .contentLeft{
-    width: 48%;
+    margin-top: 30px;
+    width: 100%;
 }
 
 .img-one{
     width: 100%;
 }
+
 .property-img{
     width: 100%;
     object-fit: cover;
@@ -49,18 +34,82 @@
     width: 32%;
 }
 
+
 .contentRight{
-    width: 48%;
-    height: 100%;
+    width: 100%;
+    padding: 10px;
 }
 
 .contentText {
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+.contentTags{
+    margin-top: 25px;
+}
+
+
+.contentTag{
+    padding:6px;
+}
+
+
+@media(min-width:1001px){
+
+
+/* ヘッダールート */
+.headerRoute{
+    display: block;
+    background-color: #B5B5B5;
+    height: 30px;
+}
+
+.hrNav{
+    margin-left: 17%;
+    line-height: 27px;
+}
+
+.headerFix{/*ヘッダーの固定分の高さをとっている*/
+    height: 145px;
+}
+
+
+
+/* コンテンツ */
+.contents-area{
+    padding-top:0;
+}
+
+.content-common{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentLeft{
+    margin-top:0;
+    width: 48%;
+}
+
+
+
+.contentRight{
+    width: 48%;
+    height: 100%;
+    padding:0;
+}
+
+.contentText {
+    margin-top: 0;
     line-height: 35px;
 }
 
 .contentTags{
     display: flex;
     justify-content: space-between;
+    margin-top: 0;
+
 }
 
 .contentTag{

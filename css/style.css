@@ -46,6 +46,11 @@ font-family:'游明朝','游ゴシック' ;
      display: inline-block;
  
  }
+
+ .headerLine{
+    height: 15px;
+    background-color: #363434;
+}
  
  /* フッター */
  .footer{

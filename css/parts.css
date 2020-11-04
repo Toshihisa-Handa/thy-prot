@@ -14,11 +14,14 @@ html {
   }
   
   .font-15{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   
   .font-16{
     font-size: 1.4rem;
+  }
+  .font-20{
+    font-size: 1.6rem;
   }
 
   .font-24{
