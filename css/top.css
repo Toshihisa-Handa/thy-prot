@@ -65,6 +65,10 @@ img{
     align-items: center;
     display: flex;
 }
+.leftImg-box, .cardImg-box {
+    width: 100%;
+}
+
 .leftImg-box{
     padding: 0 3% 0 7%;
     width: 100%;
@@ -84,6 +88,8 @@ img{
 
 .concept-right{
     width: 50%;
+    background-color: white;
+
 }
 
 .conceptTitle{
@@ -94,7 +100,9 @@ img{
 .conceptText{
     padding: 0 7% 0 3%;
     line-height: 42px;
+    width: 100%;
 }
+
 
 
 /* プロパティ */

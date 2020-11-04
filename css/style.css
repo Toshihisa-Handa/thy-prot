@@ -199,7 +199,7 @@ padding:10px 0 10px 0;
 /* コンテンツラッパー */
 
 .reHeader-wrapper{
-    height: 70vh;
+    height: 100vh;
     background-color: #000000;
   
 }
@@ -217,11 +217,11 @@ padding:10px 0 10px 0;
 }
 
 .headerNav{
-    height: 10vh;
-}
-
-.footerNav{
     height: 20vh;
 }
+
+/* .footerNav{
+    height: 20vh;
+} */
 
 }
