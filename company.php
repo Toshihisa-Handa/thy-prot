@@ -11,9 +11,11 @@ Template Name: Company
 
 
 
-    <!-- プライバシーポリシー -->
-    <div class="company">   
-        <h1>Company<img src="<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg"></h1>
+    <!-- 会社概要 -->
+    <div class="contents-area">
+            <div class="contents-title font-32 mt-40">
+                COMPANY&nbsp; <img class='icon01' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg'>
+            </div>
             <table class="company_tb">
                 <tbody>
                     <tr>

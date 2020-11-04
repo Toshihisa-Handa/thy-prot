@@ -2,10 +2,16 @@
 
 /* フォントサイズ */
 html {
-    font-size: 62.5%;/* 1rem = 10pxに指定 */
- }
+  font-size: 62.5%;/* 1rem = 10pxに指定 */
+}
+@media(min-width:1001px){
+
+
 .font-10{
     font-size: 1rem;
+}
+.font-12{
+    font-size: 1.2rem;
 }
 
 .font-14{
@@ -18,6 +24,9 @@ html {
 
 .font-16{
     font-size:1.6rem;
+}
+.font-18{
+    font-size:1.8rem;
 }
 
 .font-20{
@@ -39,6 +48,9 @@ html {
 
 /* マージン */
 /* トップ */
+.mt-5{
+  margin-top:5px;
+}
 .mt-10{
   margin-top:10px;
 }
@@ -48,13 +60,13 @@ html {
 .mt-30{
   margin-top:30px;
 }
-.mt-lm{
+.mt-40{
   margin-top:40px;
 }
-.mt-l{
+.mt-50{
   margin-top:50px;
 }
-.mt-ll{
+.mt-60{
   margin-top:60px;
 }
 
@@ -79,3 +91,38 @@ html {
 }
 
 
+/* 色指定 */
+.c-white{
+  color:white;
+}
+
+
+
+/* icon01(About, OneTeam) */
+.icon01{
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.icon01_under{
+  width: 100%;
+  height: 8px;
+
+}
+
+.icon01_side{
+   width: 25px;
+}
+}
+
+@media(min-width:0px){
+  .font-32{
+    font-size:2rem;
+}
+
+.font-15{
+  font-size: 1.2rem;
+}
+
+
+}

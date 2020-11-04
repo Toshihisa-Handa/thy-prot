@@ -1,0 +1,86 @@
+/* property.css */
+@media(min-width:1001px){
+
+
+/* ヘッダールート */
+.headerRoute{
+    background-color: #B5B5B5;
+    height: 30px;
+}
+
+.hrNav{
+    margin-left: 17%;
+    line-height: 27px;
+}
+
+.headerFix{/*ヘッダーの固定分の高さをとっている*/
+    height: 145px;
+}
+
+
+
+/* コンテンツ */
+.content-common{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentLeft{
+    width: 48%;
+}
+
+.img-one{
+    width: 100%;
+}
+.property-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.imges{
+    width: 100%;
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.property-small-img{
+    width: 32%;
+}
+
+.contentRight{
+    width: 48%;
+    height: 100%;
+}
+
+.contentText {
+    line-height: 35px;
+}
+
+.contentTags{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentTag{
+    padding:4px;
+    border: 1px solid ;
+}
+
+.content-two{
+    margin-top:10%;
+}
+
+/* コンテンツここまで */
+
+.footer-margin{
+    margin-top: 10%;
+}
+
+}
+
+
+
+
+
