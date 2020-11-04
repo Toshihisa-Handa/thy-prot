@@ -8,9 +8,6 @@ Template Name: privacy
     <div class="headerRoute"></div>
     <!-- ヘッダールートここまで -->
 
-
-
-
     <!-- プライバシーポリシー -->
     <div class="privacy">
         <h1>プライバシーポリシー<img src="<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg"></h1>

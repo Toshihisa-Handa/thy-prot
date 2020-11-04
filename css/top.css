@@ -367,7 +367,13 @@ img{
             width:80%;
         }
     }
-
+/* 問い合わせ */
+.contact{
+    margin:70px 20px 20px 20px; 
+}
+.contact_form{
+    text-align: center;
+}
 /* プライバシーポリシー */
 .privacy{
     margin:70px 20px 20px 20px; 

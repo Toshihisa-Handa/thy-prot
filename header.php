@@ -8,7 +8,8 @@
     <link href="<?php echo get_template_directory_uri(); ?>/css/parts.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/top.css" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/581c185f2a.js" crossorigin="anonymous"></script>
+    
 <?php wp_head(); ?>
 </head>
 <body>
@@ -39,10 +40,12 @@
                 <div class="font-10">ブログ</div>
                 <div class="font-16">BLOG</div>
             </li>
+            
             <li class="navs">
                 <div class="font-10">問い合わせ</div>
                 <div class="font-16">CONTACT</div>
             </li>
+            
         </ul>
     </div>
 </div>
