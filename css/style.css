@@ -3,6 +3,14 @@ html{
 font-family:'游明朝','游ゴシック' ;
 }
 
+
+/* 隠す */
+.hidden{
+    display: none;
+  }
+
+@media(min-width:1001px){
+
 body{
     max-width: 1400px;
     margin:0 auto;
@@ -194,4 +202,6 @@ padding:10px 0 10px 0;
 
 .footerNav{
     height: 20vh;
+}
+
 }

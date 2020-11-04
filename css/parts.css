@@ -2,8 +2,11 @@
 
 /* フォントサイズ */
 html {
-    font-size: 62.5%;/* 1rem = 10pxに指定 */
- }
+  font-size: 62.5%;/* 1rem = 10pxに指定 */
+}
+@media(min-width:1001px){
+
+
 .font-10{
     font-size: 1rem;
 }
@@ -93,10 +96,6 @@ html {
   color:white;
 }
 
-/* 隠す */
-.hidden{
-  display: none;
-}
 
 
 /* icon01(About, OneTeam) */
@@ -113,4 +112,17 @@ html {
 
 .icon01_side{
    width: 25px;
+}
+}
+
+@media(min-width:0px){
+  .font-32{
+    font-size:2rem;
+}
+
+.font-15{
+  font-size: 1.2rem;
+}
+
+
 }

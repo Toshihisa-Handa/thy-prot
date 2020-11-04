@@ -1,4 +1,5 @@
 /* blog.css */
+@media(min-width:1001px){
 
 /* ヘッダールート */
 .headerRoute{
@@ -272,4 +273,6 @@
 
 .contact-margin{
     height: 5%;
+}
+
 }

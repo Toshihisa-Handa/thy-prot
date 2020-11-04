@@ -1,4 +1,6 @@
 /* property.css */
+@media(min-width:1001px){
+
 
 /* ヘッダールート */
 .headerRoute{
@@ -76,7 +78,7 @@
     margin-top: 10%;
 }
 
-
+}
 
 
 
