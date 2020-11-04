@@ -15,12 +15,9 @@
 
     
 <?php wp_head(); ?>
-</head>
 <body>
-    <div class="container">
-
-
-
+ <div class="container">
+        <!-- ヘッダー -->
 <!-- ヘッダーの記述 -->
 <div class="header-wrapper">
 
@@ -36,4 +33,5 @@
         'container_id'=>'mainmenu'
     )); ?>
     </div>
-</div>
+    <div class="headerLine"></div>
+    </div>

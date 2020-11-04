@@ -1,8 +1,7 @@
-  <!-- コンテンツライト -->
-  <div class="contentRight">
+
  <!-- おすすめ記事 -->
             <div class="commonTitleBox mt-30">
-                <img src="../img/icon_02.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/icon_02.jpg" alt="">
                 <div class="commonTitle font-20">おすすめ記事</div>
              </div>
             <div class="mt-30">
@@ -81,7 +80,7 @@
 <!-- おすすめ記事ここまで -->
 <!-- 人気記事 -->
 <div class="commonTitleBox mt-30">
-    <img src="../img/icon_02.jpg" alt="">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/icon_02.jpg" alt="">
     <div class="commonTitle font-20">人気記事</div>
  </div>
 <div class="mt-30">
@@ -156,7 +155,3 @@
         </div>
     </div>
    <!-- おすすめカードここまで -->
-</div>
-
-
-        </div>

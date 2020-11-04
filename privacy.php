@@ -4,12 +4,49 @@ Template Name: privacy
 */
 ?>
 <?php get_header(); ?>
-    <!-- ヘッダールート -->
-    <div class="headerRoute"></div>
-    <!-- ヘッダールートここまで -->
+<!-- レスポンシブ時のヘッダーリンク -->
+<!-- レスポンシブ時のヘッダーナビ -->
 
-    <!-- プライバシーポリシー -->
-    <div class="contents-area">
+       <!-- レスポンシブヘッダーリンク -->
+       <div id='reHeader-wrapper' class="reHeader-wrapper hidden">
+        <div class="reHeader-innerwrapper">
+           <div class="reHeader">
+           <ul class='reNav'>
+               <li class="reNavs">
+                 <a href="#"><div class="font-28 c-white">HOME</div></a> 
+               </li>
+               <li class="reNavs">
+                <a href="#"> <div class="font-28 c-white">COMPANY</div></a> 
+               </li>
+               <li class="reNavs">
+                <a href="#"><div class="font-28 c-white">PROPERTY</div></a> 
+               </li>
+               <li class="reNavs">
+                <a href="#"><div class="font-28 c-white">BLOG</div></a> 
+               </li>
+               <li class="reNavs">
+                <a href="#"><div class="font-28 c-white">CONTACT</div></a> 
+               </li>
+           </ul>
+           </div>
+           </div>
+       </div>
+      <!-- レスポンシブヘッダーリンクここまで -->
+
+
+
+
+        <!-- レスポンシブ時のヘッダーリンクここまで -->
+        
+        <div id='cwrapper' class="cwrapper">
+         <div class="headerFix"></div>
+            <!-- パンくず -->
+            <div class="headerRoute">
+                <div class="hrNav font-14">HOME>>PRIVACY</div>
+            </div>
+            <!-- パンくずここまで -->
+         <!-- コンテンツここから -->
+         <div class="contents-area">
             <div class="contents-title font-32 mt-40">
                 PRIVACY&nbsp; <img class='icon01' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg'>
             </div>
@@ -107,9 +144,11 @@ Template Name: privacy
         Eメールアドレス：babatake@gmail.com</p>
     </div>
 
-    
-    <!-- プライバシーポリシー　ここまで -->
+         <!-- コンテンツここまで -->
+         <div class="footer-margin"></div>
 
-    
-    <!-- フッター -->
+        </div>
+
+
+<!-- フッター -->
 <?php get_footer(); ?>

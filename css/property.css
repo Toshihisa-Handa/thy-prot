@@ -5,7 +5,7 @@
 /* ヘッダールート */
 .headerRoute{
     background-color: #B5B5B5;
-    height: 30px;
+    height: 45px;
 }
 
 .hrNav{
@@ -14,7 +14,8 @@
 }
 
 .headerFix{/*ヘッダーの固定分の高さをとっている*/
-    height: 145px;
+    height: 115px;
+    
 }
 
 
