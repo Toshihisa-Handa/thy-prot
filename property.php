@@ -46,7 +46,7 @@ Template Name: syoyuu
                 <div class="hrNav font-14">HOME>>PROPERTY</div>
             </div>
             <!-- パンくずここまで -->
-         <!-- コンテンツここから -->
+          <!-- コンテンツここから -->
           <div class="contents-area">
              <div class="contents-title font-32 mt-40">
                 PROPERTY&nbsp; <img class='icon01' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg'>
@@ -72,7 +72,7 @@ Template Name: syoyuu
                         また、全面室内リフォーム済み。<br>
                         アクセントクロスや白いフローリングを施し、清潔感があります。
                      </div>
-                     <div class="contentText font-16 mt-40">
+                     <div class="contentText font-15 mt-40">
                         交通：東武伊勢崎線 新田駅より徒歩10分<br>
                         築年数：40年<br>
                         階数：3階建て<br>

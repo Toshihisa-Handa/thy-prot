@@ -1,0 +1,375 @@
+/* 全ページ共通のcssを記述 */
+html{
+font-family:'游明朝','游ゴシック' ;
+}
+
+/* 隠す */
+.hidden{
+    display: none;
+  }
+
+
+/* ヘッダー */
+.header-wrapper{
+    position: fixed;
+    z-index: 9999;
+    width:100%;
+    max-height: 120px;
+    background-color: white;
+ 
+ }
+ .header{
+     height: 100%;
+     display:flex;
+     justify-content: space-between;
+ }
+ 
+ .nav{
+     display: flex;
+     align-items: center;
+ }
+ 
+ 
+ 
+ .logo, .footerLogo{
+     max-width: 100px;
+     max-height: 70px;
+     object-fit: cover;
+ }
+ 
+ .logo-img{
+     width: 100%;
+ }
+ 
+ 
+ .menu{
+     display: inline-block;
+ 
+ }
+
+ .headerLine{
+    height: 15px;
+    background-color: #363434;
+}
+ 
+ /* フッター */
+ .footer{
+     padding:20px;
+     background-color: #333333;
+ }
+ 
+ .contents-footer{
+     display: flex;
+ }
+ .footerLeft{
+     width: 35%;
+     margin-left: 10px;
+ 
+ }
+ 
+ .footer-navBox{
+     margin-top:10px;
+ }
+ 
+ .footer-nav{
+     line-height: 20px;
+ }
+ 
+ .footer-icon{
+     display: flex;
+ }
+ 
+ .logos{
+     margin-left:5px;
+ }
+ 
+ 
+ .flink{
+     color: #C6C6C6
+ }
+ 
+ .snslink{
+     color: #C6C6C6
+ }
+ 
+ .footerRight{
+     width: 65%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .map{
+     width: 95%;
+     height: 95%;
+ }
+ 
+ /* コピーライト */
+ 
+ .copyright{
+     width: 100%;
+     padding:20px;
+     background-color: #2C2C2C;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .copyrightText{
+         color:#707070;
+ }
+ 
+ 
+ 
+ /* クリックイベント ===========================*/
+ 
+ /* コンテンツラッパー */
+ 
+ .reHeader-wrapper{
+     height: 100vh;
+     background-color: #000000;
+   
+ }
+ 
+ .reHeader-innerwrapper{
+     padding-top: 30%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .reHeader{
+     line-height: 65px;
+ 
+ }
+ 
+ .headerNav{
+     max-height: 20vh;
+ }
+ 
+ /* .footerNav{
+     height: 30vh;
+ } */
+ 
+ 
+ .bargerMenu{
+     color:white;
+ }
+ 
+ 
+ 
+ 
+ 
+ @media(min-width:550px){
+     .footer-navBox {
+         margin-left: 25%;
+ 
+     }
+ 
+ }
+ 
+
+
+@media(min-width:1001px){
+
+body{
+    max-width: 1400px;
+    margin:0 auto;
+
+}
+
+.mobile-menu{
+    width: 100%;
+    height: 100%;
+    background-color: #2C2C2C;
+}
+
+.container{
+    width: 100%;
+    /* background-color: rgb(246, 200, 200); */
+}
+
+
+/* ヘッダーここから */
+.header-wrapper{
+    position: fixed;
+    width: 1400px; 
+    z-index: 9999;
+    /* ここのwidthはレスポンシブする時width1400px以下の時はwidthを１００％に変更する */
+}
+
+.header{
+    height: 100px;
+    background-color: white;
+    display: flex;
+}
+
+
+.logo, .footerLogo{
+    max-width: 200px;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+.logo{
+    width: 50%;
+    text-align: center;
+
+}
+
+.logo-img{
+    width: 100%;
+}
+
+
+
+
+.nav{
+display: flex;
+justify-content: space-between;
+width: 50%;
+}
+.navs{
+height: 100%;
+width: 20%;
+display: grid;
+place-items: center;
+padding:10px 0 10px 0;
+
+}
+.navs:hover{
+    background-color: black;
+    color:white;
+}
+
+.menu{
+    display: none;
+  
+}
+
+.headerLine{
+    height: 15px;
+    background-color: #363434;
+}
+
+/* ヘッダーここまで */
+
+/* コンテンツ */
+.contents-area{
+    width: 980px;
+    margin: 0 auto;
+}
+
+/* コンテンツここまで */
+
+
+/* フッターここから */
+.footer{
+    width: 100%;
+    height: 320px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents-footer{
+    width: 980px;
+    height: 270px;
+    /* background-color: white; */
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footerLeft{
+    width: 50%;
+}
+
+.footer-navBox{
+    display:flex;
+    margin-left: 25%;
+
+}
+
+.footer-nav{
+    margin-top: 10px;
+    line-height: 25px;
+
+}
+
+
+.flink{
+    color: #C6C6C6
+}
+
+.snslink{
+    color: #C6C6C6
+}
+.footer-icon{
+    display:flex;
+    margin-top: 28%;
+    margin-left: 5%;
+}
+
+.logos{
+    margin-right: 5px;
+}
+
+.footerRight{
+    width: 50%;
+}
+
+.map{
+    width: 90%;
+    height: 90%;
+}
+
+
+/* フッターここまで */
+
+/* コピーライト */
+
+.copyright{
+    width: 100%;
+    height: 50px;
+    background-color: #2C2C2C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyrightText{
+        color:#707070;
+}
+
+
+/* クリックイベント ===========================*/
+
+/* コンテンツラッパー */
+
+.reHeader-wrapper{
+    height: 100vh;
+    background-color: #000000;
+  
+}
+
+.reHeader-innerwrapper{
+    padding-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reHeader{
+    line-height: 65px;
+
+}
+
+.headerNav{
+    height: 20vh;
+}
+
+
+}

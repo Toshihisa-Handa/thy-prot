@@ -1,149 +1,4 @@
 /* topページcss */
-
-/* メイン */
-.main{
-    height: 100Vh;
-    background-size: cover;
-    /* background-position:center;  */
-
-}
-
-
-/* アバウト・コンセプト */
-
-.about, .concept{
-    margin-top:20px;
-}
-
-.concept{
-    background-color: #CBC6BC;
-    padding-top:20px;
-    padding-bottom:20px;
-
-}
-
-.concept-area{
-    display:block;
-}
-
-.concept-left, .pCard{
-    width: 100%;
-}
-
-.leftImg-box, .cardImg-box{
-    width: 95%;
-    margin:0 auto;
-}
-
-.leftImg, .cardImg{
-    width: 100%;
-    object-fit:cover ;
-}
-
-.concept-right{
-    width: 95%;
-    margin:0 auto;
-    background-color: white;
-
-}
-
-.conceptTitle{
-    padding-top:15px;
-    margin-left:30px;
-}
-
-.conceptText{
-    margin-top: 15px;
-    margin-left:5px;
-    line-height: 28px;
-
-}
-
-
-/* 所有物件 */
-.property{
-    margin-top:20px;
-    margin-bottom:20px
-}
-.pCard{
-    margin-top: 15px;
-}
-
-.cardImg-box{
-    border-top:4px solid #D88526;
-}
-
-
-.propertyTitle-box{
-    display:none;
-}
-
-.cardTitle{
-    padding-top:15px;
-    margin-left:30px;
-}
-
- .cardText{
-    margin-top: 3px;
-    margin-left:15px;
-    line-height: 28px;
-
-}
-
-/* ブログ */
-
-.blog{
-    display: none;
-}
-
-
-
-
-@media(min-width:550px){
-
-/* アバウト */
-.leftImg-box, .cardImg-box{
-    width: 70%;
-}
-
-.concept-right{
-    width: 70%;
-    background-color: rgb(248, 250, 252);
-}
-
-
-.conceptTitle {
-    width: 80%;
-    margin:0 auto;
-}
-
-
-.conceptText {
-    width: 70%;
-    margin: 10px auto;
-}
-
-.cardTitle{
-width: 67%;
-margin:0 auto;
-}
-
-.cardText{
-    width: 70%;
-    margin: 10px auto;
-}
-
-.blog{
-    display: none;
-}
-
-
-}
-
-
-
-
-
 @media(min-width:1001px){
 
 img{
@@ -180,17 +35,63 @@ img{
     
 
 }
-
-/* アバウト・コンセプト（共通） */
+/* アバウト */
 .about{
-    background-color:white;
+    width: 100%;
     height: 650px;
+    background-color:#F9F9F9;
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.about-area{
+    display: flex;
+}
+.about-left{
+    width: 50%;
 }
 
 
+.aboutTitle{
+    padding: 10% 0% 10% 8%;
+
+}
+
+
+.aboutText{
+    padding: 0 3% 0 7%;
+    line-height: 33px;
+}
+
+.about-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.rightImg-box{
+    padding: 0 7% 0 3%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.rightImg{
+    width: 100%;
+    max-height: 400px;
+    height: 85%;
+    object-fit: cover;
+}
+
+
+/* コンセプト */
 .concept{
     background-color:#CBC6BC;
     height: 650px;
@@ -210,10 +111,6 @@ img{
     align-items: center;
     display: flex;
 }
-.leftImg-box, .cardImg-box {
-    width: 100%;
-}
-
 .leftImg-box{
     padding: 0 3% 0 7%;
     width: 100%;
@@ -233,8 +130,6 @@ img{
 
 .concept-right{
     width: 50%;
-    background-color: white;
-
 }
 
 .conceptTitle{
@@ -245,16 +140,10 @@ img{
 .conceptText{
     padding: 0 7% 0 3%;
     line-height: 42px;
-    width: 100%;
 }
-
 
 
 /* プロパティ */
-.propertyTitle{
-    display:block;
-}
-
 .property{
     background-color:white;
     height: 560px;
@@ -398,13 +287,7 @@ img{
     overflow: hidden;
 }
 
-
-
-
-
-
 }
-
 
 
 /* ============================ */
