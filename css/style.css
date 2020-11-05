@@ -29,6 +29,11 @@ font-family:'游明朝','游ゴシック' ;
      align-items: center;
  }
  
+
+.navs{
+    display:none;
+}
+
  
  
  .logo, .footerLogo{
@@ -161,6 +166,7 @@ font-family:'游明朝','游ゴシック' ;
  
  
  @media(min-width:550px){
+
      .footer-navBox {
          margin-left: 25%;
  
@@ -373,3 +379,14 @@ padding:10px 0 10px 0;
 
 
 }
+
+@media(max-width:1400px){
+    /* ヘッダーここから */
+    
+    .header-wrapper{
+        width: 100%;
+        /* ここのwidthはレスポンシブする時width1400px以下の時はwidthを１００％に変更する */
+    }
+    
+    }
+    

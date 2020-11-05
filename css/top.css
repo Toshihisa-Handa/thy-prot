@@ -399,8 +399,11 @@ img{
 }
 
 
+}
 
 
 
-
+/* 404 */
+.error_page{
+    margin:100px 20px 20px 20px; 
 }
