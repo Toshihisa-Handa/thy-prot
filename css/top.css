@@ -400,7 +400,63 @@ img{
 
 
 }
+/* ============================ */
+/* =======各ページの中身 ========*/
+/* ============================= */
+/* 会社概要 */
+.company_tb{
+    margin:20px auto 0 auto;
+    width:100%;
+    font-size:1.6rem;
+}
+    .company_tb th{
+        font-weight: 600;
+        width:25%;
+        padding: 10px 20px;
+        border-bottom:1px solid #bbb;
+    }
+    .company_tb td{
+        width:75%;
+        padding: 10px 20px;
+        border-bottom:1px solid #aaa;
+    }
+@media screen and (min-width: 600px){
+    .company_tb{
+        width:80%;
+    }
+}
+/* 問い合わせ */
+.contact{
+    margin:100px 20px 20px 20px; 
+}
+.contact_form{
+    text-align: center;
+}
+/* プライバシーポリシー */
+    .privacy_p{
+        font-size:1.6rem;
+    }
+    .privacy_h2{
+        font-size:1.8rem;
+        margin:20px 0 10px 0;
+        font-weight: 600;
+    }
+    .list_1 {
+        font-size:1.6rem;
+        padding-left:30px;
+    }
+    .list_2 {
+        font-size:1.6rem;
+        padding-left:30px;
+    }
+    .list_3 {
+        font-size:1.6rem;
+        padding-left:30px;
+    }
 /* 404 */
 .error_page{
     margin:100px 20px 20px 20px; 
 }
+
+
+

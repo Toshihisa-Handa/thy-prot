@@ -4,14 +4,39 @@
         
     </div>
     <!-- ヘッダールートここまで -->
-    <!-- メイン -->
-    <div class="main" style='background-image: url("<?php echo get_template_directory_uri(); ?>/img/main_pc.jpg?>")'>
-
-    </div>
+   
     <!-- ヘッダールートここまで -->
-    
+         <!-- レスポンシブヘッダーリンク -->
+         <div id='reHeader-wrapper' class="reHeader-wrapper hidden">
+        <div class="reHeader-innerwrapper">
+           <div class="reHeader">
+           <ul class='reNav'>
+               <li class="reNavs">
+                 <a href="#"><div class="font-24 bargerMenu">HOME</div></a> 
+               </li>
+               <li class="reNavs">
+                <a href="#"> <div class="font-24 bargerMenu">COMPANY</div></a> 
+               </li>
+               <li class="reNavs">
+                <a href="#"><div class="font-24 bargerMenu">PROPERTY</div></a> 
+               </li>
+               <li class="reNavs">
+                <a href="#"><div class="font-24 bargerMenu">BLOG</div></a> 
+               </li>
+               <li class="reNavs">
+                <a href="#"><div class="font-24 bargerMenu">CONTACT</div></a> 
+               </li>
+           </ul>
+           </div>
+           </div>
+       </div>
+      <!-- レスポンシブヘッダーリンクここまで -->
 
-
+      <div id='cwrapper' class="cwrapper">
+      
+ <!-- メイン -->
+ <div class="main" style='background-image: url("<?php echo get_template_directory_uri(); ?>/img/main_pc.jpg?>")'>
+    </div>
 
                 <!-- アバウト -->
                 <div class="about">

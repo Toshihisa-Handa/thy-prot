@@ -16,12 +16,22 @@ html{
         width:100%;
         max-height: 120px;
         background-color: white;
+        
      
      }
      .header{
-         height: 100%;
+         height: 50px;
          display:flex;
          justify-content: space-between;
+         object-fit: cover;
+
+     }
+
+     .logo{
+        height: 100%;
+        width: 50%;
+        text-align: center;
+    
      }
      
      .nav{
@@ -30,16 +40,10 @@ html{
      }
      
      
-     
-     .logo, .footerLogo{
-         max-width: 100px;
-         max-height: 70px;
-         object-fit: cover;
-     }
-     
+
      .logo-img{
-         width: 100%;
-     }
+        width: 120px;
+    }
      
      
      .menu{
@@ -62,9 +66,13 @@ html{
          display: flex;
      }
      .footerLeft{
-         width: 35%;
+         width: 50%;
          margin-left: 10px;
      
+     }
+
+     .footerLogo{
+         max-width: 200px;
      }
      
      .footer-navBox{
@@ -93,7 +101,7 @@ html{
      }
      
      .footerRight{
-         width: 65%;
+         width: 50%;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -161,30 +169,28 @@ html{
      
      
      @media(min-width:550px){
+         .contents-footer{
+            width: 70%;
+            margin: 0 auto;
+         }
+
          .footer-navBox {
              margin-left: 25%;
      
          }
      
+
+
+         
      }
     
-    
-    @media(max-width:1400px){
-    /* ヘッダーここから */
-    
-    .header-wrapper{
-        width: 100%;
-        /* ここのwidthはレスポンシブする時width1400px以下の時はwidthを１００％に変更する */
-    }
-    
-    }
-    
+ 
     
     
     @media(max-width:1000px){
     /* ヘッダーここから */
     
-    .navs{
+    .menu-item{
         display:none;
     }
     
@@ -194,7 +200,6 @@ html{
     @media(min-width:1001px){
     
     body{
-        max-width: 1400px;
         margin:0 auto;
     
     }
@@ -212,45 +217,42 @@ html{
     
     
     /* ヘッダーここから */
-    .header-wrapper{
-        position: fixed;
-        width: 1400px; 
-        z-index: 9999;
-        /* ここのwidthはレスポンシブする時width1400px以下の時はwidthを１００％に変更する */
-    }
-    
     .header{
-        height: 100px;
+        max-width: 1400px;
+        height: 70px;
         background-color: white;
         display: flex;
     }
     
     
-    .logo, .footerLogo{
-        max-width: 200px;
-        max-height: 100px;
-        object-fit: cover;
-    }
+  
     
-    .logo{
-        width: 50%;
-        text-align: center;
-    
-    }
     
     .logo-img{
-        width: 100%;
+      width: 160px;
     }
     
     
     
     
     .nav{
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
+    width: 50%; */
     width: 50%;
+    height: 100%;
+
     }
-    .navs{
+
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        width: 100%; 
+        height: 100%;
+
+    }
+
+    .menu-item{
     height: 100%;
     width: 20%;
     display: grid;
@@ -258,14 +260,17 @@ html{
     padding:10px 0 10px 0;
     
     }
-    .navs:hover{
+
+    .menu-item a{ 
+     font-size: 1.6rem;
+    }
+    .menu-item:hover{
         background-color: black;
         color:white;
     }
     
-    .hmenu{
-        display: none;
-      
+    .nav2{
+        display:none;
     }
     
     .headerLine{
@@ -394,3 +399,8 @@ html{
     
     
     }
+
+
+       
+
+        
