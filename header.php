@@ -32,6 +32,12 @@
         'container_class'=>'mainmenu',
         'container_id'=>'mainmenu'
     )); ?>
+        <ul class='nav'>
+            <li id='menu' class="hmenu">
+                <div class="font-16">menu</div>
+            </li>
+        </ul>
+
     </div>
     <div class="headerLine"></div>
     </div>
