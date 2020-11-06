@@ -56,7 +56,7 @@
                  
                  <div class="detailCard">
                      <div class="detailCard-top">
-                         <img class='detailImg' src="../img/property_01.jpg" alt="">
+                     <?php the_post_thumbnail('index_thumbnail'); ?>
                      </div>
                      <div class="detailCard-bottom">
                          <div class="dtitleBox">
@@ -67,12 +67,7 @@
                              </div>
                          </div>
                          <div class="detailCard-text font-16 mt-30">
-                            あああああああああああああああああああああああ
-                            あああああああああああああああああああああああ
-                            あああああああああああああああああああああああ
-                            あああああああああああああああああああああああ
-                            あああああああああああああああああああああああ
-                            ああああああああああああああああ・・・・
+                         <?php the_excerpt(); ?>
                          </div>
 
                          <div class="contact">
@@ -160,3 +155,11 @@
 
 <!-- フッター -->
 <?php get_footer(); ?>
+
+<!-- // 人気記事用にカスタムフィールドにアクセス数を1ずつ加算する -->
+<?php
+    $count_key='postviews';
+    $count=get_post_meta($post->ID,$count_key,true);
+    $count++;
+    update_post_meta($post->ID,$count_key,$count);
+?>
