@@ -27,7 +27,7 @@
             </div>
 
             <div class="copyright">
-                <div class="copyrightText font-14">Copyright THY <?php echo date('Y') ?> All Rights Reserved.</div>
+                <div class="copyrightText font-14">Copyright <?php echo date('Y') ?> THY inc. All Rights Reserved.</div>
             </div>
         </div>
     <!-- フッターここまで -->
