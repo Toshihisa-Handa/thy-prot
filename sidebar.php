@@ -52,6 +52,11 @@
             <!--カスタムメニューend-->
 <!-- おすすめ記事ここまで -->
 
+<!--検索-->
+    <?php dynamic_sidebar('submenu') ?>
+<!--検索end-->
+
+
 <!-- 人気記事 -->
 <div class="commonTitleBox mt-30">
     <img src="<?php echo get_template_directory_uri(); ?>/img/icon_02.jpg" alt="">
