@@ -1,11 +1,9 @@
 /* topページcss */
-
-/* メイン */
-.main{
-    height: 100Vh;
-    background-size: cover;
-    /* background-position:center;  */
-
+.mainImg{
+width: 100%;
+height: 100vh;
+object-fit:cover;
+object-position: left;
 }
 
 
@@ -81,6 +79,7 @@
 .cardTitle{
     padding-top:15px;
     margin-left:30px;
+    font-weight: bold;
 }
 
  .cardText{
@@ -101,6 +100,13 @@
 
 @media(min-width:550px){
 
+.mainImg{
+    width: 100%;
+    height:auto;
+    object-fit: inherit;
+    object-position: none;
+    }
+
 /* アバウト */
 .leftImg-box, .cardImg-box{
     width: 70%;
@@ -113,14 +119,14 @@
 
 
 .conceptTitle {
-    width: 80%;
+    width: 95%;
     margin:0 auto;
 }
 
 
 .conceptText {
-    width: 70%;
-    margin: 10px auto;
+    width: 100%;
+    margin-left:3%;
 }
 
 .cardTitle{
@@ -133,9 +139,7 @@ margin:0 auto;
     margin: 10px auto;
 }
 
-.blog{
-    display: none;
-}
+
 
 
 }
@@ -145,24 +149,10 @@ margin:0 auto;
 
 
 @media(min-width:1001px){
-
 img{
     padding:0;
     margin:0;
     /* max-width: 100%; */
-}
-
-/* ヘッダールート */
-.headerRoute{
-    background-color: #B5B5B5;
-    height: 28px;
-}
-
-/* メイン */
-.main{
-    height: 100vh;
-    background-image: url('<?php echo get_template_directory_uri(); ?>/img/hana3.jpg?>');
-    background-size: cover;
 }
 
 
@@ -189,6 +179,7 @@ img{
     justify-content: center;
     align-items: center;
 }
+
 
 
 .concept{
@@ -298,7 +289,9 @@ img{
 
 .cardTitle{
     padding: 8px 0 8px 5px;
-}
+    font-weight: normal;
+    }
+
 
 .cardText{
     padding-left:3px;
@@ -399,18 +392,11 @@ img{
 }
 
 
-
-
-
-
 }
-
-
 
 /* ============================ */
 /* =======各ページの中身 ========*/
 /* ============================= */
-
 /* 会社概要 */
 
 .company_tb{
@@ -420,12 +406,12 @@ img{
 }
     .company_tb th{
         font-weight: 600;
-        width:25%;
+        width:30%;
         padding: 10px 20px;
         border-bottom:1px solid #bbb;
     }
     .company_tb td{
-        width:75%;
+        width:70%;
         padding: 10px 20px;
         border-bottom:1px solid #aaa;
     }
@@ -433,6 +419,18 @@ img{
     .company_tb{
         width:80%;
     }
+
+    .company_tb th{
+        width:25%;
+       
+    }
+    .company_tb td{
+        width:75%;
+      
+    }
+
+
+    
 }
 /* 問い合わせ */
 .contact{
@@ -441,8 +439,23 @@ img{
 .contact_form{
     text-align: center;
 }
-/* プライバシーポリシー */
 
+.contact-area{
+    width: 340px;
+    height: 1000px;
+    margin: 0 auto;
+
+}
+
+@media(min-width:640px){
+    .contact-area{
+        width: 640px;
+     
+    }
+
+}
+
+/* プライバシーポリシー */
     .privacy_p{
         font-size:1.6rem;
     }
@@ -463,8 +476,10 @@ img{
         font-size:1.6rem;
         padding-left:30px;
     }
-
 /* 404 */
 .error_page{
     margin:100px 20px 20px 20px; 
 }
+
+
+

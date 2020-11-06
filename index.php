@@ -1,21 +1,13 @@
 <?php get_header(); ?>
-
-
-
-
-
-        <!-- ヘッダーここまで -->
-        <!-- ヘッダールート -->
-        <div class="headerRoute">
-            
-        </div>
-        <!-- ヘッダールートここまで -->
-
-        <!-- レスポンシブ時のヘッダーリンク -->
-<!-- レスポンシブ時のヘッダーナビ -->
-
-       <!-- レスポンシブヘッダーリンク -->
-       <div id='reHeader-wrapper' class="reHeader-wrapper hidden">
+    <!-- ヘッダールート -->
+    <div class="headerRoute">
+        
+    </div>
+    <!-- ヘッダールートここまで -->
+   
+    <!-- ヘッダールートここまで -->
+         <!-- レスポンシブヘッダーリンク -->
+         <div id='reHeader-wrapper' class="reHeader-wrapper hidden">
         <div class="reHeader-innerwrapper">
            <div class="reHeader">
            <ul class='reNav'>
@@ -40,22 +32,15 @@
        </div>
       <!-- レスポンシブヘッダーリンクここまで -->
 
+      <div id='cwrapper' class="cwrapper">
+      
+ <!-- メイン -->
+        <div class="main">
+          <img class='mainImg' src="<?php echo get_template_directory_uri(); ?>/img/top_01.jpg?>" alt="">
+        </div>
 
-
-
-        <!-- レスポンシブ時のヘッダーリンクここまで -->
-        
-        <div id='cwrapper' class="cwrapper">
-            <!-- メイン -->
-            <div class="main" style='background-image: url("<?php echo get_template_directory_uri(); ?>/img/main_pc.jpg")'>
-
-            </div>
-            <!-- ヘッダールートここまで -->
-            
-
-
-            <!-- アバウト -->
-               <div class="about">
+                <!-- アバウト -->
+                <div class="about">
                 <div class="contents-common content-head concept-area">
                 <div class="concept-left">
                     <div class="leftImg-box">
@@ -63,7 +48,7 @@
                     </div>
                 </div>
                 <div class="concept-right">
-                    <div class="conceptTitle font-32">About Us&nbsp; <img class='icon01' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg'></div>
+                    <div class="conceptTitle font-32">About Us&nbsp; <img class='icon01' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg ?>/img/icon_01.jpg'></div>
                     <div class="conceptText font-15">私たちは、関東近郊に2物件を所有し、<br>
                         あらゆる層に低価格で住まいを提供する事業を行っています。<br>
                         私たちは、低価格であること、イコール、古く条件が悪いアパ<br>
@@ -79,8 +64,8 @@
                 </div>
             </div>
             <!-- アバウトここまで -->
-            <!-- one team -->
-            <div class="concept">
+                <!-- one team -->
+                <div class="concept">
                 <div class="contents-common content-head concept-area">
                 <div class="concept-left">
                     <div class="leftImg-box">
@@ -100,40 +85,39 @@
                 </div>
             </div>
             <!-- one teamここまで -->
-            <!-- 所有物件 -->
-            <div class="property">
-                <div class="contents-property">
-                <div class="wrapper">
-                    <div class="propertyTitle-box">
-                        <div class="propertyTitle font-32">所有物件</div>
-                        <img class='icon01_under' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg'>
-                    </div>
-                    </div>
-                <div class="propertyCard-box">
-                    <div class="pCard">
-                        <div class="cardImg-box">
-                            <img class='cardImg' src="<?php echo get_template_directory_uri(); ?>/img/property_02.jpg" alt="">
-                        </div>
-                        <div class="cardSentence">
-                            <div class="cardTitle font-16">埼玉県草加市</div>
-                            <div class="cardText font-14">最寄り駅より徒歩10分日当たり良好の物件、スーパー徒歩3分あり。
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pCard">
-                        <div class="cardImg-box">
-                            <img class='cardImg' src="<?php echo get_template_directory_uri(); ?>/img/top_04.jpg" alt="">
-                        </div>
-                        <div class="cardSentence">
-                            <div class="cardTitle font-16">神奈川県川崎市</div>
-                            <div class="cardText font-14">緑豊かな環境の中、地域では大規模開発が行われている地域です。
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
+    <!-- 所有物件 -->
+    <div class="property">
+        <div class="contents-property">
+          <div class="wrapper">
+              <div class="propertyTitle-box">
+                <div class="propertyTitle font-32">所有物件</div>
+                <img style='width:40px;' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg?>'>
+              </div>
             </div>
-            <!-- 所有物件ここまで -->
+          <div class="propertyCard-box">
+              <div class="pCard">
+                  <div class="cardImg-box">
+                    <img class='cardImg' src="<?php echo get_template_directory_uri(); ?>/img/property_02.jpg?>" alt="">
+                  </div>
+                  <div class="cardSentence">
+                      <div class="cardTitle font-16">埼玉県草加市</div>
+                      <div class="cardText font-15">最寄り駅より徒歩10分日当たり良好の物件、スーパー徒歩3分あり</div>
+                  </div>
+              </div>
+              <div class="pCard">
+                  <div class="cardImg-box">
+                    <img class='cardImg' src="<?php echo get_template_directory_uri(); ?>/img/top_04.jpg?>" alt="">
+                  </div>
+                  <div class="cardSentence">
+                      <div class="cardTitle font-16">神奈川県川崎市</div>
+                      <div class="cardText font-15">緑豊かな環境の中、地域では大規模開発が行われている地域です。</div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <!-- 所有物件ここまで -->
+
             <!-- ブログ -->
             <div class="blog">
                 <div class="contents-blog">
@@ -241,6 +225,7 @@
                         </div>
                     </div>
                 </div>
+
 
             </div>
             <!-- ブログここまで -->

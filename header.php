@@ -9,29 +9,37 @@
     <link href="<?php echo get_template_directory_uri(); ?>/css/parts.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/property.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/reset.css" rel="stylesheet">
-    <link href="<?php echo get_template_directory_uri(); ?>/css/responsive.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/main.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/top.css" rel="stylesheet">
 
     
 <?php wp_head(); ?>
+</head>
 <body>
  <div class="container">
         <!-- ヘッダー -->
 <!-- ヘッダーの記述 -->
-<div class="header-wrapper">
+<div id='header' class="header-wrapper">
 
 
     <div class="header">
-        <div class="logo">
-            <img class='log-img' src="<?php echo get_template_directory_uri(); ?>/img/logo_01.png"  alt="">
+        <div class="logo"> 
+        <a href="<?php echo home_url();?>"> 
+            <img class='logo-img' src="<?php echo get_template_directory_uri(); ?>/img/logo_02.png"  alt="">
+        </a>
         </div>
     <?php wp_nav_menu(array(
         'theme_location'=>'sitenav',
         'container'=>'nav',
-        'container_class'=>'mainmenu',
+        'container_class'=>'nav',
         'container_id'=>'mainmenu'
     )); ?>
+        <ul class='nav2'>
+            <li id='hmenu' class="hmenu">
+                <div class="font-16">menu</div>
+            </li>
+        </ul>
+
     </div>
     <div class="headerLine"></div>
     </div>
