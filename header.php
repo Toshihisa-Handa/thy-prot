@@ -23,8 +23,10 @@
 
 
     <div class="header">
-        <div class="logo">
+        <div class="logo"> 
+        <a href="<?php echo home_url();?>"> 
             <img class='logo-img' src="<?php echo get_template_directory_uri(); ?>/img/logo_02.png"  alt="">
+        </a>
         </div>
     <?php wp_nav_menu(array(
         'theme_location'=>'sitenav',
