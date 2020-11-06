@@ -1,158 +1,23 @@
 /* topページcss */
-.mainImg{
-width: 100%;
-height: 100vh;
-object-fit:cover;
-object-position: left;
-}
-
-
-/* アバウト・コンセプト */
-
-.about, .concept{
-    margin-top:20px;
-}
-
-.concept{
-    background-color: #CBC6BC;
-    padding-top:20px;
-    padding-bottom:20px;
-
-}
-
-.concept-area{
-    display:block;
-}
-
-.concept-left, .pCard{
-    width: 100%;
-}
-
-.leftImg-box, .cardImg-box{
-    width: 95%;
-    margin:0 auto;
-}
-
-.leftImg, .cardImg{
-    width: 100%;
-    object-fit:cover ;
-}
-
-.concept-right{
-    width: 95%;
-    margin:0 auto;
-    background-color: white;
-
-}
-
-.conceptTitle{
-    padding-top:15px;
-    margin-left:30px;
-}
-
-.conceptText{
-    margin-top: 15px;
-    margin-left:5px;
-    line-height: 28px;
-
-}
-
-
-/* 所有物件 */
-.property{
-    margin-top:20px;
-    margin-bottom:20px
-}
-.pCard{
-    margin-top: 15px;
-}
-
-.cardImg-box{
-    border-top:4px solid #D88526;
-}
-
-
-.propertyTitle-box{
-    display:none;
-}
-
-.cardTitle{
-    padding-top:15px;
-    margin-left:30px;
-    font-weight: bold;
-}
-
- .cardText{
-    margin-top: 3px;
-    margin-left:15px;
-    line-height: 28px;
-
-}
-
-/* ブログ */
-
-.blog{
-    display: none;
-}
-
-
-
-
-@media(min-width:550px){
-
-.mainImg{
-    width: 100%;
-    height:auto;
-    object-fit: inherit;
-    object-position: none;
-    }
-
-/* アバウト */
-.leftImg-box, .cardImg-box{
-    width: 70%;
-}
-
-.concept-right{
-    width: 70%;
-    background-color: rgb(248, 250, 252);
-}
-
-
-.conceptTitle {
-    width: 95%;
-    margin:0 auto;
-}
-
-
-.conceptText {
-    width: 100%;
-    margin-left:3%;
-}
-
-.cardTitle{
-width: 67%;
-margin:0 auto;
-}
-
-.cardText{
-    width: 70%;
-    margin: 10px auto;
-}
-
-
-
-
-}
-
-
-
-
-
 @media(min-width:1001px){
+
 img{
     padding:0;
     margin:0;
     /* max-width: 100%; */
+}
+
+/* ヘッダールート */
+.headerRoute{
+    background-color: #B5B5B5;
+    height: 28px;
+}
+
+/* メイン */
+.main{
+    height: 100vh;
+    background-image: url('<?php echo get_template_directory_uri(); ?>/img/hana3.jpg?>');
+    background-size: cover;
 }
 
 
@@ -170,18 +35,63 @@ img{
     
 
 }
-
-/* アバウト・コンセプト（共通） */
+/* アバウト */
 .about{
-    background-color:white;
+    width: 100%;
     height: 650px;
+    background-color:#F9F9F9;
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.about-area{
+    display: flex;
+}
+.about-left{
+    width: 50%;
 }
 
 
+.aboutTitle{
+    padding: 10% 0% 10% 8%;
 
+}
+
+
+.aboutText{
+    padding: 0 3% 0 7%;
+    line-height: 33px;
+}
+
+.about-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.rightImg-box{
+    padding: 0 7% 0 3%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.rightImg{
+    width: 100%;
+    max-height: 400px;
+    height: 85%;
+    object-fit: cover;
+}
+
+
+/* コンセプト */
 .concept{
     background-color:#CBC6BC;
     height: 650px;
@@ -201,10 +111,6 @@ img{
     align-items: center;
     display: flex;
 }
-.leftImg-box, .cardImg-box {
-    width: 100%;
-}
-
 .leftImg-box{
     padding: 0 3% 0 7%;
     width: 100%;
@@ -224,8 +130,6 @@ img{
 
 .concept-right{
     width: 50%;
-    background-color: white;
-
 }
 
 .conceptTitle{
@@ -236,16 +140,10 @@ img{
 .conceptText{
     padding: 0 7% 0 3%;
     line-height: 42px;
-    width: 100%;
 }
-
 
 
 /* プロパティ */
-.propertyTitle{
-    display:block;
-}
-
 .property{
     background-color:white;
     height: 560px;
@@ -289,9 +187,7 @@ img{
 
 .cardTitle{
     padding: 8px 0 8px 5px;
-    font-weight: normal;
-    }
-
+}
 
 .cardText{
     padding-left:3px;
@@ -391,12 +287,13 @@ img{
     overflow: hidden;
 }
 
-
 }
+
 
 /* ============================ */
 /* =======各ページの中身 ========*/
 /* ============================= */
+
 /* 会社概要 */
 
 .company_tb{
@@ -406,12 +303,12 @@ img{
 }
     .company_tb th{
         font-weight: 600;
-        width:30%;
+        width:25%;
         padding: 10px 20px;
         border-bottom:1px solid #bbb;
     }
     .company_tb td{
-        width:70%;
+        width:75%;
         padding: 10px 20px;
         border-bottom:1px solid #aaa;
     }
@@ -419,18 +316,6 @@ img{
     .company_tb{
         width:80%;
     }
-
-    .company_tb th{
-        width:25%;
-       
-    }
-    .company_tb td{
-        width:75%;
-      
-    }
-
-
-    
 }
 /* 問い合わせ */
 .contact{
@@ -439,23 +324,8 @@ img{
 .contact_form{
     text-align: center;
 }
-
-.contact-area{
-    width: 340px;
-    height: 1000px;
-    margin: 0 auto;
-
-}
-
-@media(min-width:640px){
-    .contact-area{
-        width: 640px;
-     
-    }
-
-}
-
 /* プライバシーポリシー */
+
     .privacy_p{
         font-size:1.6rem;
     }
@@ -476,10 +346,8 @@ img{
         font-size:1.6rem;
         padding-left:30px;
     }
+
 /* 404 */
 .error_page{
     margin:100px 20px 20px 20px; 
 }
-
-
-

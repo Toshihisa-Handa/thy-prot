@@ -25,9 +25,10 @@
      </div>
  </div>
  
- <div class="copyright">
-     <div class="copyrightText font-14">Copyright © 2020 Company Co. All rights reserved</div>
- </div>
+  <div class="copyright">
+         <div class="copyrightText font-14">Copyright <?php echo date('Y') ?> THY inc. All Rights Reserved.</div>
+   </div>
+
     <!-- フッターここまで -->
     </div>
     </div>

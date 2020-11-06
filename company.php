@@ -42,9 +42,15 @@ Template Name: Company
         <div id='cwrapper' class="cwrapper">
          <div class="headerFix"></div>
             <!-- パンくず -->
-            <div class="headerRoute">
-                <div class="hrNav font-14">HOME>>COMPANY</div>
-            </div>
+                <div class="headerRoute">
+                    <div class="hrNav font-14"><a href="<?php echo home_url(); ?>">HOME</a>>>
+                        <?php if(has_category()): ?>
+                        <?php $postcat=get_the_category(); ?>
+                        <?php echo get_category_parents($postcat[0],true); ?>
+                        <?php endif; ?>
+                        <a><?php the_title(); ?></a>
+                    </div>
+                </div>
             <!-- パンくずここまで -->
          <!-- コンテンツここから -->
          <div class="contents-area">
