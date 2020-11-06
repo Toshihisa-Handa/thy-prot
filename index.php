@@ -35,8 +35,9 @@
       <div id='cwrapper' class="cwrapper">
       
  <!-- メイン -->
- <div class="main" style='background-image: url("<?php echo get_template_directory_uri(); ?>/img/main_pc.jpg?>")'>
-    </div>
+        <div class="main">
+          <img class='mainImg' src="<?php echo get_template_directory_uri(); ?>/img/top_01.jpg?>" alt="">
+        </div>
 
                 <!-- アバウト -->
                 <div class="about">
@@ -116,40 +117,7 @@
         </div>
     </div>
     <!-- 所有物件ここまで -->
-    <!-- 所有物件 -->
-    <div class="property">
-                <div class="contents-property">
-                <div class="wrapper">
-                    <div class="propertyTitle-box">
-                        <div class="propertyTitle font-32">所有物件</div>
-                        <img class='icon01_under' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg'>
-                    </div>
-                    </div>
-                <div class="propertyCard-box">
-                    <div class="pCard">
-                        <div class="cardImg-box">
-                            <img class='cardImg' src="<?php echo get_template_directory_uri(); ?>/img/property_02.jpg" alt="">
-                        </div>
-                        <div class="cardSentence">
-                            <div class="cardTitle font-16">埼玉県草加市</div>
-                            <div class="cardText font-15">最寄り駅より徒歩10分日当たり良好の物件、スーパー徒歩3分あり。
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pCard">
-                        <div class="cardImg-box">
-                            <img class='cardImg' src="<?php echo get_template_directory_uri(); ?>/img/top_04.jpg" alt="">
-                        </div>
-                        <div class="cardSentence">
-                            <div class="cardTitle font-16">神奈川県川崎市</div>
-                            <div class="cardText font-15">緑豊かな環境の中、地域では大規模開発が行われている地域です。
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <!-- 所有物件ここまで -->
+
             <!-- ブログ -->
             <div class="blog">
                 <div class="contents-blog">
