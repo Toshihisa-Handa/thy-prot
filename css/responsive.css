@@ -1,0 +1,29 @@
+/* 共通cssのレスポンシブ */
+
+@media(max-width:1400px){
+/* ヘッダーここから */
+
+.header-wrapper{
+    width: 100%;
+    /* ここのwidthはレスポンシブする時width1400px以下の時はwidthを１００％に変更する */
+}
+
+
+
+}
+
+@media(max-width:1000px){
+/* ヘッダーここから */
+
+.navs{
+    display:none;
+}
+
+.menu{
+    /* display: inline-block;
+    position: absolute;
+    top: 42%;
+    right: 5%; */
+}
+
+}
