@@ -100,8 +100,7 @@
                   </div>
                   <div class="cardSentence">
                       <div class="cardTitle font-16">埼玉県草加市</div>
-                      <div class="cardText font-15">最寄り駅より徒歩10分日当たり良好の物件、スーパー徒歩3分あ<br>
-                                            り</div>
+                      <div class="cardText font-15">最寄り駅より徒歩10分日当たり良好の物件、スーパー徒歩3分あり</div>
                   </div>
               </div>
               <div class="pCard">
@@ -110,8 +109,7 @@
                   </div>
                   <div class="cardSentence">
                       <div class="cardTitle font-16">神奈川県川崎市</div>
-                      <div class="cardText font-15">緑豊かな環境の中、地域では大規模開発が行われている地域で<br>
-                                                   す。</div>
+                      <div class="cardText font-15">緑豊かな環境の中、地域では大規模開発が行われている地域です。</div>
                   </div>
               </div>
           </div>
@@ -134,7 +132,7 @@
                         </div>
                         <div class="cardSentence">
                             <div class="cardTitle font-16">埼玉県草加市</div>
-                            <div class="cardText font-14">最寄り駅より徒歩10分日当たり良好の物件、スーパー徒歩3分あり。
+                            <div class="cardText font-15">最寄り駅より徒歩10分日当たり良好の物件、スーパー徒歩3分あり。
                             </div>
                         </div>
                     </div>
@@ -144,7 +142,7 @@
                         </div>
                         <div class="cardSentence">
                             <div class="cardTitle font-16">神奈川県川崎市</div>
-                            <div class="cardText font-14">緑豊かな環境の中、地域では大規模開発が行われている地域です。
+                            <div class="cardText font-15">緑豊かな環境の中、地域では大規模開発が行われている地域です。
                             </div>
                         </div>
                     </div>

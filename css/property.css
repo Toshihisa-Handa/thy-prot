@@ -1,9 +1,5 @@
 /* property.css */
 /* ヘッダールート */
-.headerRoute {
-    display: none;
- }
- 
  .contents-area{
      padding-top:80px;
      margin-bottom:50px;
@@ -93,14 +89,6 @@
  
  
  @media(min-width:1001px){
- 
- 
- /* ヘッダールート */
- .headerRoute{
-     display: block;
-     background-color: #B5B5B5;
-     height: 30px;
- }
  
  .hrNav{
      margin-left: 17%;
