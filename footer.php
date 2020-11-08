@@ -6,13 +6,22 @@
              <img class='logo-img' src="<?php echo get_template_directory_uri(); ?>/img/logo_02_w.png"  alt="">
              </div>
              <div class="footer-navBox">
-                 <ul class="footer-nav">
+             <nav class="footer-nav">
+                <?php wp_nav_menu(array(
+                    'theme_location'=>'place_footer',
+                    'container'=>'false',
+                    'container_class'=>'fnav',
+                    'container_id'=>'fnav'
+                )); ?>
+                </nav>
+
+                 <!-- <ul class="footer-nav">
                      <li class='fnav'><a  class='flink' href="#" class='font-14'>会社概要</a></li>
                      <li class='fnav'><a  class='flink' href="#" class='font-14'>所有物件</a></li>
                      <li class='fnav'><a  class='flink' href="#" class='font-14'>ブログ</a></li>
                      <li class='fnav'><a  class='flink' href="#" class='font-14'>問い合わせ</a></li>
                      <li class='fnav'><a  class='flink' href="#" class='font-14'>プライバシーポリシー</a></li>
-                 </ul>
+                 </ul> -->
                  <div class="footer-icon">
                      <div class="logos " ><a href="#" class='flink font-32'><span class="fab fa-facebook-square blue fa-fw"></span></a></div>
                      <div class="logos " ><a href="#" class='flink font-32'><span class="fab fa-twitter-square aqua fa-fw"></span></a></div>

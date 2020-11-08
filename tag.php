@@ -1,6 +1,10 @@
+<?php
+/*
+Template Name: BLOG
+*/
+?>
 <?php get_header(); ?>
-
-<!-- レスポンシブ時のヘッダーリンク -->
+        <!-- レスポンシブ時のヘッダーリンク -->
 <!-- レスポンシブ時のヘッダーナビ -->
 
        <!-- レスポンシブヘッダーリンク -->
@@ -60,45 +64,79 @@
                 </ol>
             </div>
             <!-- パンくずここまで -->
-        <!-- コンテンツここから -->
+         <!-- コンテンツここから -->
         <div class="contents-area">
              <div class="contents-title font-32 mt-40">
-                BLOG&nbsp; <img class='icon01' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg'>
+                <?php single_term_title(); ?>に関して&nbsp; <img class='icon01' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg'>
            </div>
              
            <div class="content-box mt-40">
 <!-- コンテンツレフト -->
              <div class="contentLeft">
-                 
-                 <?php if(have_posts()): while(have_posts()):
-                 the_post(); ?>
-                 
-                 <div class="detailCard">
-                     <div class="detailCard-top">
-                     <?php the_post_thumbnail('index_thumbnail'); ?>
+                <a href="blog_detail.html">
+                
+                 <div class="mainCard">
+                     <div class="mainCard-left">
+                         <img class='mainImg' src="../img/property_01.jpg" alt="">
                      </div>
-                     <div class="detailCard-bottom">
-                         <div class="dtitleBox">
-                             <div class="mainCard-title font-20"><?php the_title(); ?></div>
+                     <div class="mainCard-right">
+                         <div class="titleBox">
+                             <div class="mainCard-title font-20">タイトル</div>
                              <div class="mainCard-tag-box">
-                             <?php the_tags('<ul><li class="mainCard-tag font-12">','</li><li class="mainCard-tag font-12">','</li></ul>'); ?>
-                                 <div class="mainCard-time font-14 mt-10">更新日:<?php echo get_the_modified_date('Y/m/d'); ?></time></div>
+                                 <div class="mainCard-tag font-16">不動産</div>
+                                 <div class="mainCard-time font-14 mt-10">2020/10/30</div>
                              </div>
                          </div>
-                         <div class="detailCard-text font-16 mt-30">
-                         <?php the_excerpt(); ?>
+                         <div class="mainCard-text font-16 mt-30">
+                            あああああああああああああああああああああああ
+                            あああああああああああああああああああああああ
+                            あああああああああああああああああああああああ
+                            あああああああああああああああああああああああ
+                            あああああああああああああああああああああああ
+                            ああああああああああああああああ・・・・
+                            
                          </div>
-
-                         <div class="contact">
-                           <div class="contact-area">
-                             <div class="contact-box font-24">問い合わせフォーム</div>
-                           </div>
-                         </div>
-                       <div class="contact-margin"></div>
                      </div>
-                 <?php endwhile; endif; ?>
-                 </div>
 
+                 </div>
+                </a>
+<!-- ブログ -->
+                <div class="blogs mt-10">
+<?php if(have_posts()):while(have_posts()):
+the_post(); ?>
+                    <div class="blogCard">
+                        <div class="blogImg">
+                            <?php the_post_thumbnail('index_thumbnail'); ?>
+                        </div>
+                        <div class="blogTitleBox">
+                            <a href="<?php the_permalink(); ?>">
+                            <div class="blogCard-title font-16 "><?php the_title(); ?></div>
+                    </a>
+                            <div class="blogCard-tag-box">
+                                <div class="blogCard-tag font-12 "><?php the_tags('<ul><li class="mainCard-tag font-12">','</li><li class="mainCard-tag font-12">','</li></ul>'); ?></div>
+                                <div class="blogCard-time font-10 mt-10"><?php the_time('Y.m.d') ?> </div>
+                            </div>
+                        </div>
+                        <div class="blogCard-text font-12">
+                            <?php the_excerpt(); ?>
+                        </div>
+                    </div>
+
+                    <?php endwhile; endif; ?>
+
+                </div>
+<!-- ブログここまで -->
+
+<!-- ページナビ -->
+               <div class="pageLink mt-30">
+                   <ul class='pNavs'>
+                       <li class='pNav'>1</li>
+                       <li class='pNav'>2</li>
+                       <li class='pNav'>3</li>
+                       <li class='pNav'>4</li>
+                       <li class='pNav'>5</li>
+                   </ul>
+               </div>
 
 <!-- 関連記事 -->
               <div class="commonTitleBox mt-30">
@@ -161,24 +199,20 @@
 
              </div>
   <!-- コンテンツライト -->
+
         <div class="contentRight">
                 <?php get_sidebar(); ?>
         </div>
 
-        </div>
+         <!-- コンテンツここまで -->
          <!-- コンテンツここまで -->
          <div class="footer-margin"></div>
 
         </div>
 
+        </div>
+        </div>
+
 
 <!-- フッター -->
 <?php get_footer(); ?>
-
-<!-- // 人気記事用にカスタムフィールドにアクセス数を1ずつ加算する -->
-<?php
-    $count_key='postviews';
-    $count=get_post_meta($post->ID,$count_key,true);
-    $count++;
-    update_post_meta($post->ID,$count_key,$count);
-?>

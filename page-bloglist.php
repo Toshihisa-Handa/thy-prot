@@ -118,7 +118,7 @@ Template Name: BLOG
                             <div class="blogCard-title font-16 "><?php the_title(); ?></div>
                     </a>
                             <div class="blogCard-tag-box">
-                                <div class="blogCard-tag font-12 "><?php the_category(',') ?></div>
+                                <div class="blogCard-tag font-12 "><?php the_tags('<ul><li class="mainCard-tag font-12">','</li><li class="mainCard-tag font-12">','</li></ul>'); ?></div>
                                 <div class="blogCard-time font-10 mt-10"><?php the_time('Y.m.d') ?> </div>
                             </div>
                         </div>
@@ -207,127 +207,18 @@ Template Name: BLOG
 
              </div>
   <!-- コンテンツライト -->
+
         <div class="contentRight">
- <!-- おすすめ記事 -->
-            <div class="commonTitleBox mt-30">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/icon_02.jpg" alt="">
-                <div class="commonTitle font-20">おすすめ記事</div>
-             </div>
-            <div class="mt-30">
-                <!-- おすすめカード -->
-                <div class="sideCard">
-                    <div class="mainCard-left">
-                        <img class='mainImg' src="../img/property_01.jpg" alt="">
-                    </div>
-                    <div class="mainCard-right">
-                        <div class="titleBox">
-                            <div class="mainCard-title font-16">タイトル</div>
-                            <div class="mainCard-tag-box">
-                                <div class="mainCard-tag font-12">不動産</div>
-                                <div class="mainCard-time font-10 mt-10">2020/10/30</div>
-                            </div>
-                        </div>
-                        <div class="mainCard-text font-12 mt-30">
-                        あああああああああああああああああああああああ
-                        あああああああああああああああああああああああ
-                        あああああああああああああああああああああああ
-                        あああああああああああああああああああああああ
-                        あああああああああああああああああああああああ
-                        ああああああああああああああああ・・・・
-                        
-                        </div>
-                    </div>
-                </div>
+                <?php get_sidebar(); ?>
+        </div>
 
-
-               <!-- おすすめカードここまで -->
-            </div>
-<!-- おすすめ記事ここまで -->
-<!-- 人気記事 -->
-<div class="commonTitleBox mt-30">
-    <img src="../img/icon_02.jpg" alt="">
-    <div class="commonTitle font-20">人気記事</div>
- </div>
-<div class="mt-30">
-    <!-- おすすめカード -->
-    <div class="sideCard">
-        <div class="mainCard-left">
-            <img class='mainImg' src="../img/property_01.jpg" alt="">
-        </div>
-        <div class="mainCard-right">
-            <div class="titleBox">
-                <div class="mainCard-title font-16">タイトル</div>
-                <div class="mainCard-tag-box">
-                    <div class="mainCard-tag font-12">不動産</div>
-                    <div class="mainCard-time font-10 mt-10">2020/10/30</div>
-                </div>
-            </div>
-            <div class="mainCard-text font-12 mt-30">
-            あああああああああああああああああああああああ
-            あああああああああああああああああああああああ
-            あああああああああああああああああああああああ
-            あああああああああああああああああああああああ
-            あああああああああああああああああああああああ
-            ああああああああああああああああ・・・・
-            
-            </div>
-        </div>
-    </div>
-    <div class="sideCard">
-        <div class="mainCard-left">
-            <img class='mainImg' src="<?php echo get_template_directory_uri(); ?>/img/property_01.jpg" alt="">
-        </div>
-        <div class="mainCard-right">
-            <div class="titleBox">
-                <div class="mainCard-title font-16">タイトル</div>
-                <div class="mainCard-tag-box">
-                    <div class="mainCard-tag font-12">不動産</div>
-                    <div class="mainCard-time font-10 mt-10">2020/10/30</div>
-                </div>
-            </div>
-            <div class="mainCard-text font-12 mt-30">
-            あああああああああああああああああああああああ
-            あああああああああああああああああああああああ
-            あああああああああああああああああああああああ
-            あああああああああああああああああああああああ
-            あああああああああああああああああああああああ
-            ああああああああああああああああ・・・・
-            
-            </div>
-        </div>
-    </div>
-    <div class="sideCard">
-        <div class="mainCard-left">
-            <img class='mainImg' src="../img/property_01.jpg" alt="">
-        </div>
-        <div class="mainCard-right">
-            <div class="titleBox">
-                <div class="mainCard-title font-16">タイトル</div>
-                <div class="mainCard-tag-box">
-                    <div class="mainCard-tag font-12">不動産</div>
-                    <div class="mainCard-time font-10 mt-10">2020/10/30</div>
-                </div>
-            </div>
-            <div class="mainCard-text font-12 mt-30">
-            あああああああああああああああああああああああ
-            あああああああああああああああああああああああ
-            あああああああああああああああああああああああ
-            あああああああああああああああああああああああ
-            あああああああああああああああああああああああ
-            ああああああああああああああああ・・・・
-            
-            </div>
-        </div>
-    </div>
-   <!-- おすすめカードここまで -->
-</div>
-        </div>
-          </div>
-        </div>
          <!-- コンテンツここまで -->
          <!-- コンテンツここまで -->
          <div class="footer-margin"></div>
 
+        </div>
+
+        </div>
         </div>
 
 
