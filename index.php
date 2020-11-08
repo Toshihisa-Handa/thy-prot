@@ -123,106 +123,37 @@
                 <div class="contents-blog">
                     <div class="blogTitle-box">
                     <img class='icon01_side' src='<?php echo get_template_directory_uri(); ?>/img/icon_02.jpg '>
-                    <div class="blogTitle font-32">人気記事</div>
+                    <div class="blogTitle font-32">新着記事</div>
                     </div>
                     <div class="blogCards">
-                        <div class="blogCard-box">
-                            <div class="bCard">
-                                <div class="bCardImg-box">
-                                <img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/property_03.jpg" alt="">
-                                </div>
-                                <div class="bCardSentence">
-                                <div class="bcardTitles">
-                                    <div class="bCardTitle font-16">タイトル</div>
-                                    <div class="bCardTag-box">
-                                    <div class="bCardTag font-14">不動産</div>
-                                    <div class="bCardTime font-14">2020/10/20</div>
+                        <?php if(have_posts()):while(have_posts()):
+                        the_post(); ?>
+                            <div class="blogCard-box">
+                                <div class="bCard">
+                                    <div class="bCardImg-box">
+                                        <?php if(has_post_thumbnail()): ?>
+                                            <?php $postthumb=wp_get_attachment_image_src(get_post_thumbnail_id()); ?>
+                                        <img class='bCardImg' src="<?php echo $postthumb[0]; ?>">
+                                        <?php else: ?>
+                                            <img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/no_image.png">
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="bCardSentence">
+                                        <div class="bcardTitles">
+                                            <div class="bCardTitle font-16"><?php the_title(); ?></div>
+                                            <div class="bCardTag-box">
+                                            <div class="bCardTag font-14"><?php the_tags('<ul><li class="mainCard-tag font-12">','</li><li class="mainCard-tag font-12">','</li></ul>'); ?></div>
+                                            <div class="bCardTime font-14">更新日:<?php echo get_the_modified_date('Y/m/d'); ?></time></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bCardText font-15">
+                                        <?php the_excerpt(); ?>
+                                        </div>
                                     </div>
                                 </div>
-                                
-                                <div class="bCardText font-15">日差しの降り注ぐ西向き<br>
-                                                                のきれいなぶっけんです<br>
-                                                                日差しの降り注ぐ西向き<br>
-                                                                のきれいなぶっけんです<br>
-                                                                のきれいなぶっけんです<br>
-                                                                のきれいなぶっけんです<br>
-                                                                日差しの降り注ぐ西向き<br>
-                                                                のきれいなぶっけんです<br>
-                                                                のきれいなぶっけんです<br>
-                                                                のきれいなぶっけんです<br>
-                                                                日差しの降り注ぐ西向き<br>
-                                                                のきれいなぶっけんです<br>
-                                                                のきれいなぶっけんです<br>
-                                                                </div>
                             </div>
-                            </div>
-                        </div>
-
-
-                        <div class="blogCard-box">
-                            <div class="bCard">
-                                <div class="bCardImg-box">
-                                <img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/property_03.jpg" alt="">
-                                </div>
-                                <div class="bCardSentence">
-                                <div class="bcardTitles">
-                                    <div class="bCardTitle font-16">タイトル</div>
-                                    <div class="bCardTag-box">
-                                    <div class="bCardTag font-14">不動産</div>
-                                    <div class="bCardTime font-14">2020/10/20</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="bCardText font-15">日差しの降り注ぐ西向き<br>
-                                                                のきれいなぶっけんです<br>
-                                                                日差しの降り注ぐ西向き<br>
-                                                                のきれいなぶっけんです<br>
-                                                                のきれいなぶっけんです<br>
-                                                                のきれいなぶっけんです<br>
-                                                                日差しの降り注ぐ西向き<br>
-                                                                のきれいなぶっけんです<br>
-                                                                のきれいなぶっけんです<br>
-                                                                のきれいなぶっけんです<br>
-                                                                日差しの降り注ぐ西向き<br>
-                                                                のきれいなぶっけんです<br>
-                                                                のきれいなぶっけんです<br>
-                                                                </div>
-                            </div>
-                            </div>
-                        </div>
-
-
-                        <div class="blogCard-box">
-                            <div class="bCard">
-                                <div class="bCardImg-box">
-                                <img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/property_03.jpg" alt="">
-                                </div>
-                                <div class="bCardSentence">
-                                <div class="bcardTitles">
-                                    <div class="bCardTitle font-16">タイトル</div>
-                                    <div class="bCardTag-box">
-                                    <div class="bCardTag font-14">不動産</div>
-                                    <div class="bCardTime font-14">2020/10/20</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="bCardText font-15">日差しの降り注ぐ西向き<br>
-                                                                のきれいなぶっけんです<br>
-                                                                日差しの降り注ぐ西向き<br>
-                                                                のきれいなぶっけんです<br>
-                                                                のきれいなぶっけんです<br>
-                                                                のきれいなぶっけんです<br>
-                                                                日差しの降り注ぐ西向き<br>
-                                                                のきれいなぶっけんです<br>
-                                                                のきれいなぶっけんです<br>
-                                                                のきれいなぶっけんです<br>
-                                                                日差しの降り注ぐ西向き<br>
-                                                                のきれいなぶっけんです<br>
-                                                                のきれいなぶっけんです<br>
-                                                                </div>
-                            </div>
-                            </div>
-                        </div>
+                        <?php endwhile; endif; ?>
                     </div>
                 </div>
 
@@ -231,4 +162,3 @@
             <!-- ブログここまで -->
     <!-- フッター -->
     <?php get_footer(); ?>
-    <!-- フッターここまで -->
