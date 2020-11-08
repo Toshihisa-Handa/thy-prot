@@ -38,7 +38,23 @@
          <div class="headerFix"></div>
             <!-- パンくず -->
             <div class="headerRoute">
-                <div class="hrNav font-14">HOME>>BLOG</div>
+                <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="<?php echo home_url(); ?>">
+                            <span itemprop="name">HOME</span>
+                        </a>
+                        <meta itemprop="position" content="1" />
+                    </li>
+        
+                    <li itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                        <a itemprop="item">
+                            <span itemprop="name">BLOG</span>
+                        </a>
+                        <meta itemprop="position" content="2" />
+                    </li>
+                </ol>
             </div>
             <!-- パンくずここまで -->
         <!-- コンテンツここから -->

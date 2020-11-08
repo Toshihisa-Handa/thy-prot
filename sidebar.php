@@ -20,9 +20,10 @@
     <div class="mt-30">
         <!-- おすすめカード -->
         <div class="sideCard">
-            <div class="mainCard-left">
-                <img class='mainImg' src="<?php the_post_thumbnail(); ?>" alt=""> 
-            </div>
+        <div class="mainCard-left">
+       
+             <img class='mainImg' src="<?php the_post_thumbnail('medium'); ?>">
+        </div>
             <div class="mainCard-right">
                 <div class="titleBox">
                     <div class="mainCard-title font-16"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
