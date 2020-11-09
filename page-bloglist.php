@@ -73,7 +73,7 @@ Template Name: BLOG
            <div class="content-box mt-40">
 <!-- コンテンツレフト -->
              <div class="contentLeft">
-      <?php
+                <?php
                     $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
                     $news_args = array(
                     'post_status' => 'publish',
@@ -88,25 +88,24 @@ Template Name: BLOG
                     <?php
                     foreach( $information as $post ):
                     setup_postdata( $post ); $loopcount++;
-                    ?>
-	<?php if ($loopcount <= 1): ?>
-		<!-- 最初の１件目の内容　-->
-		<div class="post">
-        <?php get_template_part('gaiyou', 'large') ?>
+                ?>
+                <?php if ($loopcount <= 1): ?>
+                <!-- 最初の１件目の内容　-->
+                     <div class="post">
+                         <?php get_template_part('gaiyou', 'large') ?>
+                     </div>
+                <?php else: ?>
+                <!-- ２件目以降の内容　-->
 
-		</div>
-	<?php else: ?>
-		<!-- ２件目以降の内容　-->
-        <?php get_template_part('gaiyou', 'medium') ?>
-	<?php endif; ?>
-
-<?php
-                    endforeach;
-                    wp_reset_postdata();
-                    ?>
-                    <?php else: ?>
-                    <p>表示できる情報はありません。</p>
-                    <?php endif; ?>
+                      <?php get_template_part('gaiyou', 'medium') ?>
+                <?php endif; ?>
+                <?php
+                endforeach;
+                wp_reset_postdata();
+                ?>
+                <?php else: ?>
+                <p>表示できる情報はありません。</p>
+                <?php endif; ?>
 
 
              
