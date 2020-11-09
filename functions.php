@@ -34,6 +34,7 @@ register_sidebar(array(
 	'after_title'=>'</p>'
 ));
 
+
 //  ページネーション	
 function pagination( $args = array() ) {
 	$navigation = '';
@@ -96,4 +97,10 @@ function pagination( $args = array() ) {
 		}
 	}
 	echo $navigation;
+}
+
+//1件目の記事を分岐する関数を作成する
+function is_first(){
+	global $wp_query;
+	return ($wp_query->current_post === 0);
 }

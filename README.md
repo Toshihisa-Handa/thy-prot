@@ -18,3 +18,5 @@ page-bloglist.phpのページネーションの参考記事
 index.phpやsingle.phpでない固定ページでは基本のページネーションの関数
 ```<?php echo paginate_links(); ?>```は使用できなかった為、
 上記URLを参考にし実装した。
+
+
