@@ -7,4 +7,6 @@ partsフォルダ内の指定ファイルを読み込んでいる。
 固定ページは、カスタムテンプレートを充てる
 
 *使用プラグインプラグイン*
+--記事装飾用エディター---
+Advanced Editor Tools (previously TinyMCE Advanced)
 
