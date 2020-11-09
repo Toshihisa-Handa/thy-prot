@@ -75,7 +75,12 @@
                  
                  <div class="detailCard">
                      <div class="detailCard-top">
-                     <?php the_post_thumbnail('index_thumbnail'); ?>
+                        <?php if(has_post_thumbnail()): ?>
+                            <?php $postthumb=wp_get_attachment_image_src(get_post_thumbnail_id()); ?>
+                        <img src="<?php echo $postthumb[0]; ?>">
+                        <?php else: ?>
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/no_image.png">
+                        <?php endif; ?>
                      </div>
                      <div class="detailCard-bottom">
                          <div class="dtitleBox">

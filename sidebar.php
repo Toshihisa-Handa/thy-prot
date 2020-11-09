@@ -21,8 +21,12 @@
         <!-- おすすめカード -->
         <div class="sideCard">
         <div class="mainCard-left">
-       
-             <img class='mainImg' src="<?php the_post_thumbnail('medium'); ?>">
+            <?php if(has_post_thumbnail()): ?>
+                <?php $postthumb=wp_get_attachment_image_src(get_post_thumbnail_id()); ?>
+            <img class='mainImg' src="<?php echo $postthumb[0]; ?>">
+            <?php else: ?>
+                <img class='mainImg' src="<?php echo get_template_directory_uri(); ?>/img/no_image.png">
+            <?php endif; ?>
         </div>
             <div class="mainCard-right">
                 <div class="titleBox">
@@ -77,7 +81,12 @@
     setup_postdata($post); ?>
     <div class="sideCard">
         <div class="mainCard-left">
-             <img class='mainImg' src="<?php the_post_thumbnail(); ?>" alt=""> 
+            <?php if(has_post_thumbnail()): ?>
+                <?php $postthumb=wp_get_attachment_image_src(get_post_thumbnail_id()); ?>
+            <img class='mainImg' src="<?php echo $postthumb[0]; ?>">
+            <?php else: ?>
+                <img class='mainImg' src="<?php echo get_template_directory_uri(); ?>/img/no_image.png">
+            <?php endif; ?>
         </div>
         <div class="mainCard-right">
             <div class="titleBox">

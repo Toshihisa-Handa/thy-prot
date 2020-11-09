@@ -122,12 +122,18 @@
             <div class="blog">
                 <div class="contents-blog">
                     <div class="blogTitle-box">
-                    <img class='icon01_side' src='<?php echo get_template_directory_uri(); ?>/img/icon_02.jpg '>
-                    <div class="blogTitle font-32">新着記事</div>
+                        <img class='icon01_side' src='<?php echo get_template_directory_uri(); ?>/img/icon_02.jpg '>
+                        <div class="blogTitle font-32">新着記事</div>
                     </div>
+                    <?php 
+                    $myposts=get_posts(array(
+                        'post_type'=>'post',
+                        'posts_per_page'=>'3',
+                    ));
+                    if($myposts): ?>
                     <div class="blogCards">
-                        <?php if(have_posts()):while(have_posts()):
-                        the_post(); ?>
+                        <?php foreach($myposts as $post):
+                        setup_postdata($post); ?>
                             <div class="blogCard-box">
                                 <div class="bCard">
                                     <div class="bCardImg-box">
@@ -135,7 +141,7 @@
                                             <?php $postthumb=wp_get_attachment_image_src(get_post_thumbnail_id()); ?>
                                         <img class='bCardImg' src="<?php echo $postthumb[0]; ?>">
                                         <?php else: ?>
-                                            <img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/no_image.png">
+                                            <img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/no_image.png">
                                         <?php endif; ?>
                                     </div>
                                     <div class="bCardSentence">
@@ -153,8 +159,10 @@
                                     </div>
                                 </div>
                             </div>
-                        <?php endwhile; endif; ?>
-                    </div>
+                        <?php endforeach; ?>
+                     </div>
+                    <?php wp_reset_postdata();
+                    endif; ?>
                 </div>
 
 
