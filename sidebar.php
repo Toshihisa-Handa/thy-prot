@@ -20,9 +20,14 @@
     <div class="mt-30">
         <!-- おすすめカード -->
         <div class="sideCard">
-            <div class="mainCard-left">
-                <img class='mainImg' src="<?php the_post_thumbnail(); ?>" alt=""> 
-            </div>
+        <div class="mainCard-left">
+            <?php if(has_post_thumbnail()): ?>
+                <?php $postthumb=wp_get_attachment_image_src(get_post_thumbnail_id()); ?>
+            <img class='mainImg' src="<?php echo $postthumb[0]; ?>">
+            <?php else: ?>
+                <img class='mainImg' src="<?php echo get_template_directory_uri(); ?>/img/no_image.png">
+            <?php endif; ?>
+        </div>
             <div class="mainCard-right">
                 <div class="titleBox">
                     <div class="mainCard-title font-16"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
@@ -76,7 +81,12 @@
     setup_postdata($post); ?>
     <div class="sideCard">
         <div class="mainCard-left">
-             <img class='mainImg' src="<?php the_post_thumbnail(); ?>" alt=""> 
+            <?php if(has_post_thumbnail()): ?>
+                <?php $postthumb=wp_get_attachment_image_src(get_post_thumbnail_id()); ?>
+            <img class='mainImg' src="<?php echo $postthumb[0]; ?>">
+            <?php else: ?>
+                <img class='mainImg' src="<?php echo get_template_directory_uri(); ?>/img/no_image.png">
+            <?php endif; ?>
         </div>
         <div class="mainCard-right">
             <div class="titleBox">

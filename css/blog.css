@@ -1,14 +1,57 @@
 /* blog.css */
 @media(min-width:1001px){
 
-.hrNav{
-    margin-left: 17%;
+.hrNav{ 
+    margin-left: 17%; 
     line-height: 27px;
-}
 
-.headerFix{/*ヘッダーの固定分の高さをとっている*/
-    height: 145px;
+ }
+
+/* パンくず用 */
+ .headerRoute{
+    display: block;
+    background: #555;
+    height:32px;
 }
+.breadcrumb {
+    margin: 0;
+    padding: 1em;
+    list-style: none;
+    overflow: hidden;
+    margin:0 auto;
+    width:980px;
+  }
+  
+  .breadcrumb li {
+    display: inline;/*横に並ぶように*/
+    list-style: none;
+    font-weight: bold;/*太字*/
+  }
+  
+  .breadcrumb li:after {/* >を表示*/
+    content: '>';
+    padding: 0 0.2em;
+  }
+  
+  .breadcrumb li:last-child:after {
+    content: '';
+  }
+  
+  .breadcrumb li a {
+    text-decoration: none;
+  }
+  
+  .breadcrumb li:first-child a:before {
+    /*家アイコンに*/
+    font-family: FontAwesome;
+    content: '\f015';
+    font-weight: normal;
+    font-size: 1.1em;
+  }
+  
+  .breadcrumb li a:hover {
+    text-decoration: underline;
+  }
 
 
 /* コンテンツ */
