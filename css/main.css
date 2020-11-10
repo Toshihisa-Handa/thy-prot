@@ -288,7 +288,7 @@ html{
     
     .headerLine{
         height: 15px;
-        background-color: #363434;
+        background:linear-gradient(90deg, #222, #666, #999);
     }
     
     /* ヘッダーここまで */

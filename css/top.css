@@ -14,14 +14,18 @@ object-position: left;
 }
 
 .concept{
-    background-color: #CBC6BC;
+    background-color: #e8e8e8;
     padding-top:20px;
     padding-bottom:20px;
-
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+    /* position: relative; */
+    width: 150%;
 }
 
 .concept-area{
     display:block;
+    transform: rotate(3deg) translate3d(0, 0, 0);
+    margin: 0 auto;
 }
 
 .concept-left, .pCard{
@@ -165,7 +169,7 @@ img{
 
 
 .content-head{
-    border:3px solid rgba(64, 63, 60, 0.4);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     border-top:5px solid rgb(44, 40, 28);
     
 
@@ -183,7 +187,7 @@ img{
 
 
 .concept{
-    background-color:#CBC6BC;
+    background-color:#e8e8e8;
     height: 650px;
     display: flex;
     justify-content: center;
@@ -276,7 +280,7 @@ img{
 
 .pCard{
     width: 450px;
-    border:1px solid rgba(64, 63, 60, 0.4);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     border-top:4px solid #D88526;
 }
 
@@ -303,7 +307,7 @@ img{
 
 /* ブログ */
 .blog{
-    background-color:#D2CABA;
+    background-color:#e8e8e8;
     height: 650px;
     display: flex;
     justify-content: center;
@@ -315,7 +319,7 @@ img{
 .contents-blog{
     width: 980px;
     min-height: 500px;
-    background-color: #D2CABA;;
+    /* background-color: #D2CABA;; */
 }
 
 .blogCards{
@@ -327,6 +331,7 @@ img{
 .bCard{
     width: 300px;
     height: 450px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .bCardImg-box{
