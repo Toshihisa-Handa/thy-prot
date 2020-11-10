@@ -9,7 +9,7 @@
          <!-- レスポンシブヘッダーリンク -->
          <div id='reHeader-wrapper' class="reHeader-wrapper hidden">
         <div class="reHeader-innerwrapper">
-           <div class="reHeader">
+           <!-- <div class="reHeader">
            <ul class='reNav'>
                <li class="reNavs">
                  <a href="#"><div class="font-24 bargerMenu">HOME</div></a> 
@@ -27,7 +27,13 @@
                 <a href="#"><div class="font-24 bargerMenu">CONTACT</div></a> 
                </li>
            </ul>
-           </div>
+           </div> -->
+           <?php wp_nav_menu(array(
+        'theme_location'=>'sitenav',
+        'container'=>'div',
+        'container_class'=>'reHeader',
+        'container_id'=>'hidemenu'
+    )); ?>
            </div>
        </div>
       <!-- レスポンシブヘッダーリンクここまで -->

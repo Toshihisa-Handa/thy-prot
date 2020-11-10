@@ -13,12 +13,12 @@ register_nav_menu('pickupnav','おすすめ記事');
 
 register_nav_menus(array(
 	'sitenav'=>'サイトナビゲーション',
-	'place_footer'=>'フッターナビ'
+	'place_footer'=>'フッターナビ',
 ));
 
 
 // 管理画面を表示されないようにする（margin-topがはいってしまう）
-// add_filter( 'show_admin_bar', '__return_false' );
+add_filter( 'show_admin_bar', '__return_false' );
 
 // 	アイキャッチ画像
 add_theme_support('post-thumbnails');
@@ -35,7 +35,7 @@ register_sidebar(array(
 ));
 
 
-//  ページネーション	
+//  ページネーション=================================	
 function pagination( $args = array() ) {
 	$navigation = '';
 	$paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
@@ -98,6 +98,8 @@ function pagination( $args = array() ) {
 	}
 	echo $navigation;
 }
+
+//=========ページネーションここまで===================================================
 
 //1件目の記事を分岐する関数を作成する
 function is_first(){
