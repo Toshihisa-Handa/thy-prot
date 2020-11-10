@@ -12,6 +12,10 @@ Advanced Editor Tools (previously TinyMCE Advanced)
 
 
 <!-- 半田メモ -->
+
+#最初の１件のみ大きく表示する方法(page-bloglist.php)
+参考記事：https://kosaeru.net/memo/wp-foreach-firstview/
+
 #ページネーションの参考記事(page-bloglist.php)
 ・https://note.com/tenlife/n/nfcf4c91f9e88
 ・https://note.spiqa.design/84/
@@ -21,5 +25,3 @@ index.phpやsingle.phpでない固定ページでは基本のページネーシ�
 上記URLを参考にし実装した。
 
 
-#最初の１件のみ大きく表示する方法(page-bloglist.php)
-参考記事：https://kosaeru.net/memo/wp-foreach-firstview/

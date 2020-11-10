@@ -64,6 +64,8 @@ Template Name: BLOG
         <div class="content-box mt-40">
                 <!-- コンテンツレフト -->
                     <div class="contentLeft">
+
+<!-- 投稿記事の大小表示 -->
                     <?php
                         $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
                         $news_args = array(
@@ -100,6 +102,7 @@ Template Name: BLOG
                     <p>表示できる情報はありません。</p>
                     <?php endif; ?>
                     </div>
+<!-- 投稿記事の大小表示ここまで -->
 
                     
 
@@ -113,6 +116,9 @@ Template Name: BLOG
                                 <li class='pNav'>5</li>
                             </ul>
                         </div> -->
+
+
+<!-- ページネーション -->
                         <div class="pageLink mt-30">
                         <div class="pagination">
                 <?php
@@ -147,6 +153,7 @@ Template Name: BLOG
                     ?>
                         </div>
                         </div>
+<!-- ページネーションここまで -->
 
                 <!-- 関連記事 -->
                 <div class="commonTitleBox mt-30">
@@ -217,6 +224,6 @@ Template Name: BLOG
 
         
 
-
+</div>
 <!-- フッター -->
 <?php get_footer(); ?>
