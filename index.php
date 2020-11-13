@@ -26,7 +26,7 @@
 
 <!-- アバウト -->
 <div class="about">
-    <div class="contents-common content-head concept-area">
+    <div class="contents-common content-head concept-area_about">
     <div class="concept-left">
         <div class="leftImg-box">
         <img class='leftImg' src="<?php echo get_template_directory_uri(); ?>/img/top_02.jpg" alt="">

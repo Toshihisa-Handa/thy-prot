@@ -63,7 +63,7 @@ html{
      /* フッター */
      .footer{
          padding:20px;
-         background-color: #333333;
+         background: linear-gradient(90deg, #222, #444, #666);
      }
      
      .contents-footer{
@@ -85,8 +85,8 @@ html{
      
      .footer-nav{
          line-height: 20px;
-     }
-     
+         color:#fff;
+     }   
      .footer-icon{
          display: flex;
      }
@@ -316,7 +316,7 @@ html{
         width: 980px;
         height: 270px;
         /* background-color: white; */
-        background-color: #333333;
+        /* background-color: #333333; */
         display: flex;
         justify-content: space-between;
     
