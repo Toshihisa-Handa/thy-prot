@@ -31,11 +31,6 @@
             <div class="mainCard-right">
                 <div class="titleBox">
                     <div class="mainCard-title font-16"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-                    <div class="mainCard-tag-box">
-                        <?php the_tags('<ul><li class="mainCard-tag font-12">','</li><li class="mainCard-tag font-12">','</li></ul>'); ?>
-                        <time datetime="<?php echo get_the_modified_date('Y-m-d'); ?>" class="mainCard-time font-10 mt-10">
-                    更新日:<?php echo get_the_modified_date('Y/m/d'); ?></time>
-                    </div>
                 </div>
                 <div class="mainCard-text font-12 mt-30">
                     <?php the_excerpt(); ?>
@@ -91,11 +86,6 @@
         <div class="mainCard-right">
             <div class="titleBox">
                 <div class="mainCard-title font-16"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-                <div class="mainCard-tag-box">
-                    <?php the_tags('<ul><li class="mainCard-tag font-12">','</li><li class="mainCard-tag font-12">','</li></ul>'); ?>
-                    <time datetime="<?php echo get_the_modified_date('Y-m-d'); ?>" class="mainCard-time font-10 mt-10">
-                    更新日:<?php echo get_the_modified_date('Y/m/d'); ?></time>
-                </div>
             </div>
             <div class="mainCard-text font-12 mt-30">
                 <?php the_excerpt(); ?>
