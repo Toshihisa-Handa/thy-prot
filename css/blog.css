@@ -77,8 +77,15 @@
 
 }
 
+.mainlink{
+    width: 100%;
+}
+
+
 .mainCard-left{
-    width: 45%;
+    width:100%;
+    height: 100%;
+
 }
 
 .mainCard-left img{
@@ -90,7 +97,7 @@
 
 
 .mainCard-right{
-    width: 55%;
+    width: 100%;
     padding:2%;
 }
 
