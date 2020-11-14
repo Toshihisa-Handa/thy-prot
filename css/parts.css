@@ -28,7 +28,10 @@ html {
   .font-24{
     font-size:1.4rem;
 }
- 
+.font-28{
+  font-size:1.8rem;
+}
+
   .font-32{
     font-size:2rem;
 }
@@ -54,7 +57,10 @@ html {
   .font-24{
     font-size:1.7rem;
 }
- 
+.font-28{
+  font-size:2.0rem;
+}
+
   .font-32{
     font-size:2.2rem;
 }

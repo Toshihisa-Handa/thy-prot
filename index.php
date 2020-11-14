@@ -21,7 +21,11 @@
       
 <!-- メイン -->
         <div class="main">
-          <img class='mainImg' src="<?php echo get_template_directory_uri(); ?>/img/top_01.jpg?>" alt="">
+            <picture>
+                <source class='mainImg' media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/img/top_01.jpg?>">
+                <img class='mainImg' src="<?php echo get_template_directory_uri(); ?>/img/top_01_sp.jpg?>">
+            </picture>
+          <!-- <img class='mainImg' src="<?php echo get_template_directory_uri(); ?>/img/top_01.jpg?>" alt=""> -->
         </div>
 
 <!-- アバウト -->
@@ -33,7 +37,7 @@
         </div>
     </div>
     <div class="concept-right">
-        <div class="conceptTitle font-32">About Us&nbsp; <img class='icon01' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg ?>/img/icon_01.jpg'></div>
+        <div class="conceptTitle font-28">About Us&nbsp; <img class='icon01' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg ?>/img/icon_01.jpg'></div>
         <div class="conceptText font-15">私たちは、関東近郊に2物件を所有し、あらゆる層に低価格で住まいを提供する事業を行っています。<br>
             私たちは、低価格であること、イコール、古く条件が悪いアパートではなく、立地条件がよい物件を選別し、手を加えることで安くてもよい住まいを提供できるよう事業をおこなっております。<br>
             私たちは、関東近郊に2物件を所有し、あらゆる層に低価格で住まいを提供する事業を行っています。
@@ -64,7 +68,7 @@
     <div class="contents-property">
         <div class="wrapper">
             <div class="propertyTitle-box">
-            <div class="propertyTitle font-32">所有物件</div>
+            <div class="propertyTitle font-28">所有物件</div>
             <img style='width:40px;' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg?>'>
             </div>
         </div>
@@ -97,7 +101,7 @@
     <div class="contents-blog">
         <div class="blogTitle-box">
             <img class='icon01_side' src='<?php echo get_template_directory_uri(); ?>/img/icon_02.jpg '>
-            <div class="blogTitle font-32">新着記事</div>
+            <div class="blogTitle font-28">新着記事</div>
         </div>
         <?php 
         $myposts=get_posts(array(
@@ -140,5 +144,7 @@
     </div>
 </div>
 <!-- ブログここまで -->
+
+
 <!-- フッター -->
 <?php get_footer(); ?>

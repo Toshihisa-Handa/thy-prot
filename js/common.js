@@ -12,3 +12,12 @@ menu.onclick = function(){
    footer.classList.toggle('footerNav')
 
 }
+
+var mySwiper = new Swiper('.swiper-container', {
+	direction: 'vertical',
+	mousewheel: {
+		forceToAxis: false,
+		invert: false
+	},
+	keyboard: true
+});
