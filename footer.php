@@ -43,31 +43,7 @@
     </div>
     <script src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
     <?php wp_footer(); ?>
-<!-- swiper設定用js -->
-<script>
-  let mySwiper = new Swiper('.post-slider', {
-    // デフォルトの設定
-    slidesPerView: 1,
-    spaceBetween: 0,
-    loop: true,
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 5,
-        loop: true
-      },
-      980: {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        loop: true
-      }
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  })
-</script>
+
 <?php wp_footer(); ?>
 </body>
 </html>

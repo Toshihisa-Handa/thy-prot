@@ -34,15 +34,11 @@ register_sidebar(array(
 	'after_title'=>'</p>'
 ));
 
-//swipper.js用
-function add_slider_files() {
-	//スタイルシートの読み込み
-	wp_enqueue_style( 'swiper-style', 'https://unpkg.com/swiper/swiper-bundle.min.css');
-  
-	//JavaScript の読み込み
-	wp_enqueue_script( 'swiper-js', 'https://unpkg.com/swiper/swiper-bundle.min.js', '', '', true);
-  }
-  add_action('wp_enqueue_scripts', 'add_slider_files');
+// スクリプト（Jquery）を読み込む
+function slide_scripts(){
+	wp_enqueue_script('slide-script',get_template_directory_uri().'/js/jq.js',array('jquery'));
+}
+add_action('wp_enqueue_scripts','slide_scripts');
 
 
 // 半田記載ここから＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊

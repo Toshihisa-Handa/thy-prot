@@ -13,11 +13,3 @@ menu.onclick = function(){
 
 }
 
-var mySwiper = new Swiper('.swiper-container', {
-	direction: 'vertical',
-	mousewheel: {
-		forceToAxis: false,
-		invert: false
-	},
-	keyboard: true
-});
