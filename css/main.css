@@ -24,6 +24,7 @@ html{
          display:flex;
          justify-content: space-between;
          object-fit: cover;
+         margin: auto;
 
      }
 
@@ -46,7 +47,7 @@ html{
      
 
      .logo-img{
-        width: 120px;
+        width: 100px;
     }
      
      
@@ -60,6 +61,7 @@ html{
         background-color: #363434;
     }
      
+
      /* フッター */
      .footer{
          padding:20px;
@@ -80,26 +82,36 @@ html{
      }
      
      .footer-navBox{
-         margin-top:10px;
+         margin-top:20px;
      }
      
      .footer-nav{
-         line-height: 20px;
+        line-height: 25px;
+        margin-left:20px;
      }
      
      .footer-icon{
          display: flex;
+         justify-content: center;
+
      }
      
      .logos{
          margin-left:5px;
      }
      
-     
-     .flink{
-         color: #C6C6C6
+     .footer-navBox ul li a{
+        color: #C6C6C6;
+        font-size:1.3rem;
      }
+
      
+     .fa-facebook-square, .fa-twitter-square{
+        font-size: 31px;
+    }
+
+
+
      .snslink{
          color: #C6C6C6
      }
@@ -174,23 +186,57 @@ html{
      
      
      @media(min-width:550px){
-         .contents-footer{
-            width: 70%;
-            margin: 0 auto;
-         }
+    /* フッター */
+  
+    .logo-img{
+        width: 120px;
+    }
 
-         .footer-navBox {
-             margin-left: 25%;
-     
-         }
-     
+    .contents-footer{
+    width: 70%;
+    margin: 0 auto;
+    }
 
 
-         
-     }
-    
- 
-    
+    .footer-navBox {
+        margin-left: 25%;
+            display:flex;
+        }
+
+    .footer-nav{
+        line-height: 35px;
+        }
+
+    .footer-navBox ul li a {
+    font-size: 1.6rem;
+    }
+
+    .logos{
+        margin-top: 140px;
+
+    }
+
+    .fa-facebook-square, .fa-twitter-square{
+        font-size: 4.5rem;
+    }
+
+
+    }
+
+    @media(max-width:950px){
+        .footer-navBox {
+            margin-left: 25%;
+            display:inline;
+            }
+        .logos{
+            margin-top:0;
+        }
+
+
+    }
+
+
+
     
     @media(max-width:1000px){
     /* ヘッダーここから */
@@ -244,9 +290,6 @@ html{
     .logo-img{
       width: 160px;
     }
-    
-    
-    
     
     .nav{
     /* display: flex;
@@ -326,36 +369,8 @@ html{
         width: 50%;
     }
     
-    .footer-navBox{
-        display:flex;
-        margin-left: 25%;
     
-    }
-    
-    .footer-nav{
-        margin-top: 10px;
-        line-height: 25px;
-    
-    }
-    
-    
-    .flink{
-        color: #C6C6C6
-    }
-    
-    .snslink{
-        color: #C6C6C6
-    }
-    .footer-icon{
-        display:flex;
-        margin-top: 28%;
-        margin-left: 5%;
-    }
-    
-    .logos{
-        margin-right: 5px;
-    }
-    
+
     .footerRight{
         width: 50%;
     }
