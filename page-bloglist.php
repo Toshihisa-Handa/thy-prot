@@ -70,7 +70,7 @@ Template Name: BLOG
                         $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
                         $news_args = array(
                         'post_status' => 'publish',
-                        'posts_per_page' => 9,
+                        'posts_per_page' => 7,
                         'orderby' => 'post_date',
                         'order' => 'DESC',
                         'paged' => $paged
@@ -126,7 +126,7 @@ Template Name: BLOG
                     $args = array(
                         'paged' => $paged,           //ページネーション用
                         'post_type' => 'post',       //投稿タイプ（記事ループと条件にする）
-                        'posts_per_page' => 9,      //表示投稿数（記事ループと条件にする）
+                        'posts_per_page' => 7,      //表示投稿数（記事ループと条件にする）
                         'orderby' => 'post_date',    //表示順条件（記事ループと条件にする）
                         'order' => 'DESC',           //降順（記事ループと条件にする）
                         'post_status' => 'publish'   //公開済みのみ表示（記事ループと条件にする）
