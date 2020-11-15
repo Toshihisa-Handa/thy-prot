@@ -120,7 +120,7 @@ Template Name: BLOG
 
 <!-- ページネーション -->
                         <div class="pageLink mt-30">
-                        <div class="pagination">
+                        <div class="pNavs">
                 <?php
                     $paged = (int) get_query_var('paged');
                     $args = array(

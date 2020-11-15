@@ -228,7 +228,7 @@
      align-items: center;
 }
 
-.pNav{
+.pNavs a{
     background-color: #FED595;
     color:white;
     font-size: 1.6rem;
@@ -236,13 +236,19 @@
     margin-left: 10px;
 }
 
-.pNav:first-of-type{/*最初の要素のみを別指定している*/
-    margin-left: 0px;
+.current{
+    background-color: #DB8E16;
+    color:white;
+    font-size: 1.6rem;
+    padding:10px;
+    margin-left: 10px;
 }
 
-.pNav:hover{
+
+.pNavs a:hover{
     background-color: #DB8E16;
 }
+
 
 /* 関連記事 */
 .related{
