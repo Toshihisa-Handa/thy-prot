@@ -11,17 +11,15 @@
                                         <?php endif; ?>
         </div>
         <div class="mainCard-right">
-            <div class="titleBox">
-                <div class="mainCard-title font-20"><?php the_title(); ?></div>
-                <div class="mainCard-tag-box">
-                    <div class="mainCard-tag font-16"><?php the_tags('<ul><li class="mainCard-tag font-12">','</li><li class="mainCard-tag font-12">','</li></ul>'); ?></div>
-                    <div class="mainCard-time font-14 mt-10">><?php the_time('Y.m.d') ?></div>
-                </div>
-            </div>
-            <div class="mainCard-text font-16 mt-30">
+            <div class="mainCard-title font-20"><?php the_title(); ?></div>
+            <div class="mainCard-tag font-16"><?php the_tags('タグ：', '  ', '<br />' ); ?></div>
+            <div class="mainCard-time"><?php the_time('Y.m.d') ?></div>
+            <div class="mainCard-text font-16">
             <?php the_excerpt(); ?>
             </div>
         </div>
         </a>
     </div>
+
+
 

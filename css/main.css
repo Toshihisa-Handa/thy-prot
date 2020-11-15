@@ -108,6 +108,18 @@ html{
      
      .fa-facebook-square, .fa-twitter-square{
         font-size: 31px;
+
+    }
+     .fa-facebook-square{
+        color:#385495;
+        background-color: white;
+        padding: 3px;
+
+    }
+     .fa-twitter-square{
+        color:#438DC4;
+        background-color: white;
+        padding: 3px;
     }
 
 
