@@ -97,7 +97,7 @@
 <!-- 所有物件ここまで -->
 
 <!-- ブログ -->
-<div class="blog">
+<!-- <div class="blog">
     <div class="contents-blog">
         <div class="blogTitle-box">
             <img class='icon01_side' src='<?php echo get_template_directory_uri(); ?>/img/icon_02.jpg '>
@@ -106,7 +106,7 @@
         <?php 
         $myposts=get_posts(array(
             'post_type'=>'post',
-            'posts_per_page'=>'3',
+            // 'posts_per_page'=>'3',
         ));
         if($myposts): ?>
         <div class="blogCards">
@@ -142,9 +142,76 @@
         <?php wp_reset_postdata();
         endif; ?>
     </div>
-</div>
+</div> -->
 <!-- ブログここまで -->
 
+
+
+<!-- グライドJSやってみる -->
+<div class="blog">
+<div class="contents-blog">
+        <div class="glide">
+         <div class="glide__track" data-glide-el="track">
+        <!-- <div class="blogCards"> -->
+        <?php 
+        $myposts=get_posts(array(
+            'post_type'=>'post',
+            // 'posts_per_page'=>'3',
+        ));
+        if($myposts): ?>
+                <ul class="blogCard-box glide__slides">
+                    <?php foreach($myposts as $post): setup_postdata($post); ?>
+                    <li class="bCard glide__slide">
+                        <div class="bCardImg-box">
+                            <?php if(has_post_thumbnail()): ?>
+                                <?php $postthumb=wp_get_attachment_image_src(get_post_thumbnail_id()); ?>
+                            <img class='bCardImg' src="<?php echo $postthumb[0]; ?>">
+                            <?php else: ?>
+                                <img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/no_image.png">
+                            <?php endif; ?>
+                        </div>
+                        <div class="bCardSentence">
+                            <div class="bcardTitles">
+                                <div class="bCardTitle font-16"><?php the_title(); ?></div>
+                                <div class="bCardTag-box">
+                                <div class="bCardTag font-14"><?php the_tags('<ul><li class="mainCard-tag font-12">','</li><li class="mainCard-tag font-12">','</li></ul>'); ?></div>
+                                <div class="bCardTime font-14">更新日:<?php echo get_the_modified_date('Y/m/d'); ?></time></div>
+                                </div>
+                            </div>
+                            
+                            <div class="bCardText font-15">
+                            <?php the_excerpt(); ?>
+                            </div>
+                        </div>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+                <?php wp_reset_postdata(); endif; ?>
+            </div>
+            </div>
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+<!-- 
+<div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide"><img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/image_01.png"></li>
+      <li class="glide__slide"><img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/image_02.png"></li>
+      <li class="glide__slide"><img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/image_03.png"></li>
+    </ul>
+  </div>
+</div> -->
+
+
+<!-- グライドJSやってみる -->
 
 <!-- フッター -->
 <?php get_footer(); ?>

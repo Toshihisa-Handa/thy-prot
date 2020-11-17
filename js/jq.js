@@ -1,2 +1,5 @@
 
-//     jquery本当は書きたかったよう
+    new Glide('.glide', {
+      autoplay: 2000,
+    //   width:300,
+    }).mount()
