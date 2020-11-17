@@ -61,7 +61,7 @@ Template Name: BLOG
         BLOG&nbsp; <img class='icon01' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg'>
        </div>
     
-        <div class="content-box mt-40">
+        <div class="content-box">
                 <!-- コンテンツレフト -->
                 
                 <?php get_template_part('contents', 'left') ?>
