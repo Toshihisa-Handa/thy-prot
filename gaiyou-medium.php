@@ -24,9 +24,9 @@
     </div>
     <div class="blogTagBox">
             <div class="blogCard-tag font-12 "><?php the_tags('<ul><li class="font-12">','</li><li class="font-12">','</li></ul>'); ?></div>
-            <div class="blogCard-time font-10"><?php the_time('Y.m.d') ?> </div>
+            <div class="blogCard-time "><?php the_time('Y.m.d') ?> </div>
     </div>
-    <div class="blogCard-text font-12">
+    <div class="blogCard-text">
         <?php the_excerpt(); ?>
     </div>
     </div>

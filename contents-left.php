@@ -39,22 +39,9 @@
                     </div>
 <!-- 投稿記事の大小表示ここまで -->
 
-                    
-
-                <!-- ページナビ -->
-                        <!-- <div class="pageLink mt-30">
-                            <ul class='pNavs'>
-                                <li class='pNav'>1</li>
-                                <li class='pNav'>2</li>
-                                <li class='pNav'>3</li>
-                                <li class='pNav'>4</li>
-                                <li class='pNav'>5</li>
-                            </ul>
-                        </div> -->
-
-
+                
 <!-- ページネーション -->
-                        <div class="pageLink mt-30">
+                        <div class="pageLink">
                         <div class="pNavs">
                 <?php
                     $paged = (int) get_query_var('paged');

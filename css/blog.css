@@ -111,7 +111,56 @@
 }
 
 .blogCard-time{
+    margin-top: 8px;
     margin-left: 7px;
+    font-size: 12px;
+}
+
+.blogCard-text{
+    margin: 6px 6px 0 6px;
+    font-size: 11px;
+    line-height: 16px;
+
+}
+
+/* ページネーション */
+.pageLink{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:30px auto;
+}
+
+.pNavs{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.pNavs a{
+    background-color: #FED595;
+    color:white;
+    font-size: 1.3rem;
+    padding:6px;
+    margin-left: 6px;
+}
+
+.current{
+    background-color: #DB8E16;
+    color:white;
+    font-size: 1.3rem;
+    padding:6px;
+    margin-left: 6px;
+}
+
+
+.pNavs a:hover{
+    background-color: #DB8E16;
+}
+
+.page-numbers{
+    margin: 0 0px 0 8px;
 
 }
 
@@ -284,52 +333,34 @@
 
 
 .blogCard-time{
-    margin-left: 7px;
-
+font-size: 1.4rem;
 }
 
 .blogCard-text{
-    margin-top:14px;
-    padding:10px 5px 0 5px;
-    line-height: 18px;
+font-size: 14px;
+line-height: 20px;
 
 }
 
-/* ページナビ */
+/* ページネーション */
 .pageLink{
     width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.pNavs{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-}
 
 .pNavs a{
-    background-color: #FED595;
-    color:white;
     font-size: 1.6rem;
     padding:10px;
     margin-left: 10px;
 }
 
 .current{
-    background-color: #DB8E16;
-    color:white;
     font-size: 1.6rem;
     padding:10px;
     margin-left: 10px;
 }
 
 
-.pNavs a:hover{
-    background-color: #DB8E16;
-}
 
 .page-numbers{
     margin: 0 0px 0 8px;
