@@ -1,5 +1,5 @@
  <div class="blogCard">
-    <div class="blogImg">
+    <div class="blogLeft">
     <?php if(has_post_thumbnail()): ?>
                                             <?php $postthumb=wp_get_attachment_image_src(get_post_thumbnail_id()); ?>
                                         <img class='blogImg' src="<?php echo $postthumb[0]; ?>">
@@ -7,6 +7,7 @@
                                             <img class='blogImg' src="<?php echo get_template_directory_uri(); ?>/img/no_image.png">
                                         <?php endif; ?>
     </div>
+    <div class="blogRight">
     <div class="blogTitleBox">
         <a href="<?php the_permalink(); ?>">
             <div class="blogCard-title font-16 ">
@@ -27,5 +28,6 @@
     </div>
     <div class="blogCard-text font-12">
         <?php the_excerpt(); ?>
+    </div>
     </div>
 </div>
