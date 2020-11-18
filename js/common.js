@@ -10,6 +10,6 @@ menu.onclick = function(){
    header.classList.toggle('headerNav')
    reHeader.classList.toggle('hidden')
    footer.classList.toggle('footerNav')
-    body.classList.toggle('mobile-menu')
 
 }
+

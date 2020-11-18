@@ -50,20 +50,20 @@ html{
     }
      
      
-     .menu{
+     .nav ul{
          display: inline-block;
      
      }
     
      .headerLine{
         height: 15px;
-        background-color: #363434;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
      
      /* フッター */
      .footer{
          padding:20px;
-         background-color: #333333;
+         background: linear-gradient(90deg, #222, #444, #666);
      }
      
      .contents-footer{
@@ -85,8 +85,8 @@ html{
      
      .footer-nav{
          line-height: 20px;
-     }
-     
+         color:#fff;
+     }   
      .footer-icon{
          display: flex;
      }
@@ -139,7 +139,8 @@ html{
      
      .reHeader-wrapper{
          height: 100vh;
-         background-color: #000000;
+         background: linear-gradient(45deg, #222, #444, #666);
+         /* opacity:0.7; */
        
      }
      
@@ -164,8 +165,9 @@ html{
      } */
      
      
-     .bargerMenu{
+     .reHeader ul li a{
          color:white;
+         font-size: 2.4rem;
      }
      
      
@@ -194,7 +196,7 @@ html{
     @media(max-width:1000px){
     /* ヘッダーここから */
     
-    .menu-item{
+   .nav ul li{
         display:none;
     }
     
@@ -230,7 +232,7 @@ html{
 
     .headerRoute{
         display: block;
-        background-color: #B5B5B5;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 
     }
     
@@ -256,38 +258,50 @@ html{
 
     }
 
-    .menu{
+    .nav ul{
         display: flex;
         justify-content: space-between;
         width: 100%; 
         height: 100%;
+        
 
     }
 
-    .menu-item{
-    height: 100%;
-    width: 20%;
-    display: grid;
-    place-items: center;
-    padding:10px 0 10px 0;
-    
+    .nav ul li{
+        background-color: #fff;
+        transition: all  0.5s ease;
+        width: calc(100%/5);
+        transform: skewX(-15deg);
+        /* display: grid;
+        place-items: center; */
+        /* padding:10px 0 10px 0; */
     }
 
-    .menu-item a{ 
-     font-size: 1.6rem;
+    .nav ul li a{ 
+        width: 100%;
+        display:block;
+        /* width: 20%; */
+        text-align: center;
+        height: 100%;
+        line-height: 70px;
+        font-size: 1.6rem;
+        transform: skewX(15deg);
+        transition: all  0.2s ease;
+     /* height: 100%; */
     }
-    .menu-item:hover{
+    .nav ul li:hover{
         background-color: black;
+        transform: skewX(-15deg);
         color:white;
     }
     
     .nav2{
         display:none;
     }
-    
+
     .headerLine{
         height: 15px;
-        background-color: #363434;
+        background:linear-gradient(90deg, #222, #666, #999);
     }
     
     /* ヘッダーここまで */
@@ -315,7 +329,7 @@ html{
         width: 980px;
         height: 270px;
         /* background-color: white; */
-        background-color: #333333;
+        /* background-color: #333333; */
         display: flex;
         justify-content: space-between;
     
@@ -410,6 +424,11 @@ html{
     }
     
     
+    }
+
+    /* ハンバーガーメニュー調整 */
+    #hmenu{
+        margin:10px 10px 0 0;
     }
 
 
