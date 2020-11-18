@@ -1,10 +1,10 @@
 
 
-<div class="blogs mt-10">
+<div class="tags mt-10">
                     <?php if(have_posts()):while(have_posts()):
                     the_post(); ?>
-                    <div class="blogCard">
-                        <div class="blogLeft">
+                    <div class="tagCard">
+                        <div class="tagLeft">
                             <?php the_post_thumbnail('index_thumbnail'); ?>
                         </div>
                         <div class="blogRight">

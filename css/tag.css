@@ -1,0 +1,158 @@
+/* blog.css */
+
+.contents-area{
+    width: 90%;
+    margin:0 auto
+}
+
+
+/* 小カード */
+
+
+.tagCard{
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid rgba(197, 213, 247, 0.3);
+    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
+    overflow: hidden;
+}
+.tagLeft{
+    width: 100%;
+    height: 47%;
+}
+
+.tagLeft img{
+    width: 100%;
+}
+
+
+
+.blogImg{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+
+}
+
+.blogRight{
+    width: 100%;
+    overflow: hidden;
+    height: 180px;
+}
+
+.blogTitleBox{
+    padding:10px 5px 0 5px;
+}
+
+.blogTagBox{
+    margin-top:5px;
+}
+
+.blogCard-tag ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.blogTagBox li {
+    background-color: #A79079;
+    color:white;
+    margin-top: 5px;
+    margin-left:5px;
+    padding: 6px 10px 6px 10px;
+
+}
+
+.blogCard-time{
+    margin-top: 8px;
+    margin-left: 7px;
+    font-size: 12px;
+}
+
+.blogCard-text{
+    margin: 6px 6px 0 6px;
+    font-size: 11px;
+    line-height: 16px;
+
+}
+
+
+
+ /* 550px以上＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+@media(min-width:550px){
+
+/* コンテンツ */
+.content-box{
+    margin-top:40px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* 小カード */
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.blogCard{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    border: 1px solid rgba(197, 213, 247, 0.3);
+    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
+    overflow: hidden;
+}
+
+.blogLeft{
+    width: 100%;
+    height: 47%;
+}
+
+.blogImg{
+    height: 100%;
+
+}
+
+.blogRight{
+    width: 100%;
+
+}
+
+.blogCard-time{
+font-size: 1.4rem;
+}
+
+.blogCard-text{
+font-size: 14px;
+line-height: 20px;
+
+}
+
+}
+
+
+
+
+ /* 1010px以上＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+@media(min-width:1001px){
+
+/* コンテンツ */
+.content-box{
+    display: flex;
+ 
+}
+
+
+/* 小カード */
+
+.blogCard{
+    width: 47%;
+    margin-top:10px;
+
+}
+
+
+
+}

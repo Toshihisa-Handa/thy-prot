@@ -72,7 +72,7 @@ Template Name: BLOG
              
            <div class="content-box mt-40">
 <!-- コンテンツレフト -->
-             <div class="contentLeft">
+<div class="bcontentLeft">
              <?php get_template_part('tag', 'medium') ?>
 
 
