@@ -61,27 +61,27 @@
             <?php if(have_posts()): while(have_posts()):
             the_post(); ?>
             
-            <div class="mainCard">
-                <div class="mainCard-left">
+            <div class="singleCard">
+                <div class="singleCard-left">
                 <?php if(has_post_thumbnail()): ?>
                     <?php $postthumb=wp_get_attachment_image_src(get_post_thumbnail_id()); ?>
-                <img class='main-blogImg' src="<?php echo $postthumb[0]; ?>">
+                <img class='single-blogImg' src="<?php echo $postthumb[0]; ?>">
                 <?php else: ?>
-                    <img class='main-blogImg' src="<?php echo get_template_directory_uri(); ?>/img/no_image.png">
+                    <img class='single-blogImg' src="<?php echo get_template_directory_uri(); ?>/img/no_image.png">
                 <?php endif; ?>
                 </div>
-                <div class="mainCard-right">
-                        <div class="mainCard-title font-20"><?php the_title(); ?></div>
-                        <div class="mainCard-tag font-16"><?php the_tags('タグ：', '  ', '<br />' ); ?></div>
-                        <div class="mainCard-time ">更新日:<?php echo get_the_modified_date('Y/m/d'); ?></div>
-                        <div class="mainCard-text font-16 "><?php the_content(); ?></div>
+                <div class="singleCard-right">
+                        <div class="singleCard-title font-20"><?php the_title(); ?></div>
+                        <div class="singleCard-tag font-16"><?php the_tags('タグ：', '  ', '<br />' ); ?></div>
+                        <div class="singleCard-time ">更新日:<?php echo get_the_modified_date('Y/m/d'); ?></div>
+                        <div class="singleCard-text font-16 "><?php the_content(); ?></div>
 
-                    <div class="contact">
-                    <div class="contact-area">
+                    <div class="single-contact">
+                    <div class="single-contact-area">
                         <div class="contact-box font-24">問い合わせフォーム</div>
                     </div>
                     </div>
-                <div class="contact-margin"></div>
+                <div class="single-contact-margin"></div>
                 </div>
             <?php endwhile; endif; ?>
             </div>
