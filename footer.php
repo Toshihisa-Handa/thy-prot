@@ -37,10 +37,13 @@
     <div class="copyrightText font-14">Copyright <?php echo date('Y') ?> THY inc. All Rights Reserved.</div>
 </div>
 
-<!-- フッターここまで -->
-</div>
-</div>
-<script src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
-<?php wp_footer(); ?>
+    <!-- フッターここまで -->
+    </div>
+    </div>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/glide.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jq.js"></script>
+    <?php wp_footer(); ?>
+
 </body>
 </html>

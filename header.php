@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title(); ?></title>
     <script src="https://kit.fontawesome.com/581c185f2a.js" crossorigin="anonymous"></script>
+    <link href="<?php echo get_template_directory_uri(); ?>/css/glide.core.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/css/glide.theme.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/blog.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/single.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/tag.css" rel="stylesheet">
@@ -13,7 +15,7 @@
     <link href="<?php echo get_template_directory_uri(); ?>/css/reset.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/main.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/top.css" rel="stylesheet">
-
+   
     
 <?php wp_head(); ?>
 </head>
@@ -38,7 +40,7 @@
     )); ?>
         <ul class='nav2'>
             <li id='hmenu' class="hmenu">
-                <div class="font-16">menu</div>
+                <div class="font-16"><i class="fas fa-bars"></i></div>
             </li>
         </ul>
 

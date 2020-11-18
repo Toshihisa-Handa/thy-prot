@@ -290,7 +290,7 @@
 /* パンくず用 */
  .headerRoute{
     display: block;
-    background: #555;
+    background: #888;
     height:32px;
 }
 .breadcrumb {

@@ -65,12 +65,7 @@ Template Name: syoyuu
 <div class="content-common mt-40">
     <div class="contentLeft">
         <div class="img-one">
-            <img class='property-img'  src="<?php echo get_template_directory_uri(); ?>/img/property_01.jpg" alt="">
-        </div>
-        <div class="imges">
-            <img class='property-small-img' src="<?php echo get_template_directory_uri(); ?>/img/property_02.jpg" alt="">
-            <img class='property-small-img' src="<?php echo get_template_directory_uri(); ?>/img/property_02.jpg" alt="">
-            <img class='property-small-img' src="<?php echo get_template_directory_uri(); ?>/img/property_02.jpg" alt="">
+            <?php echo do_shortcode('[smartslider3 slider="4"]'); ?>
         </div>
     </div>
         <div class="contentRight">
@@ -103,12 +98,7 @@ Template Name: syoyuu
 <div class="content-common content-two">
     <div class="contentLeft">
         <div class="img-one">
-            <img class='property-img'  src="<?php echo get_template_directory_uri(); ?>/img/property_05.jpg" alt="">
-        </div>
-        <div class="imges">
-            <img class='property-small-img' src="" alt="">
-            <img class='property-small-img' src="" alt="">
-            <img class='property-small-img' src="" alt="">
+            <?php echo do_shortcode('[smartslider3 slider="5"]'); ?>
         </div>
     </div>
         <div class="contentRight">

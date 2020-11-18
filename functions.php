@@ -34,7 +34,11 @@ register_sidebar(array(
 	'after_title'=>'</p>'
 ));
 
-
+// スクリプト（Jquery）を読み込む
+function slide_scripts(){
+	wp_enqueue_script('slide-script',get_template_directory_uri().'/js/jq.js',array('jquery'));
+}
+add_action('wp_enqueue_scripts','slide_scripts');
 
 
 // 半田記載ここから＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊

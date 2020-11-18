@@ -12,3 +12,4 @@ menu.onclick = function(){
    footer.classList.toggle('footerNav')
 
 }
+
