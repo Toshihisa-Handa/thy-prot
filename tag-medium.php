@@ -5,20 +5,32 @@
                     the_post(); ?>
                     <div class="tagCard">
                         <div class="tagLeft">
-                            <?php the_post_thumbnail('index_thumbnail'); ?>
+                               <?php if(has_post_thumbnail()): ?>
+                                            <?php $postthumb=wp_get_attachment_image_src(get_post_thumbnail_id()); ?>
+                                        <img class='tagImg' src="<?php echo $postthumb[0]; ?>">
+                                        <?php else: ?>
+                                            <img class='tagImg' src="<?php echo get_template_directory_uri(); ?>/img/no_image.png">
+                                        <?php endif; ?>
                         </div>
-                        <div class="blogRight">
-                        <div class="blogTitleBox">
+                        <div class="tagRight">
+                        <div class="tagTitleBox">
                             <a href="<?php the_permalink(); ?>">
-                                <div class="blogCard-title font-16 "><?php the_title(); ?></div>
-                            </a>
-                            <div class="blogCardTagBox">
-                                <div class="blogCard-tag font-12 "><?php the_tags('<ul><li class="mainCard-tag font-12">','</li><li class="mainCard-tag font-12">','</li></ul>'); ?></div>
-                                <div class="blogCard-time "><?php the_time('Y.m.d') ?> </div>
+                                <div class="tagCard-title">
+                                <?php
+                                if(mb_strlen($post->post_title, 'UTF-8')>15){
+                                    $title= mb_substr($post->post_title, 0, 15, 'UTF-8');
+                                    echo $title.'……';
+                                }else{
+                                    echo $post->post_title;
+                                }
+                                ?>
                             </div>
+                            </a>
+                                <div class="tagCard-tag font-16 "><?php the_tags('', '  ', '<br />' ); ?></div>
+                                <div class="tagCard-time "><?php the_time('Y.m.d') ?> </div>
                             </div>
                      
-                        <div class="blogCard-text font-12">
+                        <div class="tagCard-text font-16">
                             <?php the_excerpt(); ?>
                         </div>
                         </div>

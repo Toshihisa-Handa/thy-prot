@@ -1,4 +1,4 @@
-/* blog.css */
+/* tag.css */
 
 .contents-area{
     width: 90%;
@@ -11,6 +11,7 @@
 
 .tagCard{
     width: 100%;
+    height: 400px;
     margin-top: 20px;
     border: 1px solid rgba(197, 213, 247, 0.3);
     box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
@@ -23,56 +24,52 @@
 
 .tagLeft img{
     width: 100%;
+    height: 100%;
 }
 
 
 
-.blogImg{
+.tagImg{
     width: 100%;
     height: 180px;
     object-fit: cover;
 
 }
 
-.blogRight{
+.tagRight{
     width: 100%;
     overflow: hidden;
     height: 180px;
 }
 
-.blogTitleBox{
+.tagTitleBox{
     padding:10px 5px 0 5px;
 }
 
-.blogTagBox{
-    margin-top:5px;
-}
-
-.blogCard-tag ul{
-    display: flex;
-    flex-wrap: wrap;
-}
 
 
-.blogTagBox li {
+
+.tagCard-tag a {
     background-color: #A79079;
-    color:white;
-    margin-top: 5px;
-    margin-left:5px;
-    padding: 6px 10px 6px 10px;
-
+    color: white;
+    margin-left: 3px;
+    padding: 8px;
+    line-height: 40px;
 }
 
-.blogCard-time{
-    margin-top: 8px;
-    margin-left: 7px;
-    font-size: 12px;
+.tagCard-title{
+    font-size: 1.6rem;
+ }
+
+.tagCard-time{
+    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-left: 19px;
 }
 
-.blogCard-text{
-    margin: 6px 6px 0 6px;
-    font-size: 11px;
-    line-height: 16px;
+.tagCard-text{
+    margin: 10px 10px 0 10px;
+    line-height: 24px;
 
 }
 
@@ -90,44 +87,51 @@
 
 /* 小カード */
 .tags{
+    width: 100%;
+}
+
+.tagCard{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
+    height: 300px;
 }
 
-.blogCard{
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    border: 1px solid rgba(197, 213, 247, 0.3);
-    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
-    overflow: hidden;
+.tagLeft{
+    width: 30%;
+    height: 90%;
 }
 
-.blogLeft{
-    width: 100%;
-    height: 47%;
+.tagImg{
+    height: 100%;
+    border-radius: 20%;
+
+
 }
 
-.blogImg{
+.tagRight{
+    width: 70%;
     height: 100%;
 
 }
 
-.blogRight{
-    width: 100%;
+.tagCard-title{
+    margin-left: 12px;
+    font-size: 2.2rem;
+ }
 
-}
+ .tagCard-tag{
+    margin-top: 10px;
+    margin-left: 12px;
 
-.blogCard-time{
+ }
+
+.tagCard-time{
 font-size: 1.4rem;
 }
 
-.blogCard-text{
+.tagCard-text{
 font-size: 14px;
-line-height: 20px;
-
+line-height: 36px;
+margin:10px 20px 0 20px;
 }
 
 }
@@ -144,15 +148,12 @@ line-height: 20px;
  
 }
 
-
-/* 小カード */
-
-.blogCard{
-    width: 47%;
-    margin-top:10px;
-
+.tagLeft{
+    width: 40%;
 }
 
+.tagRight{
+    width: 60%;
 
-
+}
 }
