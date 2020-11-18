@@ -8,6 +8,8 @@
     <link href="<?php echo get_template_directory_uri(); ?>/css/glide.core.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/glide.theme.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/blog.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/css/single.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/css/tag.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/parts.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/property.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/reset.css" rel="stylesheet">

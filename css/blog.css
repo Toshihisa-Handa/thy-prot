@@ -1,5 +1,285 @@
 /* blog.css */
-@media(min-width:1001px){
+
+.contents-area{
+    width: 90%;
+    margin:0 auto
+}
+
+/* メインカード */
+.mainCard{
+    border: 1px solid rgba(197, 213, 247, 0.3);
+    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
+}
+
+.main-blogImg{
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+}
+
+.bcontentLeft{
+    margin-top: 20px;
+}
+
+.mainCard-right{
+    overflow: hidden;
+    height: 310px;
+}
+
+.mainCard-title{
+    margin: 0 0 0 10px;
+    padding-top:10px;
+}
+
+.mainCard-tag{
+    padding: 5px;
+    margin:10px 0 0 10px;
+}
+
+.mainCard-tag a{
+    background-color: #A79079;
+    color:white;
+    margin-left:3px;
+    padding:8px;
+    line-height: 40px;
+
+}
+
+.mainCard-tag a:first-child{
+    display: none;
+}
+
+.mainCard-time{
+    font-size:1.4rem;
+    margin-top:10px;
+    margin-left: 19px;
+}
+
+.mainCard-text{
+    margin:10px 10px 0 10px;
+    line-height: 24px;
+}
+
+/* 小カード */
+.blogCard{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    border: 1px solid rgba(197, 213, 247, 0.3);
+    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
+    overflow: hidden;
+}
+.blogLeft{
+    width: 50%;
+}
+
+
+.blogImg{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+
+}
+
+.blogRight{
+    width: 50%;
+    overflow: hidden;
+    height: 180px;
+}
+
+.blogTitleBox{
+    padding:10px 5px 0 5px;
+}
+
+.blogTagBox{
+    margin-top:5px;
+}
+
+.blogCard-tag ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.blogTagBox li {
+    background-color: #A79079;
+    color:white;
+    margin-top: 5px;
+    margin-left:5px;
+    padding: 6px 10px 6px 10px;
+
+}
+
+.blogCard-time{
+    margin-top: 8px;
+    margin-left: 7px;
+    font-size: 12px;
+}
+
+.blogCard-text{
+    margin: 6px 6px 0 6px;
+    font-size: 11px;
+    line-height: 16px;
+
+}
+
+/* ページネーション */
+.pageLink{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:30px auto;
+}
+
+.pNavs{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.pNavs a{
+    background-color: #FED595;
+    color:white;
+    font-size: 1.3rem;
+    padding:6px;
+    margin-left: 6px;
+}
+
+.current{
+    background-color: #DB8E16;
+    color:white;
+    font-size: 1.3rem;
+    padding:6px;
+    margin-left: 6px;
+}
+
+
+.pNavs a:hover{
+    background-color: #DB8E16;
+}
+
+.page-numbers{
+    margin: 0 0px 0 8px;
+
+}
+
+/* 関連記事 */
+.related{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+.commonTitleBox{
+    display: flex;
+    align-items: center;
+    margin-top:30px;
+}
+
+.commonTitle{
+    margin-left:10px
+}
+
+.relatedCard{
+    width: 32%;
+    height: 200px;
+    border: 1px solid rgba(197, 213, 247, 0.3);
+    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
+    margin-top:10px;
+    overflow: hidden;
+}
+
+.related-blogLeft{
+    width: 100%;
+    height: 47%;
+}
+
+.related-blogRight{
+    width: 100%;
+}
+
+.related-blogImg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    
+ }
+
+
+/* おすすめ記事 */
+.sideCard-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+}
+
+.sideCard{
+    width: 48%;;
+    height: 200px;
+    border: 1px solid rgba(197, 213, 247, 0.3);
+    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
+    overflow: hidden;
+    
+}
+
+
+.recommendCard-left{
+    width: 100%;
+    height: 47%;
+
+}
+
+
+.recommendImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recommendCard-right{
+    width: 100%;
+    padding: 2%;
+    overflow: hidden;
+}
+
+.recommendCard-title{    
+    margin: 5px 5px 0 5px;
+    font-size: 1.6rem;
+}
+
+.recommendCard-text{
+    margin: 8px 2px 0 2px;
+    line-height: 19px;
+    font-size: 12px;
+
+}
+
+
+/* 人気記事 */
+
+.sideCard-box2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+}
+
+.sideCard2{
+    width: 33%;;
+    height: 200px;
+    border: 1px solid rgba(197, 213, 247, 0.3);
+    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
+    overflow: hidden;
+    
+}
+
+ /* 550px以上＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+@media(min-width:550px){
 
 .hrNav{ 
     margin-left: 17%; 
@@ -55,65 +335,69 @@
 
 
 /* コンテンツ */
-/* メインカード */
 .content-box{
-    display: flex;
+    margin-top:40px;
     justify-content: space-between;
     width: 100%;
 }
 
+/* メインカード */
 .bcontentLeft{
+    margin-top: 0;
     background-color: white;
-    width: 68%;
+    width: 100%;
 }
 
 .mainCard{
-    width: 100%;;
-    height: 350px;
     display: flex;
-    border: 1px solid rgba(197, 213, 247, 0.3);
-    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
-    overflow: hidden;
-
 }
+
+.mainlink{
+    width: 100%;
+}
+
 
 .mainCard-left{
-    width: 45%;
+    width:50%;
 }
 
-.mainCard-left img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.main-blogImg{
+    height: 350px;
 }
-
-
 
 .mainCard-right{
-    width: 55%;
+    width: 50%;
+    height: 350px;
     padding:2%;
 }
 
-.titleBox{
-    height: 25%;
-    display: flex;
-    justify-content: space-between;
+.mainCard-title{
+    padding-top:0;
+
 }
 
-.mainCard-tag , .detailCard-tag{
-    background-color: #A79079;
-    color:white;
-    text-align: center;
+
+
+.mainCard-tag{
     padding: 5px;
 }
 
-.mainCard-text{
-    height: 75%;
-    line-height: 24px;
+.mainCard-tag a{
+    padding:10px;
 }
 
 
-/* ブログカード */
+.mainCard-time{
+    font-size:1.6rem;
+    margin-left: 12px;
+
+}
+
+
+
+
+
+/* 小カード */
 .blogs{
     display: flex;
     flex-wrap: wrap;
@@ -122,131 +406,130 @@
 }
 
 .blogCard{
-    width: 47%;
+    width: 31%;
     height: 400px;
-    border: 1px solid rgba(197, 213, 247, 0.3);
-    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
-    margin-top:10px;
-    overflow: hidden;
+    margin-top:30px;
+    display: inline;
+    
+}
 
+.blogLeft{
+    width: 100%;
+    height: 47%;
 }
 
 .blogImg{
+    height: 100%;
+
+}
+
+.blogRight{
     width: 100%;
-    height: 40%;
-    object-fit: cover;
-}
-
-.blogImg img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 
 }
-
-.blogTitleBox{
-    height: 10%;
-    padding:10px 5px 0 5px;
-}
-
-.blogTagBox{
-    height: 15%;
-    margin-top:5px;
-}
-
-
-.blogCard-tag ul{
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-}
-
-.blogCard-tag{
-    height: 100%;
-}
-
-.blogTagBox li a{
-    background-color: #A79079;
-    color:white;
-    margin-left:5px;
-    padding: 6px 10px 6px 10px;
-
-}
-
 
 .blogCard-time{
-    height: 100%;
-    margin-left: 7px;
-
+font-size: 1.4rem;
 }
 
 .blogCard-text{
-    max-height: 33%;
-    margin-top:14px;
-    padding:10px 5px 0 5px;
-    line-height: 18px;
+font-size: 14px;
+line-height: 20px;
 
 }
 
-/* ページナビ */
+/* ページネーション */
 .pageLink{
     width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.pNavs{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-}
 
-.pNav{
-    background-color: #FED595;
-    color:white;
+.pNavs a{
     font-size: 1.6rem;
     padding:10px;
     margin-left: 10px;
 }
 
-.pNav:first-of-type{/*最初の要素のみを別指定している*/
-    margin-left: 0px;
+.current{
+    font-size: 1.6rem;
+    padding:10px;
+    margin-left: 10px;
 }
 
-.pNav:hover{
-    background-color: #DB8E16;
+
+
+.page-numbers{
+    margin: 0 0px 0 8px;
+
 }
 
 /* 関連記事 */
-.related{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.commonTitleBox{
-    display: flex;
-    align-items: center;
-}
-
-.commonTitle{
-    margin-left:10px
-}
-
 .relatedCard{
     width: 30%;
-    height: 240px;
-    border: 1px solid rgba(197, 213, 247, 0.3);
-    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
-    margin-top:10px;
-    overflow: hidden;
+    height: 300px;
 }
-/* 上記以外はブログカードと共通 */
+
 
 /* コンテンツライト */
+
+/* おすすめカード */
+.sideCard-box{
+    justify-content: normal;
+}
+
+
+.sideCard{
+width: 30%;
+height: 300px;
+}
+.sideCard:first-child{/*kooko*/
+    margin-right: 30px;
+}
+
+
+/* 人気記事 */
+
+
+.sideCard2{
+    width: 30%;
+    height: 300px;
+
+    }
+
+
+
+.footer-margin{
+    margin-top: 10%;
+}
+
+}
+
+
+
+
+ /* 1010px以上＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+@media(min-width:1001px){
+
+
+/* コンテンツ */
+.content-box{
+    display: flex;
+ 
+}
+
+/* メインカード */
+.bcontentLeft{
+    width: 68%;
+}
+
+/* 小カード */
+
+.blogCard{
+    width: 47%;
+    margin-top:10px;
+
+}
+
 
 /* おすすめカード */
 .bcontentRight{
@@ -255,23 +538,68 @@
 
 }
 
+.sideCard-box{
+    width: 100%;
+    display: block;
+    justify-content: none;
+    margin-top:30px;
+}
+
+
 
 .sideCard{
     margin-top:10px;
     width: 100%;;
     height: 150px;
     display: flex;
-    border: 1px solid rgba(197, 213, 247, 0.3);
-    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
-    overflow: hidden;
+
     
 }
 
-.sideCard:first-of-type{
-    margin-top:0;
+.sideCard:first-child{
+    margin-right: 0;
 }
-/* おすすめカードあとはメインのmainCardと共通 */
 
+
+/* 人気記事 */
+.sideCard-box2{
+    width: 100%;
+    display: block;
+    justify-content: none;
+    margin-top:30px;
+}
+
+.sideCard2{
+    margin-top:10px;
+    width: 100%;;
+    height: 150px;
+    display: flex;
+
+    
+}
+
+
+.recommendCard-left{
+    width: 50%;
+    height: 100%;
+}
+
+
+.recommendCard-right{
+    width: 50%;
+}
+
+.recommendCard-title{    
+    margin: 5px 5px 0 5px;
+    font-size: 1.6rem;
+}
+
+.recommendCard-text{
+    margin: 8px 2px 0 2px;
+    line-height: 19px;
+    font-size: 12px;
+
+}
 
 
 .footer-margin{
@@ -284,67 +612,6 @@
 
 
 
-.detailCard{
-    width: 100%;;
-    height: 900px;
-    border: 1px solid rgba(197, 213, 247, 0.3);
-    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
-    overflow: hidden;
 
-}
-
-.detailCard-top{
-    width: 100%;
-    height: 30%;
-}
-
-.detailImg{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-.detailCard-bottom{
-    width: 100%;
-    height: 70%;
-    padding:2%;
-}
-
-.dtitleBox{
-    height: 20%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1px;
-}
-
-
-
-.detailCard-text{
-    height: 55%;
-    line-height: 24px;
-}
-
-.contact{
-    width: 97%;
-    height:20%;
-    margin:0 auto;
-    background-color: #DEDEDE;
-}
-
-.contact-area{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-box{
-    color:#A09F9F
-}
-
-.contact-margin{
-    height: 5%;
-}
 
 }
