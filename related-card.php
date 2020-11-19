@@ -36,7 +36,16 @@
                                 <div class="related-blogRight">
                                     <div class="blogTitleBox">
                                         <a href="<?php the_permalink(); ?>">
-                                            <div class="blogCard-title font-16 "><?php the_title(); ?></div>
+                                            <div class="blogCard-title font-16 ">
+                                                <?php
+                                                if(mb_strlen($post->post_title, 'UTF-8')>10){
+                                                    $title= mb_substr($post->post_title, 0, 10, 'UTF-8');
+                                                    echo $title.'……';
+                                                }else{
+                                                    echo $post->post_title;
+                                                }
+                                                ?>
+                                            </div>
                                         </a>
                                     </div>
                                     <div class="blogCard-text font-12">

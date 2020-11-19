@@ -30,7 +30,18 @@
             <?php endif; ?>
         </div>
             <div class="recommendCard-right">
-                    <div class="recommendCard-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                    <div class="recommendCard-title">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php
+                                if(mb_strlen($post->post_title, 'UTF-8')>10){
+                                    $title= mb_substr($post->post_title, 0, 10, 'UTF-8');
+                                    echo $title.'……';
+                                }else{
+                                    echo $post->post_title;
+                                }
+                                ?>
+                        </a>
+                    </div>
                 <div class="recommendCard-text">
                     <?php the_excerpt(); ?>
                 
@@ -84,7 +95,18 @@
             <?php endif; ?>
         </div>
         <div class="recommendCard-right">
-                <div class="recommendCard-title font-16"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                <div class="recommendCard-title font-16">
+                    <a href="<?php the_permalink(); ?>">
+                            <?php
+                            if(mb_strlen($post->post_title, 'UTF-8')>10){
+                                $title= mb_substr($post->post_title, 0, 10, 'UTF-8');
+                                echo $title.'……';
+                            }else{
+                                echo $post->post_title;
+                            }
+                            ?>
+                    </a>
+                </div>
             <div class="recommendCard-text">
                 <?php the_excerpt(); ?>
             </div>

@@ -12,8 +12,8 @@
         <a href="<?php the_permalink(); ?>">
             <div class="blogCard-title font-16 ">
                 <?php
-                if(mb_strlen($post->post_title, 'UTF-8')>15){
-                    $title= mb_substr($post->post_title, 0, 15, 'UTF-8');
+                if(mb_strlen($post->post_title, 'UTF-8')>12){
+                    $title= mb_substr($post->post_title, 0, 12, 'UTF-8');
                     echo $title.'……';
                 }else{
                     echo $post->post_title;
