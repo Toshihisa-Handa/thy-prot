@@ -86,16 +86,17 @@ span.current {
     border-color:none;
 }
 
-.page{
+.wp-pagenavi a{
     text-decoration: none; 
     border:none; 
     padding:10px;
-    margin:0 10px 0 10px;
+    margin-right: 10px;
 }
 
 .wp-pagenavi a:last-child{
     margin:0;
 }
+
 
 .previouspostslink{
     margin:0;
