@@ -11,7 +11,8 @@ partsフォルダ内の指定ファイルを読み込んでいる。
 Advanced Editor Tools (previously TinyMCE Advanced)
 --スライダー（所有物件用）--
 SmartSlider3
-
+--ナビゲーション
+WP-PageNavi
 
 
 <!-- 半田メモ -->

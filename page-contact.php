@@ -58,7 +58,8 @@ Template Name: contact
 <!-- コンテンツここから -->
 <div class="contents-area">
     <div class="contact_form">
-        <iframe class='contact-area' src="https://docs.google.com/forms/d/e/1FAIpQLSd2Ou6Ykp2Ch32FR0z_UAuNKumdibpZM9HM-bsuVdhifR42Xw/viewform?embedded=true"   frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+ 
+        <iframe class='contact-area' src="https://docs.google.com/forms/d/e/1FAIpQLSeTb-mAmkYaqeujCd3cavWLnjIbUyx8V2TCiMYlnfVh9AXH7Q/viewform?embedded=true"   frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
     </div>
 </div>
 <!-- コンテンツここまで -->
