@@ -78,7 +78,11 @@
 
                     <div class="single-contact">
                     <div class="single-contact-area">
-                        <div class="contact-box font-24">問い合わせフォーム</div>
+                        <div class="contact-box font-24">
+                          <div class="contact_form">
+                            <iframe class='contact-area' src="https://docs.google.com/forms/d/e/1FAIpQLSd2Ou6Ykp2Ch32FR0z_UAuNKumdibpZM9HM-bsuVdhifR42Xw/viewform?embedded=true"   frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+                          </div>
+                        </div>
                     </div>
                     </div>
                 <div class="single-contact-margin"></div>

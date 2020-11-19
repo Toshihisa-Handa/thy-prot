@@ -64,8 +64,8 @@
 }
 
 .single-contact{
-    width: 90%;
-    height: 300px;
+    width: 100%;
+    padding-top:10px;
     margin:30px auto;
     background-color: #DEDEDE;
 }
@@ -103,7 +103,10 @@
 
  /* 1010px以上＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 @media(min-width:1001px){
-
+    .single-contact{
+        padding-top:30px;
+    
+    }
 
 
 
