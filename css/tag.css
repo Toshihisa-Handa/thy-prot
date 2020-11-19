@@ -1,206 +1,189 @@
 /* tag.css */
 
-.contents-area{
-    width: 90%;
-    margin:0 auto
+.contents-area {
+  width: 90%;
+  margin: 0 auto;
 }
-
 
 /* 小カード */
 
-
-.tagCard{
-    width: 100%;
-    height: 400px;
-    margin-top: 20px;
-    border: 1px solid rgba(197, 213, 247, 0.3);
-    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
-    overflow: hidden;
-}
-.tagLeft{
-    width: 100%;
-    height: 47%;
+.tagCard {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  border: 1px solid rgba(197, 213, 247, 0.3);
+  box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
+  overflow: hidden;
 }
 
-.tagLeft img{
-    width: 100%;
-    height: 100%;
+.tagLeft {
+  width: 100%;
+  height: 47%;
 }
 
-
-
-.tagImg{
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-
+.tagLeft img {
+  width: 100%;
+  height: 100%;
 }
 
-.tagRight{
-    width: 100%;
-    overflow: hidden;
-    height: 180px;
+.tagImg {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
-.tagTitleBox{
-    padding:10px 5px 0 5px;
+.tagRight {
+  width: 100%;
+  overflow: hidden;
+  height: 180px;
 }
 
-
-
+.tagTitleBox {
+  padding: 10px 5px 0 5px;
+}
 
 .tagCard-tag a {
-    background-color: #A79079;
-    color: white;
-    margin-left: 3px;
-    padding: 8px;
-    line-height: 40px;
+  background-color: #a79079;
+  color: white;
+  margin-left: 3px;
+  padding: 8px;
+  line-height: 40px;
 }
 
-.tagCard-title{
-    font-size: 1.6rem;
- }
-
-.tagCard-time{
-    font-size: 1.4rem;
-    margin-top: 10px;
-    margin-left: 19px;
+.tagCard-title {
+  font-size: 1.6rem;
 }
 
-.tagCard-text{
-    margin: 10px 10px 0 10px;
-    line-height: 24px;
-
+.tagCard-time {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  margin-left: 19px;
 }
+
+.tagCard-text {
+  margin: 10px 10px 0 10px;
+  line-height: 24px;
+}
+
 
 /* tag.phpのページネーション */
 
-.pages{
-    display: none;
+.pages {
+  display: none;
 }
+
 .wp-pagenavi span.current {
-    font-weight:normal
+  font-weight: normal;
 }
 
 span.current {
-    border-color:none;
+  border-color: none;
 }
 
-.wp-pagenavi a{
-    text-decoration: none; 
-    border:none; 
-    padding:10px;
-    margin-right: 10px;
+.wp-pagenavi a {
+  text-decoration: none;
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
 }
 
-.wp-pagenavi a:last-child{
-    margin:0;
+.wp-pagenavi a:last-child {
+  margin: 0;
+}
+
+.previouspostslink {
+  margin: 0;
+}
+
+.pNavsTag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pNavsTag a {
+  background-color: #fed595;
+  color: white;
+  font-size: 1.3rem;
+  padding: 6px;
+}
+
+.pNavsTag a:hover {
+  background-color: #db8e16;
 }
 
 
-.previouspostslink{
-    margin:0;
-}
-
-.pNavsTag{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pNavsTag a{
-   background-color: #FED595;
-   color:white;
-   font-size: 1.3rem;
-   padding:6px;
-}
-
-.pNavsTag a:hover{
-    background-color: #DB8E16;
-}
-
- /* 550px以上＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-@media(min-width:550px){
-
-/* コンテンツ */
-.content-box{
-    margin-top:40px;
+@media (min-width: 550px) {
+  /* コンテンツ */
+  .content-box {
+    margin-top: 40px;
     justify-content: space-between;
     width: 100%;
-}
+  }
 
-/* 小カード */
-.tags{
+  /* 小カード */
+  .tags {
     width: 100%;
-}
+  }
 
-.tagCard{
+  .tagCard {
     display: flex;
     height: 300px;
-}
+  }
 
-.tagLeft{
+  .tagLeft {
     width: 30%;
     height: 100%;
-}
+  }
 
-.tagImg{
+  .tagImg {
     height: 100%;
-}
+  }
 
-.tagRight{
+  .tagRight {
     width: 70%;
     height: 100%;
+  }
 
-}
-
-.tagCard-title{
+  .tagCard-title {
     margin-left: 12px;
     font-size: 2.2rem;
- }
+  }
 
- .tagCard-tag{
+  .tagCard-tag {
     margin-top: 10px;
     margin-left: 12px;
+  }
 
- }
+  .tagCard-time {
+    font-size: 1.4rem;
+  }
 
-.tagCard-time{
-font-size: 1.4rem;
-}
+  .tagCard-text {
+    font-size: 14px;
+    line-height: 36px;
+    margin: 10px 20px 0 20px;
+  }
 
-.tagCard-text{
-font-size: 14px;
-line-height: 36px;
-margin:10px 20px 0 20px;
-}
-
-/* ページネーション */
-.pNavsTag a{
+  /* ページネーション */
+  .pNavsTag a {
     font-size: 1.6rem;
-    padding:10px;
+    padding: 10px;
+  }
 }
 
-}
 
-
-
-
- /* 1010px以上＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-@media(min-width:1001px){
-
-/* コンテンツ */
-.content-box{
+@media (min-width: 1001px) {
+  /* コンテンツ */
+  .content-box {
     display: flex;
- 
-}
+  }
 
-.tagLeft{
+  .tagLeft {
     width: 40%;
-}
+  }
 
-.tagRight{
+  .tagRight {
     width: 60%;
-
-}
+  }
 }

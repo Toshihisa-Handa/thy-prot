@@ -2,179 +2,162 @@
 
 /* フォントサイズ */
 html {
-  font-size: 62.5%;/* 1rem = 10pxに指定 */
+  font-size: 62.5%; /* 1rem = 10pxに指定 */
 }
 
-
-@media(min-width:0px){
-
-  
-  .font-14{
+@media (min-width: 0px) {
+  .font-14 {
     font-size: 1.2rem;
   }
-  
-  .font-15{
-    font-size: 1.2rem;
 
+  .font-15 {
+    font-size: 1.2rem;
   }
-  
-  .font-16{
+
+  .font-16 {
     font-size: 1.4rem;
   }
-  .font-20{
+  .font-20 {
     font-size: 1.6rem;
   }
 
-  .font-24{
-    font-size:1.4rem;
-}
-.font-28{
-  font-size:1.8rem;
-}
-
-  .font-32{
-    font-size:2rem;
-}
-  
+  .font-24 {
+    font-size: 1.4rem;
+  }
+  .font-28 {
+    font-size: 1.8rem;
   }
 
-@media(min-width:550px){
+  .font-32 {
+    font-size: 2rem;
+  }
+}
 
-  
-  .font-14{
+@media (min-width: 550px) {
+  .font-14 {
     font-size: 1.2rem;
   }
-  
-  .font-15{
+
+  .font-15 {
     font-size: 1.5rem;
   }
-  
-  .font-16{
+
+  .font-16 {
     font-size: 1.6rem;
-
   }
 
-  .font-24{
-    font-size:1.7rem;
-}
-.font-28{
-  font-size:2.0rem;
-}
-
-  .font-32{
-    font-size:2.2rem;
-}
-  
+  .font-24 {
+    font-size: 1.7rem;
+  }
+  .font-28 {
+    font-size: 2rem;
   }
 
+  .font-32 {
+    font-size: 2.2rem;
+  }
+}
 
-@media(min-width:1001px){
-
-
-.font-10{
+@media (min-width: 1001px) {
+  .font-10 {
     font-size: 1rem;
-}
-.font-12{
+  }
+  .font-12 {
     font-size: 1.2rem;
-}
+  }
 
-.font-14{
+  .font-14 {
     font-size: 1.4rem;
-}
+  }
 
-.font-15{
-    font-size:1.5rem;
-}
+  .font-15 {
+    font-size: 1.5rem;
+  }
 
-.font-16{
-    font-size:1.6rem;
-}
-.font-18{
-    font-size:1.8rem;
-}
+  .font-16 {
+    font-size: 1.6rem;
+  }
+  .font-18 {
+    font-size: 1.8rem;
+  }
 
-.font-20{
-    font-size:2rem;
-}
+  .font-20 {
+    font-size: 2rem;
+  }
 
-.font-24{
-    font-size:2.4rem;
-}
+  .font-24 {
+    font-size: 2.4rem;
+  }
 
-.font-28{
-    font-size:2.8rem;
-}
+  .font-28 {
+    font-size: 2.8rem;
+  }
 
-.font-32{
-    font-size:3.2rem;
-}
+  .font-32 {
+    font-size: 3.2rem;
+  }
 
+  /* マージン */
+  /* トップ */
+  .mt-5 {
+    margin-top: 5px;
+  }
+  .mt-10 {
+    margin-top: 10px;
+  }
+  .mt-20 {
+    margin-top: 20px;
+  }
+  .mt-30 {
+    margin-top: 30px;
+  }
+  .mt-40 {
+    margin-top: 40px;
+  }
+  .mt-50 {
+    margin-top: 50px;
+  }
+  .mt-60 {
+    margin-top: 60px;
+  }
 
-/* マージン */
-/* トップ */
-.mt-5{
-  margin-top:5px;
-}
-.mt-10{
-  margin-top:10px;
-}
-.mt-20{
-  margin-top:20px;
-}
-.mt-30{
-  margin-top:30px;
-}
-.mt-40{
-  margin-top:40px;
-}
-.mt-50{
-  margin-top:50px;
-}
-.mt-60{
-  margin-top:60px;
-}
+  /* ボトム */
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  .mb-30 {
+    margin-bottom: 30px;
+  }
+  .mb-40 {
+    margin-bottom: 40px;
+  }
+  .mb-50 {
+    margin-bottom: 50px;
+  }
+  .mb-60 {
+    margin-bottom: 60px;
+  }
 
-/* ボトム */
-.mb-10{
-  margin-bottom:10px;
-}
-.mb-20{
-  margin-bottom:20px;
-}
-.mb-30{
-  margin-bottom:30px;
-}
-.mb-40{
-  margin-bottom:40px;
-}
-.mb-50{
-  margin-bottom:50px;
-}
-.mb-60{
-  margin-bottom:60px;
-}
+  /* 色指定 */
+  .c-white {
+    color: white;
+  }
 
+  /* icon01(About, OneTeam) */
+  .icon01 {
+    width: 80px;
+    margin-bottom: 15px;
+  }
 
-/* 色指定 */
-.c-white{
-  color:white;
-}
+  .icon01_under {
+    width: 100%;
+    height: 8px;
+  }
 
-
-
-/* icon01(About, OneTeam) */
-.icon01{
-  width: 80px;
-  margin-bottom: 15px;
-}
-
-.icon01_under{
-  width: 100%;
-  height: 8px;
-
-}
-
-.icon01_side{
-   width: 25px;
-}
+  .icon01_side {
+    width: 25px;
+  }
 }

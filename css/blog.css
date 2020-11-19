@@ -1,5 +1,4 @@
 /* blog.css */
-
 .contents-area{
     width: 90%;
     margin:0 auto
@@ -42,7 +41,6 @@
     margin-left:3px;
     padding:8px;
     line-height: 40px;
-
 }
 
 .mainCard-tag a:first-child{
@@ -60,6 +58,7 @@
     line-height: 24px;
 }
 
+
 /* 小カード */
 .blogCard{
     width: 100%;
@@ -69,16 +68,15 @@
     box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
     overflow: hidden;
 }
+
 .blogLeft{
     width: 50%;
 }
-
 
 .blogImg{
     width: 100%;
     height: 180px;
     object-fit: cover;
-
 }
 
 .blogRight{
@@ -100,14 +98,12 @@
     flex-wrap: wrap;
 }
 
-
 .blogTagBox li {
     background-color: #A79079;
     color:white;
     margin-top: 5px;
     margin-left:5px;
     padding: 6px 10px 6px 10px;
-
 }
 
 .blogCard-time{
@@ -120,8 +116,8 @@
     margin: 6px 6px 0 6px;
     font-size: 11px;
     line-height: 16px;
-
 }
+
 
 /* ページネーション */
 .pageLink{
@@ -154,15 +150,14 @@
     margin-right: 10px;
 }
 
-
 .pNavs a:hover{
     background-color: #DB8E16;
 }
 
 .page-numbers{
     margin: 0 0px 0 8px;
-
 }
+
 
 /* 関連記事 */
 .related{
@@ -171,8 +166,6 @@
     justify-content: space-between;
     width: 100%;
 }
-
-
 
 .commonTitleBox{
     display: flex;
@@ -206,7 +199,6 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-    
  }
 
 
@@ -224,16 +216,12 @@
     border: 1px solid rgba(197, 213, 247, 0.3);
     box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
     overflow: hidden;
-    
 }
-
 
 .recommendCard-left{
     width: 100%;
     height: 47%;
-
 }
-
 
 .recommendImg{
     width: 100%;
@@ -256,7 +244,6 @@
     margin: 8px 2px 0 2px;
     line-height: 19px;
     font-size: 12px;
-
 }
 
 
@@ -275,8 +262,8 @@
     border: 1px solid rgba(197, 213, 247, 0.3);
     box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
     overflow: hidden;
-    
 }
+
 
  /* 550px以上＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 @media(min-width:550px){
@@ -284,7 +271,6 @@
 .hrNav{ 
     margin-left: 17%; 
     line-height: 27px;
-
  }
 
 /* パンくず用 */
@@ -293,6 +279,7 @@
     background: #888;
     height:32px;
 }
+
 .breadcrumb {
     margin: 0;
     padding: 1em;
@@ -341,6 +328,7 @@
     width: 100%;
 }
 
+
 /* メインカード */
 .bcontentLeft{
     margin-top: 0;
@@ -355,7 +343,6 @@
 .mainlink{
     width: 100%;
 }
-
 
 .mainCard-left{
     width:50%;
@@ -373,10 +360,7 @@
 
 .mainCard-title{
     padding-top:0;
-
 }
-
-
 
 .mainCard-tag{
     padding: 5px;
@@ -386,15 +370,10 @@
     padding:10px;
 }
 
-
 .mainCard-time{
     font-size:1.6rem;
     margin-left: 12px;
-
 }
-
-
-
 
 
 /* 小カード */
@@ -410,7 +389,6 @@
     height: 400px;
     margin-top:30px;
     display: inline;
-    
 }
 
 .blogLeft{
@@ -420,12 +398,10 @@
 
 .blogImg{
     height: 100%;
-
 }
 
 .blogRight{
     width: 100%;
-
 }
 
 .blogCard-time{
@@ -435,14 +411,13 @@ font-size: 1.4rem;
 .blogCard-text{
 font-size: 14px;
 line-height: 20px;
-
 }
+
 
 /* ページネーション */
 .pageLink{
     width: 100%;
 }
-
 
 .pNavs a{
     font-size: 1.6rem;
@@ -455,12 +430,10 @@ line-height: 20px;
     padding:10px;
 }
 
-
-
 .page-numbers{
     margin: 0 0px 0 8px;
-
 }
+
 
 /* 関連記事 */
 .relatedCard{
@@ -476,26 +449,21 @@ line-height: 20px;
     justify-content: normal;
 }
 
-
 .sideCard{
-width: 30%;
-height: 300px;
+    width: 30%;
+    height: 300px;
 }
+
 .sideCard:first-child{/*kooko*/
     margin-right: 30px;
 }
 
-
 /* 人気記事 */
-
 
 .sideCard2{
     width: 30%;
     height: 300px;
-
-    }
-
-
+}
 
 .footer-margin{
     margin-top: 10%;
@@ -504,37 +472,32 @@ height: 300px;
 }
 
 
-
-
  /* 1010px以上＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 @media(min-width:1001px){
-
 
 /* コンテンツ */
 .content-box{
     display: flex;
- 
 }
+
 
 /* メインカード */
 .bcontentLeft{
     width: 68%;
 }
 
+
 /* 小カード */
 
 .blogCard{
     width: 47%;
     margin-top:10px;
-
 }
 
 
 /* おすすめカード */
 .bcontentRight{
-    /* background-color: rgb(188, 220, 224); */
     width: 28%;
-
 }
 
 .sideCard-box{
@@ -544,15 +507,11 @@ height: 300px;
     margin-top:30px;
 }
 
-
-
 .sideCard{
     margin-top:10px;
     width: 100%;;
     height: 150px;
     display: flex;
-
-    
 }
 
 .sideCard:first-child{
@@ -573,16 +532,12 @@ height: 300px;
     width: 100%;;
     height: 150px;
     display: flex;
-
-    
 }
-
 
 .recommendCard-left{
     width: 50%;
     height: 100%;
 }
-
 
 .recommendCard-right{
     width: 50%;
@@ -597,20 +552,11 @@ height: 300px;
     margin: 8px 2px 0 2px;
     line-height: 19px;
     font-size: 12px;
-
 }
-
 
 .footer-margin{
     margin-top: 10%;
 }
-
-
-/* blog_detail.css */
-/* ブログ詳細カード */
-
-
-
 
 
 }
