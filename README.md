@@ -27,4 +27,6 @@ index.phpやsingle.phpでない固定ページでは基本のページネーシ�
 ```<?php echo paginate_links(); ?>```は使用できなかった為、
 上記URLを参考にし実装した。
 
+tag.phpのページネーションは以下の記事を参考にプラグイン「WP-PageNavi」を使用した。
+https://senoweb.jp/note/wp-pagenavi-howto/
 

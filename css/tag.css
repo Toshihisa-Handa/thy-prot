@@ -73,7 +73,50 @@
 
 }
 
+/* tag.phpのページネーション */
 
+.pages{
+    display: none;
+}
+.wp-pagenavi span.current {
+    font-weight:normal
+}
+
+span.current {
+    border-color:none;
+}
+
+.page{
+    text-decoration: none; 
+    border:none; 
+    padding:10px;
+    margin:0 10px 0 10px;
+}
+
+.wp-pagenavi a:last-child{
+    margin:0;
+}
+
+.previouspostslink{
+    margin:0;
+}
+
+.pNavsTag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pNavsTag a{
+   background-color: #FED595;
+   color:white;
+   font-size: 1.3rem;
+   padding:6px;
+}
+
+.pNavsTag a:hover{
+    background-color: #DB8E16;
+}
 
  /* 550px以上＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
 @media(min-width:550px){
@@ -129,6 +172,12 @@ font-size: 1.4rem;
 font-size: 14px;
 line-height: 36px;
 margin:10px 20px 0 20px;
+}
+
+/* ページネーション */
+.pNavsTag a{
+    font-size: 1.6rem;
+    padding:10px;
 }
 
 }

@@ -49,7 +49,5 @@
 
 </div>
 
-<?php
-            wp_pagenavi(array('query' => $information));
      
-?>
+

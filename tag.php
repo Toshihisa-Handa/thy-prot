@@ -78,12 +78,9 @@ Template Name: BLOG
 
 <!-- ページナビ -->
                <div class="pageLink mt-30">
-                   <ul class='pNavs'>
-                       <li class='pNav'>1</li>
-                       <li class='pNav'>2</li>
-                       <li class='pNav'>3</li>
-                       <li class='pNav'>4</li>
-                       <li class='pNav'>5</li>
+                   <ul class='pNavsTag'>
+                   <?php wp_pagenavi(); ?>
+
                    </ul>
                </div>
 
