@@ -1,7 +1,16 @@
 
 
 <div class="tags mt-10">
-                    <?php if(have_posts()):while(have_posts()):
+<?php
+        $paged = get_query_var('paged')? get_query_var('paged') : 1;
+        $information= new WP_Query( array(
+                    'post_type' => 'post',
+                    'paged' => $paged,
+                    'post_status' => 'publish',
+                    'posts_per_page' => 7,
+                ));
+   
+                    if(have_posts()):while(have_posts()):
                     the_post(); ?>
                     <div class="tagCard">
                         <div class="tagLeft">
@@ -37,4 +46,10 @@
                     </div>
 
                     <?php endwhile; endif; ?>
+
 </div>
+
+<?php
+            wp_pagenavi(array('query' => $information));
+     
+?>
