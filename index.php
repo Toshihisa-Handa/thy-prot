@@ -161,30 +161,33 @@
         if($myposts): ?>
                 <ul class="blogCard-box glide__slides">
                     <?php foreach($myposts as $post): setup_postdata($post); ?>
-                    <li class="bCard glide__slide">
-                        <div class="bCardImg-box">
-                            <?php if(has_post_thumbnail()): ?>
-                                <?php $postthumb=wp_get_attachment_image_src(get_post_thumbnail_id()); ?>
-                            <img class='bCardImg' src="<?php echo $postthumb[0]; ?>">
-                            <?php else: ?>
-                                <img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/no_image.png">
-                            <?php endif; ?>
-                        </div>
-                        <div class="bCardSentence">
-                            <div class="bcardTitles">
-                                <div class="bCardTitle font-16"><?php the_title(); ?></div>
-                                <div class="bCardTag-box">
-                                <div class="bCardTag font-14"><?php the_tags('<ul><li class="mainCard-tag font-12">','</li><li class="mainCard-tag font-12">','</li></ul>'); ?></div>
-                                <div class="bCardTime font-14">更新日:<?php echo get_the_modified_date('Y/m/d'); ?></time></div>
+                    <div class="bCard-wrapper"> 
+                        <li class="bCard glide__slide">
+                            <div class="bCardImg-box">
+                                <?php if(has_post_thumbnail()): ?>
+                                    <?php $postthumb=wp_get_attachment_image_src(get_post_thumbnail_id()); ?>
+                                <img class='bCardImg' src="<?php echo $postthumb[0]; ?>">
+                                <?php else: ?>
+                                    <img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/no_image.png">
+                                <?php endif; ?>
+                            </div>
+                            <div class="bCardSentence">
+                                <div class="bcardTitles">
+                                    <div class="bCardTitle font-16"><?php the_title(); ?></div>
+                                    <div class="bCardTag-box">
+                                    <div class="bCardTag font-14"><?php the_tags('<ul><li class="mainCard-tag font-12">','</li><li class="mainCard-tag font-12">','</li></ul>'); ?></div>
+                                    <div class="bCardTime font-14">更新日:<?php echo get_the_modified_date('Y/m/d'); ?></time></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bCardText font-15">
+                                <?php the_excerpt(); ?>
                                 </div>
                             </div>
-                            
-                            <div class="bCardText font-15">
-                            <?php the_excerpt(); ?>
-                            </div>
-                        </div>
-                    </li>
-                    <?php endforeach; ?>
+                        </li>
+                     </div>
+                 <?php endforeach; ?>
+             
                 </ul>
                 <?php wp_reset_postdata(); endif; ?>
             </div>
