@@ -161,6 +161,7 @@
         if($myposts): ?>
                 <ul class="blogCard-box glide__slides">
                     <?php foreach($myposts as $post): setup_postdata($post); ?>
+
                     <div class="bCard-wrapper"> 
                         <li class="bCard glide__slide">
                             <div class="bCardImg-box">
@@ -170,10 +171,11 @@
                                 <?php else: ?>
                                     <img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/no_image.png">
                                 <?php endif; ?>
+
                             </div>
                             <div class="bCardSentence">
                                 <div class="bcardTitles">
-                                    <div class="bCardTitle font-16"><?php the_title(); ?></div>
+                                    <div class="bCardTitle font-16"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
                                     <div class="bCardTag-box">
                                     <div class="bCardTag font-14"><?php the_tags('<ul><li class="mainCard-tag font-12">','</li><li class="mainCard-tag font-12">','</li></ul>'); ?></div>
                                     <div class="bCardTime font-14">更新日:<?php echo get_the_modified_date('Y/m/d'); ?></time></div>
