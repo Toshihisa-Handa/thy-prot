@@ -174,6 +174,7 @@
                             <div class="bcardTitles">
                             
                                 <div class="bCardTitle font-16">
+                                
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_title(); ?>
                                 </a></div>
