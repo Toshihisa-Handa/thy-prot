@@ -200,21 +200,5 @@
 
 
 
-
-
-<!-- 
-<div class="glide">
-  <div class="glide__track" data-glide-el="track">
-    <ul class="glide__slides">
-      <li class="glide__slide"><img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/image_01.png"></li>
-      <li class="glide__slide"><img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/image_02.png"></li>
-      <li class="glide__slide"><img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/image_03.png"></li>
-    </ul>
-  </div>
-</div> -->
-
-
-<!-- グライドJSやってみる -->
-
 <!-- フッター -->
 <?php get_footer(); ?>
