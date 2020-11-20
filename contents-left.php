@@ -68,6 +68,7 @@
                                 'format' => 'page/%#%/',
                                 'current' => max(1, $paged),
                                 'total' => $the_query->max_num_pages,
+                                'mid_size'           => 1,
                                 'prev_text' => '<<', //次への表示指定
                                 'next_text' => '>>' //前への表示指定
                             ));

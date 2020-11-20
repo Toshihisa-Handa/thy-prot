@@ -59,7 +59,7 @@
 <!-- おすすめ記事ここまで -->
 
 <!--検索-->
-<?php dynamic_sidebar('submenu') ?>
+
 <!--検索end-->
 
 
