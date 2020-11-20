@@ -1,0 +1,198 @@
+/* tag.css */
+
+.contents-area {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* 小カード */
+
+.tagCard {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  border: 1px solid rgba(197, 213, 247, 0.3);
+  box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
+  overflow: hidden;
+}
+
+.tagLeft {
+  width: 100%;
+  height: 47%;
+}
+
+.tagLeft img {
+  width: 100%;
+  height: 100%;
+}
+
+.tagImg {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.tagRight {
+  width: 100%;
+  overflow: hidden;
+  height: 180px;
+}
+
+.tagTitleBox {
+  padding: 10px 5px 0 5px;
+}
+
+.tagCard-title {
+  font-size: 1.6rem;
+}
+
+.tagCard-title:hover {
+  opacity: 0.6;
+}
+
+.tagCard-tag a {
+  background-color: #a79079;
+  color: white;
+  margin-left: 3px;
+  padding: 8px;
+  line-height: 40px;
+}
+
+.tagCard-tag a:hover {
+  opacity: 0.6;
+}
+
+
+.tagCard-time {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  margin-left: 19px;
+}
+
+.tagCard-text {
+  margin: 10px 10px 0 10px;
+  line-height: 24px;
+}
+
+
+/* tag.phpのページネーション */
+
+.pages {
+  display: none;
+}
+
+.wp-pagenavi span.current {
+  font-weight: normal;
+}
+
+span.current {
+  border-color: none;
+}
+
+.wp-pagenavi a {
+  text-decoration: none;
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.wp-pagenavi a:last-child {
+  margin: 0;
+}
+
+.previouspostslink {
+  margin: 0;
+}
+
+.pNavsTag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pNavsTag a {
+  background-color: #fed595;
+  color: white;
+  font-size: 1.3rem;
+  padding: 6px;
+}
+
+.pNavsTag a:hover {
+  background-color: #db8e16;
+}
+
+
+@media (min-width: 550px) {
+  /* コンテンツ */
+  .content-box {
+    margin-top: 40px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* 小カード */
+  .tags {
+    width: 100%;
+  }
+
+  .tagCard {
+    display: flex;
+    height: 300px;
+  }
+
+  .tagLeft {
+    width: 30%;
+    height: 100%;
+  }
+
+  .tagImg {
+    height: 100%;
+  }
+
+  .tagRight {
+    width: 70%;
+    height: 100%;
+  }
+
+  .tagCard-title {
+    margin-left: 12px;
+    font-size: 2.2rem;
+  }
+
+  .tagCard-tag {
+    margin-top: 10px;
+    margin-left: 12px;
+  }
+
+  .tagCard-time {
+    font-size: 1.4rem;
+  }
+
+  .tagCard-text {
+    font-size: 14px;
+    line-height: 36px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* ページネーション */
+  .pNavsTag a {
+    font-size: 1.6rem;
+    padding: 10px;
+  }
+}
+
+
+@media (min-width: 1001px) {
+  /* コンテンツ */
+  .content-box {
+    display: flex;
+  }
+
+  .tagLeft {
+    width: 40%;
+  }
+
+  .tagRight {
+    width: 60%;
+  }
+}
