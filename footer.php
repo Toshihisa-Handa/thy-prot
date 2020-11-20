@@ -22,8 +22,8 @@
                     <li class='fnav'><a  class='flink' href="#" class='font-14'>プライバシーポリシー</a></li>
                 </ul> -->
                 <div class="footer-icon">
-                    <div class="logos " ><a href="#" class='flink'><span class="fab fa-facebook-square blue fa-fw"></span></a></div>
-                    <div class="logos " ><a href="#" class='flink'><span class="fab fa-twitter-square aqua fa-fw"></span></a></div>
+                    <div class="logos " ><a href="" class='flink'><span class="fab fa-facebook-square blue fa-fw"></span></a></div>
+                    <div class="logos " ><a href="https://twitter.com/THY06123094" class='flink' target="_blank"><span class="fab fa-twitter-square aqua fa-fw"></span></a></div>
                 </div>
             </div>
         </div>
