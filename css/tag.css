@@ -42,6 +42,14 @@
   padding: 10px 5px 0 5px;
 }
 
+.tagCard-title {
+  font-size: 1.6rem;
+}
+
+.tagCard-title:hover {
+  opacity: 0.6;
+}
+
 .tagCard-tag a {
   background-color: #a79079;
   color: white;
@@ -50,9 +58,10 @@
   line-height: 40px;
 }
 
-.tagCard-title {
-  font-size: 1.6rem;
+.tagCard-tag a:hover {
+  opacity: 0.6;
 }
+
 
 .tagCard-time {
   font-size: 1.4rem;

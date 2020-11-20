@@ -59,6 +59,10 @@
     padding-top:10px;
 }
 
+.mainCard-title:hover{
+    opacity: 0.6;
+}
+
 .mainCard-tag{
     padding: 5px;
     margin:10px 0 0 10px;
@@ -70,6 +74,10 @@
     margin-left:3px;
     padding:8px;
     line-height: 40px;
+}
+
+.mainCard-tag a:hover{
+    opacity: 0.6;
 }
 
 .mainCard-tag a:first-child{
@@ -118,6 +126,10 @@
     padding:10px 5px 0 5px;
 }
 
+.blogTitleBox:hover{
+    opacity: 0.6;
+}
+
 .blogTagBox{
     margin-top:5px;
 }
@@ -133,6 +145,10 @@
     margin-top: 5px;
     margin-left:5px;
     padding: 6px 10px 6px 10px;
+}
+
+.blogTagBox li:hover {
+    opacity: 0.6;
 }
 
 .blogCard-time{
@@ -267,6 +283,10 @@
 .recommendCard-title{    
     margin: 5px 5px 0 5px;
     font-size: 1.6rem;
+}
+
+.recommendCard-title:hover{    
+    opacity: 0.6;
 }
 
 .recommendCard-text{

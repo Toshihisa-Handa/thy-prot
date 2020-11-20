@@ -31,6 +31,12 @@ html {
   .font-32 {
     font-size: 2rem;
   }
+
+  /* icon01(About, OneTeam) */
+  .icon01 {
+    width: 80px;
+    margin-bottom: 6px;
+  }
 }
 
 @media (min-width: 550px) {
@@ -55,6 +61,11 @@ html {
 
   .font-32 {
     font-size: 2.2rem;
+  }
+
+   /* icon01(About, OneTeam) */
+   .icon01 {
+    margin-bottom: 8px;
   }
 }
 
@@ -148,7 +159,6 @@ html {
 
   /* icon01(About, OneTeam) */
   .icon01 {
-    width: 80px;
     margin-bottom: 15px;
   }
 
