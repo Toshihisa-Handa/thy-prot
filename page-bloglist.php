@@ -57,6 +57,9 @@ Template Name: BLOG
     <div class="contents-area">
         <div class="contents-title font-32 mt-40">
             BLOG&nbsp; <img class='icon01' src='<?php echo get_template_directory_uri(); ?>/img/icon_01.jpg'>
+            <div class="balloon1">
+              <p>各記事のタイトル / タグをクリックすると詳細に飛びます</p>
+           </div>
         </div>
         <div class="content-box">
 

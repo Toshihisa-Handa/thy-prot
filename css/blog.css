@@ -4,6 +4,35 @@
     margin:0 auto
 }
 
+/* タイトルの吹き出し */
+.balloon1 {
+    width: 100%;
+    position: relative;
+    /* display: inline-block; */
+    margin: 1.5em 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 1.2rem;
+    background: #e0edff;
+  }
+  
+  .balloon1:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid #e0edff;
+  }
+  
+  .balloon1 p {
+    margin: 0;
+    padding: 0;
+  }
+
 /* メインカード */
 .mainCard{
     border: 1px solid rgba(197, 213, 247, 0.3);
@@ -329,6 +358,11 @@
 }
 
 
+.balloon1 {
+    font-size: 1.6rem;
+  }
+
+
 /* メインカード */
 .bcontentLeft{
     margin-top: 0;
@@ -480,6 +514,10 @@ line-height: 20px;
     display: flex;
 }
 
+/* タイトルの吹き出し */
+.balloon1 {
+    width: 68%;
+  }
 
 /* メインカード */
 .bcontentLeft{
