@@ -53,7 +53,7 @@
 }
 
 .wp-block-image {/*ワードプレスのblog.phpページに表示している画像を非表示*/
-  display: none;
+  /* display: none; */
 }
 
 .single-contact {
