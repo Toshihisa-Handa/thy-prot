@@ -1,111 +1,94 @@
-/* blog.cssと共通部分コメント */
-/* .contents-area{
-    width: 90%;
-    margin:0 auto
-} */
-
 /* メインカード */
-.singleCard{
-    border: 1px solid rgba(197, 213, 247, 0.3);
-    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
+
+.singleCard {
+  border: 1px solid rgba(197, 213, 247, 0.3);
+  box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
 }
 
-.singleCard-left{
-    width: 100%;
-    height: 350px;
+.singleCard-left {
+  width: 100%;
+  height: 350px;
 }
 
-.single-blogImg{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.single-blogImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.singleCard-right {
+  width: 100%;
+}
+
+.singleCard-title {
+  margin: 0 0 0 10px;
+  padding-top: 10px;
+}
+
+.singleCard-tag {
+  padding: 5px;
+  margin: 10px 0 0 10px;
+}
+
+.singleCard-tag a {
+  background-color: #a79079;
+  color: white;
+  margin-left: 3px;
+  padding: 8px;
+  line-height: 40px;
+}
+.singleCard-tag a:hover {
+  opacity: 0.6;
+}
+
+.singleCard-time {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  margin-left: 19px;
+}
+
+.singleCard-text {
+  margin: 10px 10px 0 10px;
+  line-height: 24px;
+}
+
+.wp-block-image {/*ワードプレスのblog.phpページに表示している画像を非表示*/
+  /* display: none; */
+}
+
+.single-contact {
+  width: 100%;
+  padding-top: 10px;
+  margin: 30px auto;
+  background-color: #dedede;
+}
+
+.single-contact-area {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-contact-box {
+  color: #a09f9f;
+}
+
+.contact-margin {
+  height: 5%;
 }
 
 
+@media (min-width: 550px) {
+  /* パンくずはblog.cssと共通 */
 
-.singleCard-right{
-    width: 100%;
-}
-
-.singleCard-title{
-    margin: 0 0 0 10px;
-    padding-top:10px;
-}
-
-.singleCard-tag{
-    padding: 5px;
-    margin:10px 0 0 10px;
-}
-
-
-.singleCard-tag a{
-    background-color: #A79079;
-    color:white;
-    margin-left:3px;
-    padding:8px;
-    line-height: 40px;
-
-}
-
-
-.singleCard-time{
-    font-size:1.4rem;
-    margin-top:10px;
-    margin-left: 19px;
-}
-
-.singleCard-text{
-    margin:10px 10px 0 10px;
-    line-height: 24px;
-}
-
-.wp-block-image{/*ワードプレスのblog.phpページに表示している画像を非表示*/
-    display: none;
-}
-
-.single-contact{
-    width: 90%;
-    height: 300px;
-    margin:30px auto;
-    background-color: #DEDEDE;
-}
-
-.single-contact-area{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.single-contact-box{
-    color:#A09F9F
-}
-
-.contact-margin{
-    height: 5%;
-}
-
-
- /* 550px以上＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-@media(min-width:550px){
-/* パンくずはblog.cssと共通 */
-
-
-.singleCard-text{
+  .singleCard-text {
     line-height: 37px;
-
+  }
 }
 
-}
-
-
-
-
- /* 1010px以上＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
-@media(min-width:1001px){
-
-
-
-
-
+@media (min-width: 1001px) {
+  .single-contact {
+    padding-top: 30px;
+  }
 }

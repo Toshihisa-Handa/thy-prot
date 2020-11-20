@@ -1,221 +1,171 @@
 /* topページcss */
-.mainImg{
-width: 100%;
-/* height: 100vh; */
-object-fit:cover;
-object-position: left;
-margin-top:50px;
+.mainImg {
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+  margin-top: 50px;
 }
 
 
 /* アバウト・コンセプト */
 
-.about,.concept,.property,.blog{
-    padding:50px 0 50px 0;
+.about,
+.concept,
+.property,
+.blog {
+  padding: 50px 0 50px 0;
 }
 
-.concept{
-    background: linear-gradient(90deg, #e8e8e8, #e5e5e5, #dedede);
-    background-color: #e8e8e8;
-    /* padding-top:20px;
-    padding-bottom:20px; */
-    width: 100%;
-    /* transform: skewY(-2deg); */
+.concept {
+  background: linear-gradient(90deg, #e8e8e8, #e5e5e5, #dedede);
+  background-color: #e8e8e8;
+  width: 100%;
 }
 
-.concept-area{
-    display:block;
-    /* transform: skewY(2deg); */
-}
-.concept-area_about{
-    display:block;
+.concept-area {
+  display: block;
 }
 
-
-.concept-left, .pCard{
-    width: 100%;
+.concept-area_about {
+  display: block;
 }
 
-.leftImg-box, .cardImg-box{
-    width: 95%;
-    margin:0 auto;
+.concept-left,
+.pCard {
+  width: 100%;
 }
 
-.leftImg, .cardImg{
-    width: 100%;
-    object-fit:cover ;
+.leftImg-box,
+.cardImg-box {
+  width: 95%;
+  margin: 0 auto;
 }
 
-.concept-right{
-    width: 95%;
-    margin:0 auto;
-    /* background-color: white; */
-
+.leftImg,
+.cardImg {
+  width: 100%;
+  object-fit: cover;
 }
 
-.conceptTitle{
-    padding-top:15px;
-    margin-left:5px;
+.concept-right {
+  width: 95%;
+  margin: 0 auto;
 }
 
-.conceptText{
-    margin-top: 15px;
-    margin-left:5px;
-    line-height: 28px;
+.conceptTitle {
+  padding-top: 15px;
+  margin-left: 5px;
+}
 
+.conceptText {
+  margin-top: 15px;
+  margin-left: 5px;
+  line-height: 28px;
 }
 
 
 /* 所有物件 */
-.property{
-    /* margin-top:20px;
-    margin-bottom:20px */
-}
-.pCard{
-    /* margin-top: 15px; */
+
+.propertyTitle-box {
+  display: none;
 }
 
-/* .cardImg-box{
-    border-top:4px solid #D88526;
-} */
-
-
-.propertyTitle-box{
-    display:none;
-}
-
-.cardTitle{
-    padding-top:15px;
-    /* margin-left:30px; */
-    font-weight: bold;
-}
-
- .cardText{
-    /* margin-top: 3px;
-    margin-left:15px;
-    line-height: 28px; */
-
+.cardTitle {
+  padding-top: 15px;
+  font-weight: bold;
 }
 
 /* ブログ */
 
-.blog{
-    display: none;
+.blog {
+  display: none;
 }
 
 
-
-
-@media(min-width:550px){
-
-.mainImg{
+@media (min-width: 550px) {
+  .mainImg {
     width: 100%;
     /* height:auto; */
     object-fit: inherit;
     object-position: none;
-    }
+  }
 
-/* アバウト */
-.leftImg-box, .cardImg-box{
+
+  /* アバウト */
+  .leftImg-box,
+  .cardImg-box {
     width: 70%;
-}
+  }
 
-.concept-right{
+  .concept-right {
     width: 70%;
-    /* background-color: rgb(248, 250, 252); */
-}
+  }
 
-
-.conceptTitle {
+  .conceptTitle {
     width: 95%;
-    margin:0 auto;
-}
+    margin: 0 auto;
+  }
 
-
-.conceptText {
+  .conceptText {
     width: 100%;
-    margin-left:3%;
-}
+    margin-left: 3%;
+  }
 
-.cardTitle{
-width: 67%;
-/* margin:0 auto; */
-}
-
-.cardText{
-    /* width: 70%;
-    margin: 10px auto; */
+  .cardTitle {
+    width: 67%;
+  }
 }
 
 
-
-}
-
-
-
-
-
-@media(min-width:1001px){
-img{
-    padding:0;
-    margin:0;
-    /* max-width: 100%; */
-}
+@media (min-width: 1001px) {
+  img {
+    padding: 0;
+    margin: 0;
+  }
 
 
-/* 共通コンテンツ */
-.contents-common{
+  /* 共通コンテンツ */
+  .contents-common {
     width: 980px;
-    /* height: 500px; */
-    /* background-color: rgb(255, 255, 255); */
-}
+  }
 
 
-.content-head{
-    /* box-shadow: 0 2px 4px rgba(0,0,0,0.3); */
-    /* border-top:5px solid rgb(44, 40, 28); */
-    
-
-}
-
-/* アバウト・コンセプト（共通） */
-.about{
-    background-color:white;
-    /* height: 650px; */
+  /* アバウト・コンセプト（共通） */
+  .about {
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-
-
-.concept{
-    background-color:#e8e8e8;
-    /* height: 650px; */
+  .concept {
+    background-color: #e8e8e8;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.concept-area{
-    display:flex;
-}
+  .concept-area {
+    display: flex;
+  }
 
-.concept-area_about{
-    display:flex;
-}
-.concept-left{
+  .concept-area_about {
+    display: flex;
+  }
+  .concept-left {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     display: flex;
-}
-.leftImg-box, .cardImg-box {
-    width: 100%;
-}
+  }
 
-.leftImg-box{
+  .leftImg-box,
+  .cardImg-box {
+    width: 100%;
+  }
+
+  .leftImg-box {
     padding: 0 3% 0 7%;
     width: 100%;
     height: 100%;
@@ -223,199 +173,175 @@ img{
     justify-content: center;
     align-items: center;
     display: flex;
-}
+  }
 
-.leftImg{
+  .leftImg {
     width: 100%;
     max-height: 400px;
-    /* height: 85%; */
     object-fit: cover;
-}
+  }
 
-.concept-right{
+  .concept-right {
     width: 50%;
-    /* background-color: white; */
+  }
 
-}
-
-.conceptTitle{
-    /* padding: 5% 0% 5% 8%; */
-
-}
-
-.conceptText{
+  .conceptText {
     padding: 0 7% 0 3%;
-    /* line-height: 42px; */
     width: 100%;
-}
+  }
 
+  /* プロパティ */
+  .propertyTitle {
+    display: block;
+  }
 
-
-/* プロパティ */
-.propertyTitle{
-    display:block;
-}
-
-.property{
-    background-color:white;
-    /* height: 560px; */
+  .property {
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.contents-property{
+  .contents-property {
     width: 980px;
-    /* height: 500px; */
     background-color: rgb(255, 255, 255);
-    
-}
+  }
 
-.wrapper{
+  .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.propertyCard-box{
-    display:flex;
+  .propertyCard-box {
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    /* margin-top: 40px; */
-}
+  }
 
-.pCard{
+  .pCard {
     width: 450px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    border-top:4px solid #D88526;
-}
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #d88526;
+  }
 
-.cardImg{
+  .cardImg {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    
-}
+  }
 
-.cardTitle{
+  .cardTitle {
     padding: 8px 0 8px 5px;
-    /* font-weight: normal; */
-    }
+  }
 
-
-.cardText{
-    padding-left:3px;
+  .cardText {
+    padding-left: 3px;
     line-height: 25px;
-}
+  }
 
 
-
-
-/* ブログ */
-.blog{
+  /* ブログ */
+  .blog {
     background: linear-gradient(90deg, #e8e8e8, #e5e5e5, #dedede);
-    /* height: 650px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-bottom: 30px; */
+  }
 
-}
-
-.contents-blog{
+  .contents-blog {
     width: 980px;
     min-height: 500px;
-    /* background-color: #D2CABA;; */
-}
+  }
 
-.blogCards{
+  .blogCards {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
+  }
 
-.bCard{
+  .bCard {
     width: 300px;
     height: 450px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3); 
-}
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
 
-.bCardImg-box{
+  .bCardImg-box {
     height: 50%;
-}
+  }
 
-.bCardImg{
+  .bCardImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+  }
 
-.bCardSentence{
+  .bCardSentence {
     width: 100%;
-    height:50%;
-    /* padding:10px 10px; */
+    height: 50%;
     background-color: white;
-}
-.cardSentence{
-    padding:10px 10px;
-}
-.blogTitle-box{
+  }
+
+  .cardSentence {
+    padding: 10px 10px;
+  }
+
+  .blogTitle-box {
     display: flex;
     align-items: center;
     height: 15%;
-}
+  }
 
-.blogTitle{
+  .blogTitle {
     margin-left: 10px;
+  }
 
-}
-
-.blogCard-box{
+  .blogCard-box {
     margin-top: 15px;
     height: 85%;
-}
+  }
 
-.bcardTitles{
-    /* display:flex; */
-    /* justify-content: space-between; */
+  .bcardTitles {
     padding: 15px 1px 25px 10px;
+  }
 
-}
-.bCardTitle{
+  .bCardTitle {
     font-weight: 600;
-}
-.bCardTitle, .bCardTime, .bCardText{
-    color:#4C4C4C;
+  }
 
-}
+  .bCardTitle,
+  .bCardTime,
+  .bCardText {
+    color: #4c4c4c;
+  }
 
-.bCardTag-box{
-    padding-right:10px;
-}
+  .bCardTag-box {
+    padding-right: 10px;
+  }
 
-.bCardTag{
-    /* background-color: #A79079; */
-    color:white;
+  .bCardTag {
+    color: white;
     text-align: center;
     padding: 3px 0 3px 0;
-}
-.bCardTag ul{
-    display:flex;
-}
-.bCardTag ul li{
-    margin-left:3px;
-}
-    .bCardTime{
-    margin-top:5px;
-}
+  }
 
-.bCardText{
+  .bCardTag ul {
+    display: flex;
+  }
+
+  .bCardTag ul li {
+    margin-left: 3px;
+  }
+
+  .bCardTime {
+    margin-top: 5px;
+  }
+
+  .bCardText {
     margin-left: 10px;
     max-height: 60%;
     overflow: hidden;
-}
-
-
+  }
 }
 
 /* ============================ */
@@ -423,90 +349,86 @@ img{
 /* ============================= */
 /* 会社概要 */
 
-.company_tb{
-    margin:20px auto 0 auto;
-    width:100%;
-    font-size:1.6rem;
+.company_tb {
+  margin: 20px auto 0 auto;
+  width: 100%;
+  font-size: 1.6rem;
 }
-    .company_tb th{
-        font-weight: 600;
-        width:30%;
-        padding: 10px 20px;
-        border-bottom:1px solid #bbb;
-    }
-    .company_tb td{
-        width:70%;
-        padding: 10px 20px;
-        border-bottom:1px solid #aaa;
-    }
-@media screen and (min-width: 600px){
-    .company_tb{
-        width:80%;
-    }
 
-    .company_tb th{
-        width:25%;
-       
-    }
-    .company_tb td{
-        width:75%;
-      
-    }
-
-
-    
+.company_tb th {
+  font-weight: 600;
+  width: 30%;
+  padding: 10px 20px;
+  border-bottom: 1px solid #bbb;
 }
+
+.company_tb td {
+  width: 70%;
+  padding: 10px 20px;
+  border-bottom: 1px solid #aaa;
+}
+
+
+@media screen and (min-width: 600px) {
+  .company_tb {
+    width: 80%;
+  }
+
+  .company_tb th {
+    width: 25%;
+  }
+  .company_tb td {
+    width: 75%;
+  }
+}
+
+
 /* 問い合わせ */
-.contact{
-    margin:100px 20px 20px 20px; 
+.contact {
+  margin: 100px 20px 20px 20px;
 }
-.contact_form{
-    text-align: center;
-}
-
-.contact-area{
-    width: 340px;
-    height: 1000px;
-    margin: 0 auto;
-
+.contact_form {
+  text-align: center;
 }
 
-@media(min-width:640px){
-    .contact-area{
-        width: 640px;
-     
-    }
+.contact-area {
+  width: 340px;
+  height: 1000px;
+  margin: 0 auto;
+}
 
+@media (min-width: 640px) {
+  .contact-area {
+    width: 640px;
+  }
 }
 
 /* プライバシーポリシー */
-    .privacy_p{
-        font-size:1.6rem;
-    }
-    .privacy_h2{
-        font-size:1.8rem;
-        margin:20px 0 10px 0;
-        font-weight: 600;
-    }
-    .list_1 {
-        font-size:1.6rem;
-        padding-left:30px;
-    }
-    .list_2 {
-        font-size:1.6rem;
-        padding-left:30px;
-    }
-    .list_3 {
-        font-size:1.6rem;
-        padding-left:30px;
-    }
+.privacy_p {
+  font-size: 1.6rem;
+}
+.privacy_h2 {
+  font-size: 1.8rem;
+  margin: 20px 0 10px 0;
+  font-weight: 600;
+}
+.list_1 {
+  font-size: 1.6rem;
+  padding-left: 30px;
+}
+.list_2 {
+  font-size: 1.6rem;
+  padding-left: 30px;
+}
+.list_3 {
+  font-size: 1.6rem;
+  padding-left: 30px;
+}
 /* 404 */
-.error_page{
-    margin:100px 20px 20px 20px; 
+.error_page {
+  margin: 100px 20px 20px 20px;
 }
 
-
-
-.cardSentence{
-    padding:10px 10px;
+.cardSentence {
+  padding: 10px 10px;
 }
