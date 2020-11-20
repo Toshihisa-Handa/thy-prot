@@ -172,7 +172,11 @@
                         </div>
                         <div class="bCardSentence">
                             <div class="bcardTitles">
-                                <div class="bCardTitle font-16"><?php the_title(); ?></div>
+                            
+                                <div class="bCardTitle font-16">
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php the_title(); ?>
+                                </a></div>
                                 <div class="bCardTag-box">
                                 <div class="bCardTag font-14"><?php the_tags('<ul><li class="mainCard-tag font-12">','</li><li class="mainCard-tag font-12">','</li></ul>'); ?></div>
                                 <div class="bCardTime font-14">更新日:<?php echo get_the_modified_date('Y/m/d'); ?></time></div>
@@ -196,22 +200,6 @@
 
 
 
-
-
-
-<!-- 
-<div class="glide">
-  <div class="glide__track" data-glide-el="track">
-    <ul class="glide__slides">
-      <li class="glide__slide"><img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/image_01.png"></li>
-      <li class="glide__slide"><img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/image_02.png"></li>
-      <li class="glide__slide"><img class='bCardImg' src="<?php echo get_template_directory_uri(); ?>/img/image_03.png"></li>
-    </ul>
-  </div>
-</div> -->
-
-
-<!-- グライドJSやってみる -->
 
 <!-- フッター -->
 <?php get_footer(); ?>
