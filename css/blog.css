@@ -35,8 +35,8 @@
 
 /* メインカード */
 .mainCard{
-    border: 1px solid rgba(197, 213, 247, 0.3);
-    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);
 }
 
 .main-blogImg{
@@ -101,8 +101,8 @@
     width: 100%;
     margin-top: 20px;
     display: flex;
-    border: 1px solid rgba(197, 213, 247, 0.3);
-    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);
     overflow: hidden;
 }
 
@@ -225,8 +225,8 @@
 .relatedCard{
     width: 32%;
     height: 200px;
-    border: 1px solid rgba(197, 213, 247, 0.3);
-    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);
     margin-top:10px;
     overflow: hidden;
 }
@@ -258,8 +258,8 @@
 .sideCard{
     width: 48%;;
     height: 200px;
-    border: 1px solid rgba(197, 213, 247, 0.3);
-    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);
     overflow: hidden;
 }
 
@@ -308,8 +308,8 @@
 .sideCard2{
     width: 33%;;
     height: 200px;
-    border: 1px solid rgba(197, 213, 247, 0.3);
-    box-shadow: 3px 3px 3px 1px rgba(163, 189, 197, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);
     overflow: hidden;
 }
 
