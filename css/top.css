@@ -98,8 +98,11 @@
   .bCard {
     width: 300px;
     height: 450px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);    margin: 0 auto;
+  }
+
+  .glide *{
+    border-radius: 8px
   }
 
   .bCard-wrapper{
