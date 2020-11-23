@@ -70,7 +70,7 @@ Template Name: syoyuu
     </div>
         <div class="contentRight">
             <div class="contentTitle font-20">
-            八幡ハイム
+            埼玉県草加市物件
             </div>
             <div class="contentText font-15 mt-30">
             埼玉県草加市にある築40年の物件。<br>
@@ -98,12 +98,13 @@ Template Name: syoyuu
 <div class="content-common content-two">
     <div class="contentLeft">
         <div class="img-one">
-            <?php echo do_shortcode('[smartslider3 slider="5"]'); ?>
+        <?php echo do_shortcode('[smartslider3 slider="7"]');?>
+            <!-- ローカル環境上：'[smartslider3 slider="5"]' -->
         </div>
     </div>
         <div class="contentRight">
             <div class="contentTitle font-20">
-            グリーンヒルズ
+            神奈川県川崎市物件
             </div>
             <div class="contentText font-15 mt-30">
             神奈川県川崎市向ヶ丘遊園にある築32年の物件。<br>

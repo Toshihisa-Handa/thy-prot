@@ -67,7 +67,7 @@ Template Name: Company
             </tr>
             <tr>
                 <th>設立</th>
-                <td>2014年11月</td>
+                <td>2018年5月</td>
             </tr>
             <tr>
                 <th>代表社員</th>
@@ -79,7 +79,7 @@ Template Name: Company
             </tr>
             <tr>
                 <th>所在地</th>
-                <td>神奈川県横浜市緑区長津田4-15-18</td>
+                <td>神奈川県横浜市緑区長津田</td>
             </tr>
         </tbody>
     </table>
